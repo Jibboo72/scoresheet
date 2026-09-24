@@ -8,6 +8,10 @@ import pandas as pd
 import requests
 import nhl_pipeline as m
 
+TUNED = m.ROOT / "data" / "tuned_config.json"
+if TUNED.exists():  # settings chosen by tune.py
+    m.CONFIG.update(json.loads(TUNED.read_text()))
+
 SEASON, PRIOR = "20262027", "20252026"
 OUT = m.ROOT / "docs" / "data" / "board.json"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
@@ -141,4 +145,4 @@ def main():
 
 
 if __name__ == "__main__":
-     main()
+    main()
