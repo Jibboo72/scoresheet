@@ -1,0 +1,13 @@
+{
+ "recent_n": 10,
+ "recent_weight": 0.2,
+ "prior_games": 35,
+ "toi_recent_weight": 0.4,
+ "sh_prior_shots": 150,
+ "save_prior_shots": 600,
+ "assist_prior_team_goals": 40,
+ "team_prior_games": 20,
+ "nb_dispersion": [
+  20
+ ]
+}
