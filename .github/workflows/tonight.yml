@@ -2,7 +2,7 @@ name: Tonight
 
 on:
   schedule:
-    - cron: 0 21 * * *
+    - cron: 30 16 * * *
   workflow_dispatch:
     inputs:
       date:
@@ -25,10 +25,11 @@ jobs:
       - run: python board.py ${{ inputs.date }}
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      - run: python sim.py
       - run: |
           git config user.name github-actions
           git config user.email actions@github.com
-          git add docs/data/board.json
+          git add docs/data/board.json docs/data/sim_log.json
           git diff --cached --quiet || git commit -m tonight-board
           git pull --rebase
           git push
