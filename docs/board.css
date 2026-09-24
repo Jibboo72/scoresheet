@@ -1,0 +1,22 @@
+.masthead a{color:var(--blue);font-weight:500;text-decoration:none}
+.switch.two{grid-template-columns:1fr 1fr}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:1px solid var(--rule);background:none;border-radius:999px;padding:6px 14px;
+  cursor:pointer;font-size:14px;font-weight:500;color:var(--muted)}
+.chips button[aria-pressed="true"]{border-color:var(--blue);color:var(--blue);background:var(--board)}
+.status{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.plays{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.play{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.play .who{font:600 21px/1.1 var(--display)}
+.play .game{grid-column:1;color:var(--muted);font-size:14px}
+.play .nums{grid-column:1;font-size:15px;font-variant-numeric:tabular-nums}
+.play .nums b{font-weight:600}
+.play .ev{grid-row:1 / span 3;grid-column:2;align-self:center;text-align:right}
+.play .ev b{display:block;font:700 30px/1 var(--display);color:var(--blue)}
+.play .ev span{font-size:12px;color:var(--muted)}
+.plays.flagged .ev b{color:var(--goal)}
+.plays:empty{border-top:0}
+td.pos{color:var(--blue);font-weight:600}
+td .sub{display:block;color:var(--muted);font-size:12px}
+td:first-child{max-width:150px}
