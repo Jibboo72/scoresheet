@@ -1,0 +1,25 @@
+name: Run backtest
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - run: pip install requests pandas numpy scipy
+      - run: python nhl_pipeline.py
+      - run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add data docs/data
+          git diff --cached --quiet || git commit -m backtest-results
+          git push
