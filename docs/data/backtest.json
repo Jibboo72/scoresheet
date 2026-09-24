@@ -1,0 +1,470 @@
+{
+ "generated": "2026-09-24T00:53+00:00",
+ "season_tested": "2025-26",
+ "prior_season": "2024-25",
+ "counts": {
+  "player_games": 36812,
+  "players": 586,
+  "games": 1312
+ },
+ "config": {
+  "prior_games": 20,
+  "recent_n": 10,
+  "recent_weight": 0.35,
+  "toi_recent_weight": 0.6,
+  "team_prior_games": 10,
+  "opp_clamp": [
+   0.85,
+   1.15
+  ],
+  "sh_prior_shots": 150,
+  "save_prior_shots": 600,
+  "assist_prior_team_goals": 40,
+  "min_history_games": 5,
+  "min_proj_toi": 10.0,
+  "nb_dispersion": [
+   null,
+   40,
+   20,
+   10,
+   6
+  ],
+  "sog_lines": [
+   1.5,
+   2.5,
+   3.5
+  ]
+ },
+ "markets": {
+  "sog": {
+   "label": "Shots on goal",
+   "fits": [
+    {
+     "name": "Poisson",
+     "r": null,
+     "loglik": -1.58955
+    },
+    {
+     "name": "Neg. binomial (r=40)",
+     "r": 40,
+     "loglik": -1.58746
+    },
+    {
+     "name": "Neg. binomial (r=20)",
+     "r": 20,
+     "loglik": -1.58643
+    },
+    {
+     "name": "Neg. binomial (r=10)",
+     "r": 10,
+     "loglik": -1.58672
+    },
+    {
+     "name": "Neg. binomial (r=6)",
+     "r": 6,
+     "loglik": -1.59047
+    }
+   ],
+   "chosen": "Neg. binomial (r=20)",
+   "avg_proj": 1.543,
+   "avg_actual": 1.661,
+   "lines": {
+    "1.5": {
+     "n": 36812,
+     "base_rate": 0.4587,
+     "avg_pred": 0.4267,
+     "brier_model": 0.21554,
+     "brier_naive": 0.21787,
+     "skill": 0.0107,
+     "logloss_model": 0.62088,
+     "logloss_naive": 0.62809,
+     "ece": 0.032,
+     "early_skill": 0.0394,
+     "late_skill": 0.0026,
+     "confident": {
+      "threshold": 0.6,
+      "n": 7432,
+      "pred": 0.6979,
+      "hit": 0.7289
+     },
+     "top5": {
+      "n": 1841,
+      "pred": 0.7986,
+      "hit": 0.8278
+     },
+     "calibration": [
+      {
+       "lo": 0.0,
+       "hi": 0.1,
+       "n": 213,
+       "pred": 0.0852,
+       "actual": 0.1549
+      },
+      {
+       "lo": 0.1,
+       "hi": 0.2,
+       "n": 3532,
+       "pred": 0.1598,
+       "actual": 0.1812
+      },
+      {
+       "lo": 0.2,
+       "hi": 0.3,
+       "n": 7123,
+       "pred": 0.2522,
+       "actual": 0.2868
+      },
+      {
+       "lo": 0.3,
+       "hi": 0.4,
+       "n": 7199,
+       "pred": 0.3489,
+       "actual": 0.3748
+      },
+      {
+       "lo": 0.4,
+       "hi": 0.5,
+       "n": 5783,
+       "pred": 0.4485,
+       "actual": 0.4852
+      },
+      {
+       "lo": 0.5,
+       "hi": 0.6,
+       "n": 5530,
+       "pred": 0.5494,
+       "actual": 0.5877
+      },
+      {
+       "lo": 0.6,
+       "hi": 0.7,
+       "n": 4214,
+       "pred": 0.6455,
+       "actual": 0.677
+      },
+      {
+       "lo": 0.7,
+       "hi": 0.8,
+       "n": 2440,
+       "pred": 0.7455,
+       "actual": 0.7857
+      },
+      {
+       "lo": 0.8,
+       "hi": 0.9,
+       "n": 770,
+       "pred": 0.8318,
+       "actual": 0.8312
+      },
+      {
+       "lo": 0.9,
+       "hi": 1.0,
+       "n": 8,
+       "pred": 0.9105,
+       "actual": 0.875
+      }
+     ]
+    },
+    "2.5": {
+     "n": 36812,
+     "base_rate": 0.2422,
+     "avg_pred": 0.2143,
+     "brier_model": 0.15882,
+     "brier_naive": 0.16018,
+     "skill": 0.0085,
+     "logloss_model": 0.48636,
+     "logloss_naive": 0.49163,
+     "ece": 0.0281,
+     "early_skill": 0.0345,
+     "late_skill": 0.0013,
+     "confident": {
+      "threshold": 0.6,
+      "n": 679,
+      "pred": 0.6498,
+      "hit": 0.6451
+     },
+     "top5": {
+      "n": 1841,
+      "pred": 0.5912,
+      "hit": 0.629
+     },
+     "calibration": [
+      {
+       "lo": 0.0,
+       "hi": 0.1,
+       "n": 10305,
+       "pred": 0.0625,
+       "actual": 0.0806
+      },
+      {
+       "lo": 0.1,
+       "hi": 0.2,
+       "n": 10314,
+       "pred": 0.1451,
+       "actual": 0.1646
+      },
+      {
+       "lo": 0.2,
+       "hi": 0.3,
+       "n": 6455,
+       "pred": 0.248,
+       "actual": 0.2838
+      },
+      {
+       "lo": 0.3,
+       "hi": 0.4,
+       "n": 4833,
+       "pred": 0.3462,
+       "actual": 0.3929
+      },
+      {
+       "lo": 0.4,
+       "hi": 0.5,
+       "n": 2684,
+       "pred": 0.4448,
+       "actual": 0.4754
+      },
+      {
+       "lo": 0.5,
+       "hi": 0.6,
+       "n": 1542,
+       "pred": 0.5454,
+       "actual": 0.6109
+      },
+      {
+       "lo": 0.6,
+       "hi": 0.7,
+       "n": 578,
+       "pred": 0.6362,
+       "actual": 0.6384
+      },
+      {
+       "lo": 0.7,
+       "hi": 0.8,
+       "n": 101,
+       "pred": 0.7279,
+       "actual": 0.6832
+      }
+     ]
+    },
+    "3.5": {
+     "n": 36812,
+     "base_rate": 0.1162,
+     "avg_pred": 0.098,
+     "brier_model": 0.09192,
+     "brier_naive": 0.09258,
+     "skill": 0.0071,
+     "logloss_model": 0.31148,
+     "logloss_naive": 0.31431,
+     "ece": 0.0185,
+     "early_skill": 0.0309,
+     "late_skill": 0.0007,
+     "confident": {
+      "threshold": 0.6,
+      "n": 6,
+      "pred": 0.6159,
+      "hit": 0.1667
+     },
+     "top5": {
+      "n": 1841,
+      "pred": 0.3852,
+      "hit": 0.4139
+     },
+     "calibration": [
+      {
+       "lo": 0.0,
+       "hi": 0.1,
+       "n": 23643,
+       "pred": 0.0385,
+       "actual": 0.0502
+      },
+      {
+       "lo": 0.1,
+       "hi": 0.2,
+       "n": 7873,
+       "pred": 0.144,
+       "actual": 0.1741
+      },
+      {
+       "lo": 0.2,
+       "hi": 0.3,
+       "n": 3197,
+       "pred": 0.2425,
+       "actual": 0.2684
+      },
+      {
+       "lo": 0.3,
+       "hi": 0.4,
+       "n": 1496,
+       "pred": 0.3436,
+       "actual": 0.3877
+      },
+      {
+       "lo": 0.4,
+       "hi": 0.5,
+       "n": 490,
+       "pred": 0.4357,
+       "actual": 0.4592
+      },
+      {
+       "lo": 0.5,
+       "hi": 0.6,
+       "n": 107,
+       "pred": 0.5321,
+       "actual": 0.5234
+      },
+      {
+       "lo": 0.6,
+       "hi": 0.7,
+       "n": 6,
+       "pred": 0.6159,
+       "actual": 0.1667
+      }
+     ]
+    }
+   }
+  },
+  "goals": {
+   "n": 36812,
+   "base_rate": 0.1656,
+   "avg_pred": 0.1542,
+   "brier_model": 0.12868,
+   "brier_naive": 0.13189,
+   "skill": 0.0243,
+   "logloss_model": 0.4139,
+   "logloss_naive": 0.49555,
+   "ece": 0.0114,
+   "early_skill": 0.0641,
+   "late_skill": 0.0134,
+   "confident": {
+    "threshold": 0.6,
+    "n": 0,
+    "pred": null,
+    "hit": null
+   },
+   "top5": {
+    "n": 1841,
+    "pred": 0.3607,
+    "hit": 0.3824
+   },
+   "calibration": [
+    {
+     "lo": 0.0,
+     "hi": 0.1,
+     "n": 12645,
+     "pred": 0.0616,
+     "actual": 0.0639
+    },
+    {
+     "lo": 0.1,
+     "hi": 0.2,
+     "n": 13479,
+     "pred": 0.1477,
+     "actual": 0.1596
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.3,
+     "n": 7578,
+     "pred": 0.2437,
+     "actual": 0.2644
+    },
+    {
+     "lo": 0.3,
+     "hi": 0.4,
+     "n": 2937,
+     "pred": 0.3366,
+     "actual": 0.3616
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 173,
+     "pred": 0.4178,
+     "actual": 0.4162
+    }
+   ],
+   "label": "Anytime goal",
+   "avg_proj": 0.1737,
+   "avg_actual": 0.1882
+  },
+  "assists": {
+   "n": 36812,
+   "base_rate": 0.2634,
+   "avg_pred": 0.2407,
+   "brier_model": 0.18286,
+   "brier_naive": 0.18559,
+   "skill": 0.0147,
+   "logloss_model": 0.54867,
+   "logloss_naive": 0.6053,
+   "ece": 0.0227,
+   "early_skill": 0.0443,
+   "late_skill": 0.0063,
+   "confident": {
+    "threshold": 0.6,
+    "n": 82,
+    "pred": 0.6222,
+    "hit": 0.6341
+   },
+   "top5": {
+    "n": 1841,
+    "pred": 0.4943,
+    "hit": 0.5339
+   },
+   "calibration": [
+    {
+     "lo": 0.0,
+     "hi": 0.1,
+     "n": 1047,
+     "pred": 0.0873,
+     "actual": 0.1156
+    },
+    {
+     "lo": 0.1,
+     "hi": 0.2,
+     "n": 13707,
+     "pred": 0.1553,
+     "actual": 0.1689
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.3,
+     "n": 12826,
+     "pred": 0.2444,
+     "actual": 0.2639
+    },
+    {
+     "lo": 0.3,
+     "hi": 0.4,
+     "n": 6508,
+     "pred": 0.3429,
+     "actual": 0.3823
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 2001,
+     "pred": 0.4401,
+     "actual": 0.4888
+    },
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 641,
+     "pred": 0.5363,
+     "actual": 0.5585
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 82,
+     "pred": 0.6222,
+     "actual": 0.6341
+    }
+   ],
+   "label": "1+ assist",
+   "avg_proj": 0.2851,
+   "avg_actual": 0.3194
+  }
+ }
+}
