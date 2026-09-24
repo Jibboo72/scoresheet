@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sim">
+<title>Scoresheet — Sim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="board.css">
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <h1 class="wordmark">Scoresheet</h1>
+    <p>Sim mode<br><a href="board.html">Tonight</a> <a href="app.html">Backtest</a></p>
+  </header>
+  <div id="app" hidden>
+    <div class="verdict">
+      <span class="num" id="units"></span>
+      <p id="unitsText"></p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b id="fRec"></b><span>Record</span></div>
+      <div class="fact"><b id="fRoi"></b><span>Return per bet</span></div>
+      <div class="fact"><b id="fHit"></b><span>Hit rate</span></div>
+      <div class="fact"><b id="fExp"></b><span>Model expected</span></div>
+    </div>
+    <section class="block">
+      <h2>Is the model honest?</h2>
+      <p class="muted">Hits the model expected across every graded pick, priced or not, against what actually happened. Close together means its odds can be trusted.</p>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Group</th><th>Picks</th><th>Expected</th><th>Actual</th><th>Units</th></tr></thead>
+        <tbody id="splits"></tbody>
+      </table></div>
+    </section>
+    <section class="block">
+      <h2>Ready to go live?</h2>
+      <ol class="plays" id="checks"></ol>
+    </section>
+    <section class="block">
+      <h2>Waiting on results</h2>
+      <ol class="plays" id="pending"></ol>
+      <p class="muted" id="pendingNote"></p>
+    </section>
+    <section class="block">
+      <h2>Graded</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Player</th><th>Bet</th><th>Price</th><th>Result</th></tr></thead>
+        <tbody id="history"></tbody>
+      </table></div>
+    </section>
+  </div>
+  <div class="empty" id="empty" hidden>
+    <h2>No sim plays yet</h2>
+    <p>Plays get logged each time the Tonight workflow runs on a game day, then graded the next day.</p>
+  </div>
+  <footer>Paper bets only, 1 unit each. The first price logged before puck drop is the one graded. Scratched players void.</footer>
+</main>
+<script src="sim.js"></script>
+</body>
+</html>
