@@ -1,0 +1,34 @@
+name: Tonight
+
+on:
+  schedule:
+    - cron: 0 21 * * *
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Date as YYYY-MM-DD, blank for today
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - run: pip install requests pandas numpy scipy
+      - run: python board.py ${{ inputs.date }}
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      - run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add docs/data/board.json
+          git diff --cached --quiet || git commit -m tonight-board
+          git pull --rebase
+          git push
