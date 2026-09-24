@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Scoresheet">
+<title>Scoresheet — NHL model backtest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <h1 class="wordmark">Scoresheet</h1>
+    <p id="meta">NHL props model</p>
+  </header>
+  <div id="app" hidden>
+    <div class="switch" role="group" aria-label="Market">
+      <button data-market="sog" aria-pressed="true">Shots</button>
+      <button data-market="goals" aria-pressed="false">Goals</button>
+      <button data-market="assists" aria-pressed="false">Assists</button>
+    </div>
+    <div class="lines" id="lines" role="group" aria-label="Shots line"></div>
+    <div class="verdict">
+      <span class="num" id="skill"></span>
+      <p id="verdictText"></p>
+    </div>
+    <div class="rink">
+      <h2>Does it say what really happens?</h2>
+      <p class="sub">Each dot is a group of bets. On the red line, the model’s odds matched reality exactly.</p>
+      <svg id="chart" viewBox="0 0 320 300" role="img" aria-label="Calibration chart"></svg>
+      <div class="readout" id="readout" aria-live="polite">Tap a dot for its numbers.</div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b id="fN"></b><span>Player-games tested</span></div>
+      <div class="fact"><b id="fBase"></b><span>Overs that hit</span></div>
+      <div class="fact"><b id="fEce"></b><span>Average miss</span></div>
+      <div class="fact"><b id="fEarly"></b><span>Edge, first 15 games</span></div>
+    </div>
+    <section class="block">
+      <h2>When it liked a bet</h2>
+      <div class="conf">
+        <div><b id="c60"></b><span id="c60s"></span></div>
+        <div><b id="ctop"></b><span id="ctops"></span></div>
+      </div>
+    </section>
+    <section class="block">
+      <h2>By confidence</h2>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Model said</th><th>Hit</th><th>Gap</th><th>Bets</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="block" id="fitBlock">
+      <h2>Shot count spread</h2>
+      <p class="muted">Which curve best predicted exact shot totals. Higher is better.</p>
+      <ul class="fits" id="fits"></ul>
+    </section>
+    <section class="block">
+      <h2>How to read this</h2>
+      <p>Every 2025-26 game was projected using only information available before puck drop. The big number compares the model against a plain season average. Positive means sharper.</p>
+      <p>Average miss is how far the model’s odds sat from what actually happened. Under 2 points is solid for props. No sportsbook prices are in this test yet, so this shows accuracy, not profit.</p>
+    </section>
+  </div>
+  <div class="empty" id="empty" hidden>
+    <h2>No backtest yet</h2>
+    <p>Results appear here after the pipeline runs once.</p>
+    <ol>
+      <li>Open the repo’s Actions tab.</li>
+      <li>Choose Run backtest, then Run workflow.</li>
+      <li>Come back in about 15 minutes and refresh.</li>
+    </ol>
+  </div>
+  <footer id="foot">Data from the NHL’s public stats feed.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
