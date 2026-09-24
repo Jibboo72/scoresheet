@@ -63,7 +63,10 @@ def season_rows(players):
         rows = [r for f in futs for r in f.result()]
     cols = ["season", "player_id", "name", "pos", "game_id", "date", "team", "opp", "home",
             "toi", "shots", "goals", "assists", "pp_points"]
-    return pd.DataFrame(rows, columns=cols)
+        df = pd.DataFrame(rows, columns=cols)
+    num = ["player_id", "game_id", "home", "toi", "shots", "goals", "assists", "pp_points"]
+    return df.astype({c: float for c in num})
+
 
 
 def fetch_odds(date):
