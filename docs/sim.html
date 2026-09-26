@@ -11,6 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="board.css">
+<style>
+td.up{color:var(--blue);font-weight:600} td.down{color:var(--goal)}
+td.lead{font-weight:600} td.lead::after{content:"Best so far";display:block;color:var(--blue);font-size:12px;font-weight:500}
+#sizes{margin:4px 0 12px}
+.slate-meta{margin:22px 0 10px;font-size:15px}
+</style>
 </head>
 <body>
 <main>
@@ -37,6 +43,18 @@
         <tbody id="splits"></tbody>
       </table></div>
     </section>
+    <section class="block" id="structBlock" hidden>
+      <h2>Which way to bet it</h2>
+      <p class="muted">Each night takes the top props by edge, one per player and at most two per game, and bets $33 total in each structure below.</p>
+      <div class="chips" id="sizes" role="group" aria-label="Props per night"></div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Structure</th><th>Profit</th><th>Return</th><th>Nights won</th><th>Worst slump</th></tr></thead>
+        <tbody id="structs"></tbody>
+      </table></div>
+      <p class="muted" id="structNote"></p>
+      <p class="slate-meta" id="slateMeta"></p>
+      <ol class="plays" id="slate"></ol>
+    </section>
     <section class="block">
       <h2>Ready to go live?</h2>
       <ol class="plays" id="checks"></ol>
@@ -61,5 +79,6 @@
   <footer>Paper bets only, 1 unit each. The first price logged before puck drop is the one graded. Scratched players void.</footer>
 </main>
 <script src="sim.js"></script>
+<script src="structures.js"></script>
 </body>
 </html>
