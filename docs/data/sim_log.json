@@ -1195,5 +1195,24 @@
   "logged": "2026-09-29T17:16+00:00",
   "status": "pending",
   "units": null
+ },
+ {
+  "date": "2026-09-29",
+  "game_id": 2026020002,
+  "player_id": 8476931,
+  "name": "Jake McCabe",
+  "team": "TOR",
+  "opp": "MTL",
+  "market": "goal",
+  "kind": "bet",
+  "p": 0.0605,
+  "fair": 1554,
+  "price": 2000,
+  "book": "FanDuel",
+  "ev": 0.2697,
+  "flag": false,
+  "logged": "2026-09-29T20:56+00:00",
+  "status": "pending",
+  "units": null
  }
 ]
