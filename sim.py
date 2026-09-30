@@ -86,7 +86,7 @@ def log_today(log, board):
             new.append({"date": board["date"], "game_id": p["game_id"], "player_id": p["id"],
                         "name": p["name"], "team": p["team"], "opp": p["opp"], "market": market,
                         "kind": kind, "p": mk["p"], "fair": mk["fair"], "price": mk.get("price"),
-                        "book": mk.get("book"), "ev": mk.get("ev"),
+                        "book": mk.get("book"), "prices": mk.get("prices"), "ev": mk.get("ev"),
                         "flag": bool(mk.get("ev") is not None and mk["ev"] >= FLAG_EV),
                         "logged": now.isoformat(timespec="minutes"), "status": "pending",
                         "units": None})
