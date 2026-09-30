@@ -45,7 +45,7 @@ td.lead{font-weight:600} td.lead::after{content:"Best so far";display:block;colo
     </section>
     <section class="block" id="structBlock" hidden>
       <h2>Which way to bet it</h2>
-      <p class="muted">Each night takes the top props by edge, one per player and at most two per game, and bets $33 total in each structure below.</p>
+      <p class="muted">Each night takes the top props by edge at your books, one per player and at most two per game, and bets $33 total in each structure below. Every parlay is priced at one book, the one that pays the most for it.</p>
       <div class="chips" id="sizes" role="group" aria-label="Props per night"></div>
       <div class="tablewrap"><table>
         <thead><tr><th>Structure</th><th>Profit</th><th>Return</th><th>Nights won</th><th>Worst slump</th></tr></thead>
@@ -54,6 +54,13 @@ td.lead{font-weight:600} td.lead::after{content:"Best so far";display:block;colo
       <p class="muted" id="structNote"></p>
       <p class="slate-meta" id="slateMeta"></p>
       <ol class="plays" id="slate"></ol>
+      <div id="slipBlock" hidden>
+        <p class="slate-meta">The 2-pick slip, each parlay placed at the book that pays the most for it.</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Parlay</th><th>Book</th><th>Odds</th></tr></thead>
+          <tbody id="slip"></tbody>
+        </table></div>
+      </div>
     </section>
     <section class="block">
       <h2>Ready to go live?</h2>
