@@ -17,6 +17,8 @@ OUT = m.ROOT / "docs" / "data" / "board.json"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 ODDS_BASE = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"
 MARKETS = {"goal": "player_goal_scorer_anytime", "assist": "player_assists"}
+# Only books you can bet. Fanatics (fanatics) and Hard Rock (hardrockbet) need the paid odds plan.
+BOOKS = "draftkings,fanduel,betmgm,hardrockbet,espnbet,betrivers,betparx"
 TEAM_WORDS = {"ANA": "ducks", "BOS": "bruins", "BUF": "sabres", "CAR": "hurricanes", "CBJ": "jackets",
     "CGY": "flames", "CHI": "blackhawks", "COL": "avalanche", "DAL": "stars", "DET": "wings",
     "EDM": "oilers", "FLA": "panthers", "LAK": "kings", "MIN": "wild", "MTL": "canadiens",
@@ -73,7 +75,7 @@ def season_rows(players):
 
 
 def fetch_odds(date):
-    """Best price per player for each market across US books. Returns (odds, status)."""
+    """Every book's price per player for each market. Returns (odds, status)."""
     if not ODDS_KEY:
         return {}, "No odds key set. Showing fair odds only."
     try:
@@ -84,7 +86,7 @@ def fetch_odds(date):
         odds, left = {}, None
         for e in todays:
             r = requests.get(f"{ODDS_BASE}/events/{e['id']}/odds", timeout=30, params={
-                "apiKey": ODDS_KEY, "regions": "us", "markets": ",".join(MARKETS.values()),
+                "apiKey": ODDS_KEY, "bookmakers": BOOKS, "markets": ",".join(MARKETS.values()),
                 "oddsFormat": "american"})
             left = r.headers.get("x-requests-remaining", left)
             teams = norm(e["home_team"]) + " " + norm(e["away_team"])
@@ -95,8 +97,7 @@ def fetch_odds(date):
                         if o.get("name") not in ("Yes", "Over") or (kind == "assist" and o.get("point") != 0.5):
                             continue
                         key = (kind, norm(o.get("description")), teams)
-                        if key not in odds or o["price"] > odds[key]["price"]:
-                            odds[key] = {"price": o["price"], "book": book.get("title", book.get("key"))}
+                        odds.setdefault(key, {})[book.get("title", book.get("key"))] = o["price"]
         n = len(todays)
         return odds, f"Odds from {n} game{'' if n == 1 else 's'}. {left} odds credits left this month."
     except Exception as exc:  # the board still works without odds
@@ -137,7 +138,9 @@ def main():
             hit = next((v for (k, n, t), v in odds.items()
                         if k == kind and n == norm(r["name"]) and word in t), None)
             if hit:
-                row[kind].update(hit, ev=round(p * decimal(hit["price"]) - 1, 4))
+                book = max(hit, key=hit.get)
+                row[kind].update(price=hit[book], book=book, prices=hit,
+                                 ev=round(p * decimal(hit[book]) - 1, 4))
         out["players"].append(row)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
