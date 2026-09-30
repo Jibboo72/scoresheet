@@ -2,7 +2,7 @@
   // Grades the same nightly props as singles and round robins, $33 a night each.
   // A parlay lives at one book, so each combo is priced at the single book that pays most for it.
   var BUDGET=33, SIZES=[6,8,12], size=8, LOG=[];
-  var MY_BOOKS=["DraftKings","FanDuel","BetMGM","Fanatics","Hard Rock Bet"];
+  var OFFSHORE=["Bovada","BetOnline.ag","MyBookie.ag","BetUS","LowVig.ag"]; // never used, even in old logs
   var STRUCTS=[{name:"Singles",k:[1]},{name:"2-pick round robin",k:[2]},
                {name:"3-pick round robin",k:[3]},{name:"2s + 3s round robin",k:[2,3]}];
   var $=function(id){return document.getElementById(id)};
@@ -12,9 +12,9 @@
   var label={goal:"goal",assist:"assist"};
   function dec(p){return p>0?1+p/100:1+100/Math.abs(p)}
   function toAm(d){return d>=2?Math.round((d-1)*100):-Math.round(100/(d-1))}
-  function books(b){ // this prop's prices at your books only
+  function books(b){ // this prop's prices at your books (board.py only pulls your books)
     var src=b.prices||(b.book?(function(){var o={}; o[b.book]=b.price; return o})():{}), out={};
-    Object.keys(src).forEach(function(k){if(MY_BOOKS.indexOf(k)>=0) out[k]=src[k]});
+    Object.keys(src).forEach(function(k){if(OFFSHORE.indexOf(k)<0) out[k]=src[k]});
     return out;
   }
   function combos(n,k){
