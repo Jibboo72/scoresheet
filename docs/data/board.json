@@ -1,6 +1,6 @@
 {
  "date": "2026-09-30",
- "generated": "2026-09-30T18:05+00:00",
+ "generated": "2026-09-30T18:39+00:00",
  "games": [
   {
    "id": 2026020006,
@@ -64,7 +64,7 @@
     "price": 275,
     "book": "FanDuel",
     "prices": {
-     "DraftKings": 270,
+     "DraftKings": 260,
      "BetRivers": 265,
      "BetMGM": 250,
      "FanDuel": 275
@@ -74,14 +74,14 @@
    "assist": {
     "p": 0.4643,
     "fair": 115,
-    "price": 160,
+    "price": 155,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 145,
-     "Hard Rock Bet": 160,
+     "Hard Rock Bet": 155,
      "theScore Bet": 150
     },
-    "ev": 0.2073
+    "ev": 0.184
    }
   },
   {
@@ -166,15 +166,15 @@
    "goal": {
     "p": 0.0764,
     "fair": 1209,
-    "price": 1000,
-    "book": "FanDuel",
+    "price": 900,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 900,
      "BetRivers": 700,
      "BetMGM": 850,
-     "FanDuel": 1000
+     "FanDuel": 650
     },
-    "ev": -0.1596
+    "ev": -0.236
    },
    "assist": {
     "p": 0.2611,
@@ -276,14 +276,14 @@
    "assist": {
     "p": 0.4019,
     "fair": 149,
-    "price": 190,
+    "price": 185,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 165,
-     "Hard Rock Bet": 190,
+     "Hard Rock Bet": 185,
      "theScore Bet": 160
     },
-    "ev": 0.1656
+    "ev": 0.1455
    }
   },
   {
@@ -360,27 +360,27 @@
    "goal": {
     "p": 0.2357,
     "fair": 324,
-    "price": 270,
-    "book": "DraftKings",
+    "price": 275,
+    "book": "FanDuel",
     "prices": {
      "DraftKings": 270,
      "BetRivers": 250,
      "BetMGM": 270,
-     "FanDuel": 270
+     "FanDuel": 275
     },
-    "ev": -0.128
+    "ev": -0.1163
    },
    "assist": {
     "p": 0.3702,
     "fair": 170,
-    "price": 250,
+    "price": 240,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 215,
-     "Hard Rock Bet": 250,
-     "theScore Bet": 230
+     "Hard Rock Bet": 240,
+     "theScore Bet": 225
     },
-    "ev": 0.2957
+    "ev": 0.2587
    }
   },
   {
@@ -395,15 +395,15 @@
    "goal": {
     "p": 0.0405,
     "fair": 2370,
-    "price": 2300,
+    "price": 2200,
     "book": "FanDuel",
     "prices": {
      "DraftKings": 2000,
      "BetRivers": 900,
      "BetMGM": 2000,
-     "FanDuel": 2300
+     "FanDuel": 2200
     },
-    "ev": -0.0285
+    "ev": -0.0689
    },
    "assist": {
     "p": 0.2141,
@@ -470,10 +470,10 @@
     "price": 270,
     "book": "BetMGM",
     "prices": {
-     "DraftKings": 225,
+     "DraftKings": 220,
      "BetRivers": 255,
      "BetMGM": 270,
-     "FanDuel": 235
+     "FanDuel": 240
     },
     "ev": 0.1221
    },
@@ -484,8 +484,8 @@
     "book": "DraftKings",
     "prices": {
      "DraftKings": 240,
-     "Hard Rock Bet": 240,
-     "theScore Bet": 225
+     "Hard Rock Bet": 230,
+     "theScore Bet": 215
     },
     "ev": -0.0807
    }
@@ -669,7 +669,7 @@
      "DraftKings": 255,
      "BetRivers": 285,
      "BetMGM": 240,
-     "FanDuel": 250
+     "FanDuel": 240
     },
     "ev": -0.1189
    },
@@ -753,9 +753,9 @@
     "p": 0.3129,
     "fair": 220,
     "price": 240,
-    "book": "DraftKings",
+    "book": "FanDuel",
     "prices": {
-     "DraftKings": 240,
+     "DraftKings": 235,
      "BetRivers": 205,
      "BetMGM": 220,
      "FanDuel": 240
@@ -822,15 +822,15 @@
    "goal": {
     "p": 0.0362,
     "fair": 2664,
-    "price": 2100,
+    "price": 2200,
     "book": "FanDuel",
     "prices": {
      "DraftKings": 2000,
      "BetRivers": 1000,
      "BetMGM": 1850,
-     "FanDuel": 2100
+     "FanDuel": 2200
     },
-    "ev": -0.2039
+    "ev": -0.1678
    },
    "assist": {
     "p": 0.1421,
@@ -983,27 +983,27 @@
    "goal": {
     "p": 0.2551,
     "fair": 292,
-    "price": 280,
+    "price": 285,
     "book": "DraftKings",
     "prices": {
-     "DraftKings": 280,
+     "DraftKings": 285,
      "BetRivers": 255,
      "BetMGM": 280,
      "FanDuel": 270
     },
-    "ev": -0.0305
+    "ev": -0.0178
    },
    "assist": {
     "p": 0.2625,
     "fair": 281,
-    "price": 190,
-    "book": "DraftKings",
+    "price": 200,
+    "book": "theScore Bet",
     "prices": {
      "DraftKings": 190,
-     "Hard Rock Bet": 160,
-     "theScore Bet": 180
+     "Hard Rock Bet": 195,
+     "theScore Bet": 200
     },
-    "ev": -0.2386
+    "ev": -0.2124
    }
   },
   {
@@ -1021,7 +1021,7 @@
     "price": 120,
     "book": "BetRivers",
     "prices": {
-     "DraftKings": 105,
+     "DraftKings": 110,
      "BetRivers": 120,
      "BetMGM": 110,
      "FanDuel": 120
@@ -1093,14 +1093,14 @@
    "assist": {
     "p": 0.3527,
     "fair": 184,
-    "price": 145,
-    "book": "DraftKings",
+    "price": 150,
+    "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 145,
-     "Hard Rock Bet": 145,
-     "theScore Bet": 140
+     "Hard Rock Bet": 150,
+     "theScore Bet": 145
     },
-    "ev": -0.136
+    "ev": -0.1183
    }
   },
   {
@@ -1260,7 +1260,7 @@
     "price": 250,
     "book": "BetRivers",
     "prices": {
-     "DraftKings": 235,
+     "DraftKings": 230,
      "BetRivers": 250,
      "BetMGM": 210,
      "FanDuel": 230
@@ -1274,7 +1274,7 @@
     "book": "DraftKings",
     "prices": {
      "DraftKings": 155,
-     "Hard Rock Bet": 125,
+     "Hard Rock Bet": 120,
      "theScore Bet": 135
     },
     "ev": 0.0546
@@ -1310,7 +1310,7 @@
     "prices": {
      "DraftKings": 280,
      "Hard Rock Bet": 300,
-     "theScore Bet": 270
+     "theScore Bet": 280
     },
     "ev": 0.2995
    }
@@ -1333,21 +1333,21 @@
      "DraftKings": 750,
      "BetRivers": 650,
      "BetMGM": 600,
-     "FanDuel": 750
+     "FanDuel": 700
     },
     "ev": -0.3745
    },
    "assist": {
     "p": 0.2195,
     "fair": 356,
-    "price": 190,
+    "price": 195,
     "book": "DraftKings",
     "prices": {
-     "DraftKings": 190,
-     "Hard Rock Bet": 180,
-     "theScore Bet": 175
+     "DraftKings": 195,
+     "Hard Rock Bet": 185,
+     "theScore Bet": 180
     },
-    "ev": -0.3635
+    "ev": -0.3525
    }
   },
   {
@@ -1375,14 +1375,14 @@
    "assist": {
     "p": 0.3898,
     "fair": 157,
-    "price": 140,
+    "price": 135,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 130,
-     "Hard Rock Bet": 140,
-     "theScore Bet": 135
+     "Hard Rock Bet": 135,
+     "theScore Bet": 130
     },
-    "ev": -0.0645
+    "ev": -0.084
    }
   },
   {
@@ -1400,7 +1400,7 @@
     "price": 400,
     "book": "FanDuel",
     "prices": {
-     "DraftKings": 380,
+     "DraftKings": 360,
      "BetRivers": 390,
      "BetMGM": 350,
      "FanDuel": 400
@@ -1410,13 +1410,13 @@
    "assist": {
     "p": 0.2713,
     "fair": 269,
-    "price": 230,
+    "price": 220,
     "book": "Hard Rock Bet",
     "prices": {
-     "Hard Rock Bet": 230,
-     "theScore Bet": 215
+     "Hard Rock Bet": 220,
+     "theScore Bet": 210
     },
-    "ev": -0.1048
+    "ev": -0.1319
    }
   },
   {
@@ -1444,14 +1444,14 @@
    "assist": {
     "p": 0.3833,
     "fair": 161,
-    "price": 155,
+    "price": 150,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 145,
-     "Hard Rock Bet": 155,
-     "theScore Bet": 145
+     "Hard Rock Bet": 150,
+     "theScore Bet": 140
     },
-    "ev": -0.0225
+    "ev": -0.0417
    }
   },
   {
@@ -1472,7 +1472,7 @@
      "DraftKings": 550,
      "BetRivers": 450,
      "BetMGM": 400,
-     "FanDuel": 490
+     "FanDuel": 500
     },
     "ev": -0.17
    },
@@ -1496,7 +1496,7 @@
     "price": 245,
     "book": "BetRivers",
     "prices": {
-     "DraftKings": 225,
+     "DraftKings": 220,
      "BetRivers": 245,
      "BetMGM": 240,
      "FanDuel": 240
@@ -1511,7 +1511,7 @@
     "prices": {
      "DraftKings": 105,
      "Hard Rock Bet": 105,
-     "theScore Bet": 105
+     "theScore Bet": 100
     },
     "ev": 0.0285
    }
@@ -1541,14 +1541,14 @@
    "assist": {
     "p": 0.3551,
     "fair": 182,
-    "price": 145,
-    "book": "Hard Rock Bet",
+    "price": 140,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 140,
-     "Hard Rock Bet": 145,
+     "Hard Rock Bet": 140,
      "theScore Bet": 135
     },
-    "ev": -0.13
+    "ev": -0.1477
    }
   },
   {
@@ -1640,7 +1640,7 @@
      "DraftKings": 425,
      "BetRivers": 375,
      "BetMGM": 400,
-     "FanDuel": 400
+     "FanDuel": 410
     },
     "ev": 0.1248
    },
@@ -1661,15 +1661,15 @@
    "goal": {
     "p": 0.0493,
     "fair": 1929,
-    "price": 2000,
-    "book": "FanDuel",
+    "price": 1800,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 1800,
      "BetRivers": 800,
      "BetMGM": 1800,
-     "FanDuel": 2000
+     "FanDuel": 1500
     },
-    "ev": 0.0348
+    "ev": -0.0637
    },
    "assist": {
     "p": 0.2248,
@@ -1701,14 +1701,14 @@
    "assist": {
     "p": 0.2485,
     "fair": 302,
-    "price": 230,
+    "price": 250,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 215,
-     "Hard Rock Bet": 230,
-     "theScore Bet": 215
+     "Hard Rock Bet": 250,
+     "theScore Bet": 230
     },
-    "ev": -0.18
+    "ev": -0.1303
    }
   },
   {
@@ -1736,14 +1736,14 @@
    "assist": {
     "p": 0.443,
     "fair": 126,
-    "price": -115,
+    "price": -110,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": -125,
-     "Hard Rock Bet": -115,
+     "Hard Rock Bet": -110,
      "theScore Bet": -115
     },
-    "ev": -0.1718
+    "ev": -0.1543
    }
   },
   {
@@ -1774,9 +1774,9 @@
     "price": -155,
     "book": "Hard Rock Bet",
     "prices": {
-     "DraftKings": -175,
+     "DraftKings": -170,
      "Hard Rock Bet": -155,
-     "theScore Bet": -155
+     "theScore Bet": -160
     },
     "ev": -0.2864
    }
@@ -1820,15 +1820,15 @@
    "goal": {
     "p": 0.188,
     "fair": 432,
-    "price": 800,
+    "price": 850,
     "book": "FanDuel",
     "prices": {
      "DraftKings": 700,
      "BetRivers": 650,
      "BetMGM": 725,
-     "FanDuel": 800
+     "FanDuel": 850
     },
-    "ev": 0.6922
+    "ev": 0.7862
    },
    "assist": {
     "p": 0.1475,
@@ -2077,15 +2077,15 @@
    "goal": {
     "p": 0.0451,
     "fair": 2116,
-    "price": 2800,
+    "price": 2500,
     "book": "DraftKings",
     "prices": {
-     "DraftKings": 2800,
+     "DraftKings": 2500,
      "BetRivers": 1100,
      "BetMGM": 2500,
      "FanDuel": 2200
     },
-    "ev": 0.3089
+    "ev": 0.1735
    },
    "assist": {
     "p": 0.1657,
@@ -2104,15 +2104,15 @@
    "goal": {
     "p": 0.1108,
     "fair": 803,
-    "price": 500,
+    "price": 490,
     "book": "FanDuel",
     "prices": {
      "DraftKings": 475,
      "BetRivers": 475,
      "BetMGM": 475,
-     "FanDuel": 500
+     "FanDuel": 490
     },
-    "ev": -0.3352
+    "ev": -0.3463
    },
    "assist": {
     "p": 0.2207,
@@ -2131,15 +2131,15 @@
    "goal": {
     "p": 0.2592,
     "fair": 286,
-    "price": 260,
+    "price": 265,
     "book": "DraftKings",
     "prices": {
-     "DraftKings": 260,
+     "DraftKings": 265,
      "BetRivers": 255,
      "BetMGM": 260,
      "FanDuel": 260
     },
-    "ev": -0.0669
+    "ev": -0.0539
    },
    "assist": {
     "p": 0.3753,
@@ -2148,7 +2148,7 @@
     "book": "DraftKings",
     "prices": {
      "DraftKings": 120,
-     "Hard Rock Bet": 110,
+     "Hard Rock Bet": 105,
      "theScore Bet": 105
     },
     "ev": -0.1744
@@ -2206,14 +2206,14 @@
    "assist": {
     "p": 0.2811,
     "fair": 256,
-    "price": 300,
-    "book": "Hard Rock Bet",
+    "price": 275,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 275,
-     "Hard Rock Bet": 300,
-     "theScore Bet": 270
+     "Hard Rock Bet": 275,
+     "theScore Bet": 260
     },
-    "ev": 0.1245
+    "ev": 0.0542
    }
   },
   {
@@ -2258,7 +2258,7 @@
     "price": 300,
     "book": "BetRivers",
     "prices": {
-     "DraftKings": 260,
+     "DraftKings": 255,
      "BetRivers": 300,
      "BetMGM": 260,
      "FanDuel": 270
@@ -2268,14 +2268,14 @@
    "assist": {
     "p": 0.319,
     "fair": 213,
-    "price": 210,
+    "price": 200,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 180,
-     "Hard Rock Bet": 210,
-     "theScore Bet": 210
+     "Hard Rock Bet": 200,
+     "theScore Bet": 190
     },
-    "ev": -0.0111
+    "ev": -0.043
    }
   },
   {
@@ -2303,14 +2303,14 @@
    "assist": {
     "p": 0.2551,
     "fair": 292,
-    "price": 160,
+    "price": 165,
     "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 155,
-     "Hard Rock Bet": 160,
+     "Hard Rock Bet": 165,
      "theScore Bet": 150
     },
-    "ev": -0.3367
+    "ev": -0.324
    }
   },
   {
@@ -2325,27 +2325,27 @@
    "goal": {
     "p": 0.2489,
     "fair": 302,
-    "price": 350,
+    "price": 360,
     "book": "FanDuel",
     "prices": {
-     "DraftKings": 330,
+     "DraftKings": 320,
      "BetRivers": 330,
      "BetMGM": 340,
-     "FanDuel": 350
+     "FanDuel": 360
     },
-    "ev": 0.12
+    "ev": 0.1449
    },
    "assist": {
     "p": 0.2942,
     "fair": 240,
-    "price": 270,
-    "book": "DraftKings",
+    "price": 275,
+    "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 270,
-     "Hard Rock Bet": 260,
-     "theScore Bet": 240
+     "Hard Rock Bet": 275,
+     "theScore Bet": 260
     },
-    "ev": 0.0884
+    "ev": 0.1032
    }
   },
   {
@@ -2373,14 +2373,14 @@
    "assist": {
     "p": 0.171,
     "fair": 485,
-    "price": 230,
-    "book": "Hard Rock Bet",
+    "price": 210,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 210,
-     "Hard Rock Bet": 230,
-     "theScore Bet": 215
+     "Hard Rock Bet": 210,
+     "theScore Bet": 200
     },
-    "ev": -0.4355
+    "ev": -0.4697
    }
   },
   {
@@ -2458,27 +2458,27 @@
    "goal": {
     "p": 0.0992,
     "fair": 908,
-    "price": 700,
-    "book": "FanDuel",
+    "price": 650,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 650,
      "BetRivers": 600,
      "BetMGM": 625,
-     "FanDuel": 700
+     "FanDuel": 575
     },
-    "ev": -0.2066
+    "ev": -0.2562
    },
    "assist": {
     "p": 0.3648,
     "fair": 174,
-    "price": 170,
-    "book": "Hard Rock Bet",
+    "price": 165,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 165,
-     "Hard Rock Bet": 170,
-     "theScore Bet": 165
+     "Hard Rock Bet": 160,
+     "theScore Bet": 150
     },
-    "ev": -0.015
+    "ev": -0.0332
    }
   },
   {
@@ -2655,27 +2655,27 @@
    "goal": {
     "p": 0.2232,
     "fair": 348,
-    "price": 285,
+    "price": 290,
     "book": "DraftKings",
     "prices": {
-     "DraftKings": 285,
+     "DraftKings": 290,
      "BetRivers": 260,
      "BetMGM": 280,
      "FanDuel": 280
     },
-    "ev": -0.1408
+    "ev": -0.1297
    },
    "assist": {
     "p": 0.3087,
     "fair": 224,
-    "price": 190,
-    "book": "Hard Rock Bet",
+    "price": 185,
+    "book": "DraftKings",
     "prices": {
      "DraftKings": 185,
-     "Hard Rock Bet": 190,
+     "Hard Rock Bet": 185,
      "theScore Bet": 180
     },
-    "ev": -0.1047
+    "ev": -0.1202
    }
   },
   {
@@ -2738,14 +2738,14 @@
    "assist": {
     "p": 0.3353,
     "fair": 198,
-    "price": 180,
-    "book": "DraftKings",
+    "price": 185,
+    "book": "Hard Rock Bet",
     "prices": {
      "DraftKings": 180,
-     "Hard Rock Bet": 175,
-     "theScore Bet": 165
+     "Hard Rock Bet": 185,
+     "theScore Bet": 175
     },
-    "ev": -0.0612
+    "ev": -0.0444
    }
   },
   {
@@ -2767,5 +2767,5 @@
    }
   }
  ],
- "odds_status": "Odds from 3 games. 474 odds credits left this month."
+ "odds_status": "Odds from 3 games. 468 odds credits left this month."
 }
