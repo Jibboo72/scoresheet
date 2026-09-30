@@ -1,3411 +1,454 @@
 {
- "date": "2026-09-29",
- "generated": "2026-09-29T20:56+00:00",
+ "date": "2026-09-30",
+ "generated": "2026-09-30T18:05+00:00",
  "games": [
   {
-   "id": 2026020001,
-   "start": "2026-09-29T21:00:00Z",
-   "away": "FLA",
-   "home": "CAR"
+   "id": 2026020006,
+   "start": "2026-09-30T23:30:00Z",
+   "away": "PIT",
+   "home": "PHI"
   },
   {
-   "id": 2026020002,
-   "start": "2026-09-29T23:00:00Z",
-   "away": "MTL",
+   "id": 2026020008,
+   "start": "2026-09-30T23:30:00Z",
+   "away": "NYI",
    "home": "TOR"
   },
   {
-   "id": 2026020003,
-   "start": "2026-09-30T00:00:00Z",
-   "away": "NYR",
-   "home": "BOS"
-  },
-  {
-   "id": 2026020004,
-   "start": "2026-09-30T02:00:00Z",
-   "away": "VAN",
-   "home": "EDM"
-  },
-  {
-   "id": 2026020005,
-   "start": "2026-09-30T02:30:00Z",
-   "away": "CHI",
-   "home": "VGK"
+   "id": 2026020007,
+   "start": "2026-10-01T02:00:00Z",
+   "away": "LAK",
+   "home": "COL"
   }
  ],
  "players": [
   {
-   "id": 8473419,
-   "name": "Brad Marchand",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 17.7,
-   "sog": 2.56,
+   "id": 8470613,
+   "name": "Brent Burns",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 18.9,
+   "sog": 2.02,
    "goal": {
-    "p": 0.342,
-    "fair": 192
+    "p": 0.1242,
+    "fair": 705,
+    "price": 1000,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 1000,
+     "BetRivers": 750,
+     "BetMGM": 875,
+     "FanDuel": 900
+    },
+    "ev": 0.3663
    },
    "assist": {
-    "p": 0.3571,
-    "fair": 180
+    "p": 0.2063,
+    "fair": 385
    }
   },
   {
-   "id": 8473533,
-   "name": "Jordan Staal",
-   "team": "CAR",
-   "opp": "FLA",
+   "id": 8471215,
+   "name": "Evgeni Malkin",
+   "team": "PIT",
+   "opp": "PHI",
    "pos": "C",
-   "game_id": 2026020001,
-   "toi": 16.2,
-   "sog": 1.47,
+   "game_id": 2026020006,
+   "toi": 17.6,
+   "sog": 2.56,
    "goal": {
-    "p": 0.2048,
-    "fair": 388,
-    "price": 340,
-    "book": "BetRivers",
-    "ev": -0.0991
+    "p": 0.2845,
+    "fair": 252,
+    "price": 275,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 270,
+     "BetRivers": 265,
+     "BetMGM": 250,
+     "FanDuel": 275
+    },
+    "ev": 0.0667
    },
    "assist": {
-    "p": 0.1677,
-    "fair": 496,
-    "price": 250,
+    "p": 0.4643,
+    "fair": 115,
+    "price": 160,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 145,
+     "Hard Rock Bet": 160,
+     "theScore Bet": 150
+    },
+    "ev": 0.2073
+   }
+  },
+  {
+   "id": 8471675,
+   "name": "Sidney Crosby",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 19.2,
+   "sog": 2.34,
+   "goal": {
+    "p": 0.3087,
+    "fair": 224,
+    "price": 225,
     "book": "DraftKings",
-    "ev": -0.4131
+    "prices": {
+     "DraftKings": 225,
+     "BetRivers": 205,
+     "BetMGM": 200,
+     "FanDuel": 210
+    },
+    "ev": 0.0033
+   },
+   "assist": {
+    "p": 0.4376,
+    "fair": 129,
+    "price": -110,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": -110,
+     "Hard Rock Bet": -120,
+     "theScore Bet": -110
+    },
+    "ev": -0.1646
+   }
+  },
+  {
+   "id": 8471724,
+   "name": "Kris Letang",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 21.7,
+   "sog": 1.41,
+   "goal": {
+    "p": 0.0649,
+    "fair": 1440,
+    "price": 800,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 800,
+     "BetRivers": 650,
+     "BetMGM": 675,
+     "FanDuel": 800
+    },
+    "ev": -0.4155
+   },
+   "assist": {
+    "p": 0.3231,
+    "fair": 209,
+    "price": 325,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 270,
+     "Hard Rock Bet": 325,
+     "theScore Bet": 300
+    },
+    "ev": 0.3733
+   }
+  },
+  {
+   "id": 8474563,
+   "name": "Drew Doughty",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 23.1,
+   "sog": 1.41,
+   "goal": {
+    "p": 0.0764,
+    "fair": 1209,
+    "price": 1000,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 900,
+     "BetRivers": 700,
+     "BetMGM": 850,
+     "FanDuel": 1000
+    },
+    "ev": -0.1596
+   },
+   "assist": {
+    "p": 0.2611,
+    "fair": 283
+   }
+  },
+  {
+   "id": 8474578,
+   "name": "Erik Karlsson",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 23.6,
+   "sog": 2.29,
+   "goal": {
+    "p": 0.1555,
+    "fair": 543,
+    "price": 500,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 500,
+     "BetRivers": 420,
+     "BetMGM": 425,
+     "FanDuel": 480
+    },
+    "ev": -0.0667
+   },
+   "assist": {
+    "p": 0.459,
+    "fair": 118,
+    "price": 105,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 105,
+     "Hard Rock Bet": 100,
+     "theScore Bet": 105
+    },
+    "ev": -0.0591
+   }
+  },
+  {
+   "id": 8475151,
+   "name": "Kyle Palmieri",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 18.9,
+   "sog": 2.67,
+   "goal": {
+    "p": 0.2708,
+    "fair": 269,
+    "price": 310,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 265,
+     "BetMGM": 275,
+     "BetRivers": 310,
+     "FanDuel": 310
+    },
+    "ev": 0.1104
+   },
+   "assist": {
+    "p": 0.3533,
+    "fair": 183,
+    "price": 210,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 190,
+     "Hard Rock Bet": 210,
+     "theScore Bet": 200
+    },
+    "ev": 0.0953
    }
   },
   {
    "id": 8475166,
    "name": "John Tavares",
    "team": "TOR",
-   "opp": "MTL",
+   "opp": "NYI",
    "pos": "C",
-   "game_id": 2026020002,
-   "toi": 18.2,
-   "sog": 2.32,
+   "game_id": 2026020008,
+   "toi": 18.0,
+   "sog": 2.35,
    "goal": {
-    "p": 0.2921,
+    "p": 0.2928,
     "fair": 242,
     "price": 230,
     "book": "BetRivers",
-    "ev": -0.0362
+    "prices": {
+     "DraftKings": 210,
+     "BetMGM": 210,
+     "BetRivers": 230,
+     "FanDuel": 210
+    },
+    "ev": -0.0339
    },
    "assist": {
-    "p": 0.4015,
+    "p": 0.4019,
     "fair": 149,
-    "price": 135,
+    "price": 190,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 165,
+     "Hard Rock Bet": 190,
+     "theScore Bet": 160
+    },
+    "ev": 0.1656
+   }
+  },
+  {
+   "id": 8475170,
+   "name": "Brayden Schenn",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 16.8,
+   "sog": 1.53,
+   "goal": {
+    "p": 0.1951,
+    "fair": 413,
+    "price": 350,
     "book": "DraftKings",
-    "ev": -0.0565
+    "prices": {
+     "DraftKings": 350,
+     "BetMGM": 310,
+     "BetRivers": 300,
+     "FanDuel": 320
+    },
+    "ev": -0.122
+   },
+   "assist": {
+    "p": 0.2765,
+    "fair": 262,
+    "price": 220,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 210,
+     "Hard Rock Bet": 220,
+     "theScore Bet": 210
+    },
+    "ev": -0.1152
    }
   },
   {
    "id": 8475171,
    "name": "Oliver Ekman-Larsson",
    "team": "TOR",
-   "opp": "MTL",
+   "opp": "NYI",
    "pos": "D",
-   "game_id": 2026020002,
-   "toi": 20.6,
-   "sog": 1.38,
+   "game_id": 2026020008,
+   "toi": 20.4,
+   "sog": 1.36,
    "goal": {
-    "p": 0.0877,
-    "fair": 1041,
-    "price": 1300,
-    "book": "DraftKings",
-    "ev": 0.2273
-   },
-   "assist": {
-    "p": 0.344,
-    "fair": 191,
-    "price": 285,
-    "book": "DraftKings",
-    "ev": 0.3245
-   }
-  },
-  {
-   "id": 8475179,
-   "name": "Dmitry Kulikov",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 18.0,
-   "sog": 0.92,
-   "goal": {
-    "p": 0.0493,
-    "fair": 1928,
-    "price": 2100,
+    "p": 0.0861,
+    "fair": 1062,
+    "price": 1200,
     "book": "FanDuel",
-    "ev": 0.0847
+    "prices": {
+     "DraftKings": 1100,
+     "BetMGM": 1100,
+     "BetRivers": 700,
+     "FanDuel": 1200
+    },
+    "ev": 0.1188
    },
    "assist": {
-    "p": 0.128,
-    "fair": 681,
-    "price": 450,
-    "book": "DraftKings",
-    "ev": -0.2959
+    "p": 0.3382,
+    "fair": 196
    }
   },
   {
-   "id": 8475184,
-   "name": "Chris Kreider",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "L",
-   "game_id": 2026020002,
-   "toi": 17.0,
-   "sog": 1.86,
-   "goal": {
-    "p": 0.2371,
-    "fair": 322,
-    "price": 333,
-    "book": "BetMGM",
-    "ev": 0.0266
-   },
-   "assist": {
-    "p": 0.2889,
-    "fair": 246,
-    "price": 235,
-    "book": "DraftKings",
-    "ev": -0.0323
-   }
-  },
-  {
-   "id": 8475188,
-   "name": "Brayden McNabb",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 20.5,
-   "sog": 1.29,
-   "goal": {
-    "p": 0.076,
-    "fair": 1216,
-    "price": 1400,
-    "book": "FanDuel",
-    "ev": 0.14
-   },
-   "assist": {
-    "p": 0.1418,
-    "fair": 605
-   }
-  },
-  {
-   "id": 8475218,
-   "name": "Mattias Ekholm",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 20.6,
-   "sog": 1.58,
-   "goal": {
-    "p": 0.0814,
-    "fair": 1129,
-    "price": 900,
-    "book": "FanDuel",
-    "ev": -0.1861
-   },
-   "assist": {
-    "p": 0.3187,
-    "fair": 214,
-    "price": 165,
-    "book": "DraftKings",
-    "ev": -0.1553
-   }
-  },
-  {
-   "id": 8475343,
-   "name": "Nic Dowd",
-   "team": "VGK",
-   "opp": "CHI",
+   "id": 8475172,
+   "name": "Nazem Kadri",
+   "team": "COL",
+   "opp": "LAK",
    "pos": "C",
-   "game_id": 2026020005,
-   "toi": 14.5,
-   "sog": 0.97,
+   "game_id": 2026020007,
+   "toi": 19.0,
+   "sog": 2.71,
    "goal": {
-    "p": 0.1065,
-    "fair": 839,
+    "p": 0.2357,
+    "fair": 324,
+    "price": 270,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 270,
+     "BetRivers": 250,
+     "BetMGM": 270,
+     "FanDuel": 270
+    },
+    "ev": -0.128
+   },
+   "assist": {
+    "p": 0.3702,
+    "fair": 170,
+    "price": 250,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 215,
+     "Hard Rock Bet": 250,
+     "theScore Bet": 230
+    },
+    "ev": 0.2957
+   }
+  },
+  {
+   "id": 8475208,
+   "name": "Brian Dumoulin",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 17.8,
+   "sog": 0.79,
+   "goal": {
+    "p": 0.0405,
+    "fair": 2370,
+    "price": 2300,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 2000,
+     "BetRivers": 900,
+     "BetMGM": 2000,
+     "FanDuel": 2300
+    },
+    "ev": -0.0285
+   },
+   "assist": {
+    "p": 0.2141,
+    "fair": 367
+   }
+  },
+  {
+   "id": 8475231,
+   "name": "Casey Cizikas",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 11.8,
+   "sog": 1.04,
+   "goal": {
+    "p": 0.1269,
+    "fair": 688,
     "price": 850,
     "book": "FanDuel",
-    "ev": 0.0122
+    "prices": {
+     "DraftKings": 800,
+     "BetMGM": 800,
+     "BetRivers": 525,
+     "FanDuel": 850
+    },
+    "ev": 0.2051
    },
    "assist": {
-    "p": 0.2171,
-    "fair": 361
+    "p": 0.1424,
+    "fair": 602
    }
   },
   {
    "id": 8475690,
    "name": "Chris Tanev",
    "team": "TOR",
-   "opp": "MTL",
+   "opp": "NYI",
    "pos": "D",
-   "game_id": 2026020002,
+   "game_id": 2026020008,
    "toi": 18.0,
-   "sog": 0.93,
-   "goal": {
-    "p": 0.0523,
-    "fair": 1812
-   },
-   "assist": {
-    "p": 0.2023,
-    "fair": 394
-   }
-  },
-  {
-   "id": 8475786,
-   "name": "Zach Hyman",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "L",
-   "game_id": 2026020004,
-   "toi": 20.0,
-   "sog": 2.69,
-   "goal": {
-    "p": 0.3582,
-    "fair": 179,
-    "price": 150,
-    "book": "BetMGM",
-    "ev": -0.1044
-   },
-   "assist": {
-    "p": 0.2709,
-    "fair": 269,
-    "price": 195,
-    "book": "DraftKings",
-    "ev": -0.2008
-   }
-  },
-  {
-   "id": 8475791,
-   "name": "Taylor Hall",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 14.5,
-   "sog": 1.71,
-   "goal": {
-    "p": 0.2021,
-    "fair": 395,
-    "price": 300,
-    "book": "DraftKings",
-    "ev": -0.1915
-   },
-   "assist": {
-    "p": 0.2536,
-    "fair": 294,
-    "price": 185,
-    "book": "DraftKings",
-    "ev": -0.2772
-   }
-  },
-  {
-   "id": 8475848,
-   "name": "Brendan Gallagher",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020004,
-   "toi": 12.4,
-   "sog": 1.55,
-   "goal": {
-    "p": 0.143,
-    "fair": 600,
-    "price": 850,
-    "book": "DraftKings",
-    "ev": 0.358
-   },
-   "assist": {
-    "p": 0.1687,
-    "fair": 493
-   }
-  },
-  {
-   "id": 8475913,
-   "name": "Mark Stone",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "R",
-   "game_id": 2026020005,
-   "toi": 19.2,
-   "sog": 2.17,
-   "goal": {
-    "p": 0.3105,
-    "fair": 222,
-    "price": 180,
-    "book": "BetRivers",
-    "ev": -0.1307
-   },
-   "assist": {
-    "p": 0.4657,
-    "fair": 115,
-    "price": 140,
-    "book": "DraftKings",
-    "ev": 0.1177
-   }
-  },
-  {
-   "id": 8476374,
-   "name": "Sean Kuraly",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 13.3,
-   "sog": 1.36,
-   "goal": {
-    "p": 0.1273,
-    "fair": 685,
-    "price": 1200,
-    "book": "FanDuel",
-    "ev": 0.6555
-   },
-   "assist": {
-    "p": 0.1848,
-    "fair": 441
-   }
-  },
-  {
-   "id": 8476448,
-   "name": "William Karlsson",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 15.1,
-   "sog": 1.97,
-   "goal": {
-    "p": 0.2308,
-    "fair": 333,
-    "price": 360,
-    "book": "BetMGM",
-    "ev": 0.0619
-   },
-   "assist": {
-    "p": 0.2185,
-    "fair": 358,
-    "price": 265,
-    "book": "DraftKings",
-    "ev": -0.2024
-   }
-  },
-  {
-   "id": 8476454,
-   "name": "Ryan Nugent-Hopkins",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 19.1,
-   "sog": 1.88,
-   "goal": {
-    "p": 0.2332,
-    "fair": 329,
-    "price": 230,
-    "book": "BetMGM",
-    "ev": -0.2305
-   },
-   "assist": {
-    "p": 0.3522,
-    "fair": 184
-   }
-  },
-  {
-   "id": 8476459,
-   "name": "Mika Zibanejad",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 20.9,
-   "sog": 2.63,
-   "goal": {
-    "p": 0.3225,
-    "fair": 210,
-    "price": 200,
-    "book": "BetRivers",
-    "ev": -0.0326
-   },
-   "assist": {
-    "p": 0.4013,
-    "fair": 149,
-    "price": 125,
-    "book": "DraftKings",
-    "ev": -0.097
-   }
-  },
-  {
-   "id": 8476468,
-   "name": "J.T. Miller",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 20.1,
-   "sog": 2.13,
-   "goal": {
-    "p": 0.2356,
-    "fair": 325,
-    "price": 290,
-    "book": "FanDuel",
-    "ev": -0.0813
-   },
-   "assist": {
-    "p": 0.4075,
-    "fair": 145,
-    "price": 125,
-    "book": "DraftKings",
-    "ev": -0.0831
-   }
-  },
-  {
-   "id": 8476473,
-   "name": "Connor Murphy",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 17.5,
-   "sog": 0.9,
-   "goal": {
-    "p": 0.0563,
-    "fair": 1677,
-    "price": 1100,
-    "book": "DraftKings",
-    "ev": -0.3245
-   },
-   "assist": {
-    "p": 0.1717,
-    "fair": 482
-   }
-  },
-  {
-   "id": 8476479,
-   "name": "Phillip Danault",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 15.6,
-   "sog": 1.28,
-   "goal": {
-    "p": 0.1286,
-    "fair": 677,
-    "price": 825,
-    "book": "BetMGM",
-    "ev": 0.19
-   },
-   "assist": {
-    "p": 0.1494,
-    "fair": 569
-   }
-  },
-  {
-   "id": 8476853,
-   "name": "Morgan Rielly",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 21.1,
-   "sog": 1.77,
-   "goal": {
-    "p": 0.1154,
-    "fair": 767,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": -0.0192
-   },
-   "assist": {
-    "p": 0.2952,
-    "fair": 239,
-    "price": 215,
-    "book": "DraftKings",
-    "ev": -0.0701
-   }
-  },
-  {
-   "id": 8476854,
-   "name": "Hampus Lindholm",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 21.6,
-   "sog": 1.49,
-   "goal": {
-    "p": 0.0805,
-    "fair": 1142,
-    "price": 1000,
-    "book": "BetRivers",
-    "ev": -0.1143
-   },
-   "assist": {
-    "p": 0.2607,
-    "fair": 284,
-    "price": 150,
-    "book": "DraftKings",
-    "ev": -0.3483
-   }
-  },
-  {
-   "id": 8476873,
-   "name": "Mark Jankowski",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 11.2,
-   "sog": 0.98,
-   "goal": {
-    "p": 0.1333,
-    "fair": 650,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": 0.1328
-   },
-   "assist": {
-    "p": 0.1377,
-    "fair": 626
-   }
-  },
-  {
-   "id": 8476875,
-   "name": "Mike Matheson",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 24.2,
-   "sog": 1.47,
-   "goal": {
-    "p": 0.0859,
-    "fair": 1064,
-    "price": 1200,
-    "book": "FanDuel",
-    "ev": 0.117
-   },
-   "assist": {
-    "p": 0.262,
-    "fair": 282,
-    "price": 265,
-    "book": "DraftKings",
-    "ev": -0.0436
-   }
-  },
-  {
-   "id": 8476881,
-   "name": "Tomas Hertl",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 17.0,
-   "sog": 2.41,
-   "goal": {
-    "p": 0.2603,
-    "fair": 284,
-    "price": 260,
-    "book": "FanDuel",
-    "ev": -0.0629
-   },
-   "assist": {
-    "p": 0.3267,
-    "fair": 206,
-    "price": 165,
-    "book": "DraftKings",
-    "ev": -0.1342
-   }
-  },
-  {
-   "id": 8476882,
-   "name": "Teuvo Teravainen",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 17.8,
-   "sog": 1.27,
-   "goal": {
-    "p": 0.1654,
-    "fair": 505
-   },
-   "assist": {
-    "p": 0.272,
-    "fair": 268
-   }
-  },
-  {
-   "id": 8476906,
-   "name": "Shayne Gostisbehere",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 19.2,
-   "sog": 2.01,
-   "goal": {
-    "p": 0.1536,
-    "fair": 551,
-    "price": 600,
-    "book": "DraftKings",
-    "ev": 0.0752
-   },
-   "assist": {
-    "p": 0.3765,
-    "fair": 166,
-    "price": 130,
-    "book": "DraftKings",
-    "ev": -0.1342
-   }
-  },
-  {
-   "id": 8476921,
-   "name": "Jordan Martinook",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 14.8,
-   "sog": 1.45,
-   "goal": {
-    "p": 0.1637,
-    "fair": 511,
-    "price": 475,
-    "book": "BetMGM",
-    "ev": -0.0588
-   },
-   "assist": {
-    "p": 0.1734,
-    "fair": 477,
-    "price": 330,
-    "book": "DraftKings",
-    "ev": -0.2542
-   }
-  },
-  {
-   "id": 8476931,
-   "name": "Jake McCabe",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 22.4,
-   "sog": 1.0,
-   "goal": {
-    "p": 0.0605,
-    "fair": 1554,
-    "price": 2000,
-    "book": "FanDuel",
-    "ev": 0.2697
-   },
-   "assist": {
-    "p": 0.2452,
-    "fair": 308
-   }
-  },
-  {
-   "id": 8476958,
-   "name": "Jaccob Slavin",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 21.3,
-   "sog": 1.59,
-   "goal": {
-    "p": 0.0725,
-    "fair": 1280,
-    "price": 1600,
-    "book": "DraftKings",
-    "ev": 0.2321
-   },
-   "assist": {
-    "p": 0.1466,
-    "fair": 582,
-    "price": 280,
-    "book": "DraftKings",
-    "ev": -0.4428
-   }
-  },
-  {
-   "id": 8476981,
-   "name": "Josh Anderson",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "R",
-   "game_id": 2026020002,
-   "toi": 14.0,
-   "sog": 1.28,
-   "goal": {
-    "p": 0.1667,
-    "fair": 500,
-    "price": 600,
-    "book": "FanDuel",
-    "ev": 0.1672
-   },
-   "assist": {
-    "p": 0.1231,
-    "fair": 713
-   }
-  },
-  {
-   "id": 8477406,
-   "name": "Mattias Janmark",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 11.9,
-   "sog": 0.74,
-   "goal": {
-    "p": 0.0852,
-    "fair": 1074
-   },
-   "assist": {
-    "p": 0.1691,
-    "fair": 491
-   }
-  },
-  {
-   "id": 8477409,
-   "name": "Carter Verhaeghe",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 17.6,
-   "sog": 2.39,
-   "goal": {
-    "p": 0.2728,
-    "fair": 267,
-    "price": 300,
-    "book": "DraftKings",
-    "ev": 0.0913
-   },
-   "assist": {
-    "p": 0.3136,
-    "fair": 219,
-    "price": 250,
-    "book": "DraftKings",
-    "ev": 0.0975
-   }
-  },
-  {
-   "id": 8477426,
-   "name": "Nick Paul",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "L",
-   "game_id": 2026020002,
-   "toi": 13.7,
-   "sog": 1.37,
-   "goal": {
-    "p": 0.1563,
-    "fair": 540,
-    "price": 450,
-    "book": "BetRivers",
-    "ev": -0.1402
-   },
-   "assist": {
-    "p": 0.1509,
-    "fair": 563
-   }
-  },
-  {
-   "id": 8477447,
-   "name": "Shea Theodore",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 22.8,
-   "sog": 1.83,
-   "goal": {
-    "p": 0.1173,
-    "fair": 753,
-    "price": 480,
-    "book": "FanDuel",
-    "ev": -0.3197
-   },
-   "assist": {
-    "p": 0.3177,
-    "fair": 215,
-    "price": 105,
-    "book": "DraftKings",
-    "ev": -0.3486
-   }
-  },
-  {
-   "id": 8477478,
-   "name": "William Carrier",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 10.8,
-   "sog": 1.16,
-   "goal": {
-    "p": 0.1269,
-    "fair": 688,
-    "price": 1200,
-    "book": "DraftKings",
-    "ev": 0.6496
-   },
-   "assist": {
-    "p": 0.1378,
-    "fair": 626
-   }
-  },
-  {
-   "id": 8477479,
-   "name": "Tyler Bertuzzi",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020005,
-   "toi": 18.4,
-   "sog": 2.08,
-   "goal": {
-    "p": 0.2911,
-    "fair": 243,
-    "price": 320,
-    "book": "BetRivers",
-    "ev": 0.2228
-   },
-   "assist": {
-    "p": 0.3166,
-    "fair": 216,
-    "price": 245,
-    "book": "DraftKings",
-    "ev": 0.0921
-   }
-  },
-  {
-   "id": 8477495,
-   "name": "Seth Jones",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 23.7,
-   "sog": 1.68,
-   "goal": {
-    "p": 0.1075,
-    "fair": 830,
-    "price": 800,
-    "book": "DraftKings",
-    "ev": -0.0326
-   },
-   "assist": {
-    "p": 0.3409,
-    "fair": 193,
-    "price": 125,
-    "book": "DraftKings",
-    "ev": -0.233
-   }
-  },
-  {
-   "id": 8477496,
-   "name": "Elias Lindholm",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 17.9,
-   "sog": 1.69,
-   "goal": {
-    "p": 0.2113,
-    "fair": 373,
-    "price": 410,
-    "book": "FanDuel",
-    "ev": 0.0774
-   },
-   "assist": {
-    "p": 0.3342,
-    "fair": 199,
-    "price": 255,
-    "book": "DraftKings",
-    "ev": 0.1864
-   }
-  },
-  {
-   "id": 8477507,
-   "name": "Nikita Zadorov",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 20.9,
-   "sog": 1.33,
-   "goal": {
-    "p": 0.0557,
-    "fair": 1695,
-    "price": 2200,
-    "book": "FanDuel",
-    "ev": 0.2815
-   },
-   "assist": {
-    "p": 0.2139,
-    "fair": 368,
-    "price": 330,
-    "book": "DraftKings",
-    "ev": -0.0804
-   }
-  },
-  {
-   "id": 8477903,
-   "name": "Garnet Hathaway",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "R",
-   "game_id": 2026020001,
-   "toi": 10.4,
-   "sog": 0.64,
-   "goal": {
-    "p": 0.0699,
-    "fair": 1331,
-    "price": 1000,
-    "book": "BetMGM",
-    "ev": -0.2313
-   },
-   "assist": {
-    "p": 0.0777,
-    "fair": 1187
-   }
-  },
-  {
-   "id": 8477932,
-   "name": "Aaron Ekblad",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 22.5,
-   "sog": 1.36,
-   "goal": {
-    "p": 0.0696,
-    "fair": 1336,
-    "price": 900,
-    "book": "DraftKings",
-    "ev": -0.3037
-   },
-   "assist": {
-    "p": 0.2568,
-    "fair": 289,
-    "price": 235,
-    "book": "DraftKings",
-    "ev": -0.1398
-   }
-  },
-  {
-   "id": 8477933,
-   "name": "Sam Reinhart",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 21.3,
-   "sog": 2.58,
-   "goal": {
-    "p": 0.3293,
-    "fair": 204,
-    "price": 230,
-    "book": "BetRivers",
-    "ev": 0.0868
-   },
-   "assist": {
-    "p": 0.364,
-    "fair": 175,
-    "price": 140,
-    "book": "DraftKings",
-    "ev": -0.1263
-   }
-  },
-  {
-   "id": 8477934,
-   "name": "Leon Draisaitl",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 21.6,
-   "sog": 2.82,
-   "goal": {
-    "p": 0.3699,
-    "fair": 170,
-    "price": 110,
-    "book": "DraftKings",
-    "ev": -0.2232
-   },
-   "assist": {
-    "p": 0.5394,
-    "fair": -117,
-    "price": -155,
-    "book": "DraftKings",
-    "ev": -0.1126
-   }
-  },
-  {
-   "id": 8477935,
-   "name": "Sam Bennett",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 18.5,
-   "sog": 2.59,
-   "goal": {
-    "p": 0.288,
-    "fair": 247,
-    "price": 260,
-    "book": "FanDuel",
-    "ev": 0.0369
-   },
-   "assist": {
-    "p": 0.3293,
-    "fair": 204,
-    "price": 225,
-    "book": "DraftKings",
-    "ev": 0.0703
-   }
-  },
-  {
-   "id": 8477939,
-   "name": "William Nylander",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "R",
-   "game_id": 2026020002,
-   "toi": 19.4,
-   "sog": 2.38,
-   "goal": {
-    "p": 0.3221,
-    "fair": 210,
-    "price": 200,
-    "book": "BetRivers",
-    "ev": -0.0336
-   },
-   "assist": {
-    "p": 0.5156,
-    "fair": -106,
-    "price": 100,
-    "book": "DraftKings",
-    "ev": 0.0311
-   }
-  },
-  {
-   "id": 8477940,
-   "name": "Nikolaj Ehlers",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 16.6,
-   "sog": 2.46,
-   "goal": {
-    "p": 0.2717,
-    "fair": 268,
-    "price": 250,
-    "book": "FanDuel",
-    "ev": -0.049
-   },
-   "assist": {
-    "p": 0.3369,
-    "fair": 197,
-    "price": 150,
-    "book": "DraftKings",
-    "ev": -0.1578
-   }
-  },
-  {
-   "id": 8477956,
-   "name": "David Pastrnak",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "R",
-   "game_id": 2026020003,
-   "toi": 20.7,
-   "sog": 3.3,
-   "goal": {
-    "p": 0.3252,
-    "fair": 207,
-    "price": 150,
-    "book": "FanDuel",
-    "ev": -0.1869
-   },
-   "assist": {
-    "p": 0.545,
-    "fair": -120,
-    "price": 100,
-    "book": "DraftKings",
-    "ev": 0.0901
-   }
-  },
-  {
-   "id": 8477964,
-   "name": "Ivan Barbashev",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "L",
-   "game_id": 2026020005,
-   "toi": 16.2,
-   "sog": 1.64,
-   "goal": {
-    "p": 0.2211,
-    "fair": 352,
-    "price": 260,
-    "book": "FanDuel",
-    "ev": -0.204
-   },
-   "assist": {
-    "p": 0.3536,
-    "fair": 183,
-    "price": 210,
-    "book": "DraftKings",
-    "ev": 0.0961
-   }
-  },
-  {
-   "id": 8477969,
-   "name": "Marcus Pettersson",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 21.5,
-   "sog": 0.85,
-   "goal": {
-    "p": 0.0467,
-    "fair": 2039,
-    "price": 1800,
-    "book": "FanDuel",
-    "ev": -0.1119
-   },
-   "assist": {
-    "p": 0.2098,
-    "fair": 377,
-    "price": 340,
-    "book": "DraftKings",
-    "ev": -0.0769
-   }
-  },
-  {
-   "id": 8477987,
-   "name": "Ryan Donato",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 14.7,
-   "sog": 1.51,
-   "goal": {
-    "p": 0.1764,
-    "fair": 467,
-    "price": 460,
-    "book": "BetRivers",
-    "ev": -0.0121
-   },
-   "assist": {
-    "p": 0.2094,
-    "fair": 377
-   }
-  },
-  {
-   "id": 8478013,
-   "name": "Jake Walman",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 18.8,
-   "sog": 1.74,
-   "goal": {
-    "p": 0.1138,
-    "fair": 778,
-    "price": 650,
-    "book": "BetMGM",
-    "ev": -0.1463
-   },
-   "assist": {
-    "p": 0.2077,
-    "fair": 382,
-    "price": 195,
-    "book": "DraftKings",
-    "ev": -0.3874
-   }
-  },
-  {
-   "id": 8478055,
-   "name": "Gustav Forsling",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 22.6,
-   "sog": 1.41,
-   "goal": {
-    "p": 0.0579,
-    "fair": 1626,
-    "price": 1200,
-    "book": "DraftKings",
-    "ev": -0.2467
-   },
-   "assist": {
-    "p": 0.2705,
-    "fair": 270,
-    "price": 265,
-    "book": "DraftKings",
-    "ev": -0.0128
-   }
-  },
-  {
-   "id": 8478133,
-   "name": "Jake Evans",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 15.4,
-   "sog": 1.18,
-   "goal": {
-    "p": 0.1549,
-    "fair": 545,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": 0.3169
-   },
-   "assist": {
-    "p": 0.1564,
-    "fair": 539
-   }
-  },
-  {
-   "id": 8478178,
-   "name": "Darren Raddysh",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 22.7,
-   "sog": 2.79,
-   "goal": {
-    "p": 0.2131,
-    "fair": 369,
-    "price": 450,
-    "book": "DraftKings",
-    "ev": 0.1719
-   },
-   "assist": {
-    "p": 0.3957,
-    "fair": 153,
-    "price": 125,
-    "book": "DraftKings",
-    "ev": -0.1098
-   }
-  },
-  {
-   "id": 8478233,
-   "name": "Andrew Mangiapane",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020005,
-   "toi": 12.5,
-   "sog": 1.01,
-   "goal": {
-    "p": 0.1276,
-    "fair": 684,
-    "price": 675,
-    "book": "BetMGM",
-    "ev": -0.0112
-   },
-   "assist": {
-    "p": 0.1496,
-    "fair": 568
-   }
-  },
-  {
-   "id": 8478396,
-   "name": "Noah Hanifin",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 22.6,
-   "sog": 1.87,
-   "goal": {
-    "p": 0.0763,
-    "fair": 1211,
-    "price": 1500,
-    "book": "DraftKings",
-    "ev": 0.2202
-   },
-   "assist": {
-    "p": 0.2919,
-    "fair": 243
-   }
-  },
-  {
-   "id": 8478401,
-   "name": "Pavel Zacha",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 16.8,
-   "sog": 1.7,
-   "goal": {
-    "p": 0.2615,
-    "fair": 282,
-    "price": 280,
-    "book": "FanDuel",
-    "ev": -0.0063
-   },
-   "assist": {
-    "p": 0.3356,
-    "fair": 198,
-    "price": 170,
-    "book": "DraftKings",
-    "ev": -0.0939
-   }
-  },
-  {
-   "id": 8478402,
-   "name": "Connor McDavid",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 23.0,
-   "sog": 3.65,
-   "goal": {
-    "p": 0.4197,
-    "fair": 138,
-    "price": 115,
-    "book": "BetMGM",
-    "ev": -0.0977
-   },
-   "assist": {
-    "p": 0.6044,
-    "fair": -153,
-    "price": -230,
-    "book": "DraftKings",
-    "ev": -0.1328
-   }
-  },
-  {
-   "id": 8478403,
-   "name": "Jack Eichel",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 21.2,
-   "sog": 3.42,
-   "goal": {
-    "p": 0.3241,
-    "fair": 209,
-    "price": 170,
-    "book": "DraftKings",
-    "ev": -0.125
-   },
-   "assist": {
-    "p": 0.5267,
-    "fair": -111,
-    "price": -110,
-    "book": "DraftKings",
-    "ev": 0.0054
-   }
-  },
-  {
-   "id": 8478413,
-   "name": "Jordan Greenway",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020005,
-   "toi": 12.4,
    "sog": 0.94,
    "goal": {
-    "p": 0.103,
-    "fair": 871,
-    "price": 1300,
-    "book": "FanDuel",
-    "ev": 0.4424
-   },
-   "assist": {
-    "p": 0.1382,
-    "fair": 624
-   }
-  },
-  {
-   "id": 8478427,
-   "name": "Sebastian Aho",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 19.6,
-   "sog": 2.45,
-   "goal": {
-    "p": 0.2835,
-    "fair": 253,
-    "price": 230,
-    "book": "DraftKings",
-    "ev": -0.0645
-   },
-   "assist": {
-    "p": 0.3885,
-    "fair": 157,
-    "price": 115,
-    "book": "DraftKings",
-    "ev": -0.1646
-   }
-  },
-  {
-   "id": 8478444,
-   "name": "Brock Boeser",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020004,
-   "toi": 19.1,
-   "sog": 2.21,
-   "goal": {
-    "p": 0.2544,
-    "fair": 293,
-    "price": 270,
-    "book": "FanDuel",
-    "ev": -0.0588
-   },
-   "assist": {
-    "p": 0.3264,
-    "fair": 206,
-    "price": 185,
-    "book": "DraftKings",
-    "ev": -0.0696
-   }
-  },
-  {
-   "id": 8478450,
-   "name": "Parker Wotherspoon",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 20.2,
-   "sog": 0.92,
-   "goal": {
-    "p": 0.0491,
-    "fair": 1936,
-    "price": 2200,
-    "book": "BetMGM",
-    "ev": 0.1295
-   },
-   "assist": {
-    "p": 0.2753,
-    "fair": 263
-   }
-  },
-  {
-   "id": 8478483,
-   "name": "Mitch Marner",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "R",
-   "game_id": 2026020005,
-   "toi": 20.0,
-   "sog": 2.06,
-   "goal": {
-    "p": 0.2497,
-    "fair": 301,
-    "price": 180,
-    "book": "BetMGM",
-    "ev": -0.3009
-   },
-   "assist": {
-    "p": 0.4657,
-    "fair": 115,
-    "price": 105,
-    "book": "DraftKings",
-    "ev": -0.0452
-   }
-  },
-  {
-   "id": 8478498,
-   "name": "Jake DeBrusk",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "L",
-   "game_id": 2026020004,
-   "toi": 16.9,
-   "sog": 2.63,
-   "goal": {
-    "p": 0.2636,
-    "fair": 279,
-    "price": 300,
-    "book": "FanDuel",
-    "ev": 0.0543
-   },
-   "assist": {
-    "p": 0.2549,
-    "fair": 292
-   }
-  },
-  {
-   "id": 8478840,
-   "name": "Will Borgen",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 18.0,
-   "sog": 0.95,
-   "goal": {
-    "p": 0.0593,
-    "fair": 1588,
-    "price": 1700,
-    "book": "FanDuel",
-    "ev": 0.0667
-   },
-   "assist": {
-    "p": 0.1488,
-    "fair": 572
-   }
-  },
-  {
-   "id": 8478851,
-   "name": "Alexandre Carrier",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 19.1,
-   "sog": 0.82,
-   "goal": {
-    "p": 0.0618,
-    "fair": 1517,
-    "price": 1900,
-    "book": "BetMGM",
-    "ev": 0.2368
-   },
-   "assist": {
-    "p": 0.1619,
-    "fair": 518
-   }
-  },
-  {
-   "id": 8478859,
-   "name": "Niko Mikkola",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 20.4,
-   "sog": 1.04,
-   "goal": {
-    "p": 0.0559,
-    "fair": 1690,
-    "price": 1300,
-    "book": "FanDuel",
-    "ev": -0.218
-   },
-   "assist": {
-    "p": 0.1346,
-    "fair": 643,
-    "price": 425,
-    "book": "DraftKings",
-    "ev": -0.2935
-   }
-  },
-  {
-   "id": 8478882,
-   "name": "Vladislav Gavrikov",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 23.7,
-   "sog": 1.46,
-   "goal": {
-    "p": 0.1179,
-    "fair": 748,
-    "price": 1100,
-    "book": "FanDuel",
-    "ev": 0.415
-   },
-   "assist": {
-    "p": 0.2322,
-    "fair": 331,
-    "price": 280,
-    "book": "DraftKings",
-    "ev": -0.1176
-   }
-  },
-  {
-   "id": 8478970,
-   "name": "Jalen Chatfield",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 20.1,
-   "sog": 1.39,
-   "goal": {
-    "p": 0.0597,
-    "fair": 1576,
-    "price": 1600,
-    "book": "DraftKings",
-    "ev": 0.0141
-   },
-   "assist": {
-    "p": 0.1639,
-    "fair": 510,
-    "price": 320,
-    "book": "DraftKings",
-    "ev": -0.3114
-   }
-  },
-  {
-   "id": 8479314,
-   "name": "Matthew Tkachuk",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 18.3,
-   "sog": 2.68,
-   "goal": {
-    "p": 0.3104,
-    "fair": 222,
-    "price": 215,
-    "book": "BetRivers",
-    "ev": -0.0224
-   },
-   "assist": {
-    "p": 0.4639,
-    "fair": 116,
-    "price": 135,
-    "book": "DraftKings",
-    "ev": 0.0901
-   }
-  },
-  {
-   "id": 8479318,
-   "name": "Auston Matthews",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 20.8,
-   "sog": 3.63,
-   "goal": {
-    "p": 0.3641,
-    "fair": 175,
-    "price": 146,
-    "book": "Bovada",
-    "ev": -0.1044
-   },
-   "assist": {
-    "p": 0.3617,
-    "fair": 177,
-    "price": 130,
-    "book": "DraftKings",
-    "ev": -0.1682
-   }
-  },
-  {
-   "id": 8479323,
-   "name": "Adam Fox",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 23.6,
-   "sog": 1.65,
-   "goal": {
-    "p": 0.1164,
-    "fair": 759,
-    "price": 490,
-    "book": "FanDuel",
-    "ev": -0.3135
-   },
-   "assist": {
-    "p": 0.4882,
-    "fair": 105,
-    "price": -110,
-    "book": "DraftKings",
-    "ev": -0.0679
-   }
-  },
-  {
-   "id": 8479325,
-   "name": "Charlie McAvoy",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 24.4,
-   "sog": 1.61,
-   "goal": {
-    "p": 0.1167,
-    "fair": 757
-   },
-   "assist": {
-    "p": 0.4585,
-    "fair": 118
-   }
-  },
-  {
-   "id": 8479353,
-   "name": "Brett Howden",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 14.9,
-   "sog": 1.22,
-   "goal": {
-    "p": 0.1653,
-    "fair": 505,
-    "price": 255,
-    "book": "DraftKings",
-    "ev": -0.413
-   },
-   "assist": {
-    "p": 0.199,
-    "fair": 403,
-    "price": 390,
-    "book": "DraftKings",
-    "ev": -0.025
-   }
-  },
-  {
-   "id": 8479365,
-   "name": "Trent Frederic",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 11.0,
-   "sog": 1.07,
-   "goal": {
-    "p": 0.1073,
-    "fair": 832,
-    "price": 650,
-    "book": "FanDuel",
-    "ev": -0.1952
-   },
-   "assist": {
-    "p": 0.0801,
-    "fair": 1148
-   }
-  },
-  {
-   "id": 8479425,
-   "name": "Filip Hronek",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 25.0,
-   "sog": 1.67,
-   "goal": {
-    "p": 0.0948,
-    "fair": 955,
-    "price": 600,
-    "book": "DraftKings",
-    "ev": -0.3366
-   },
-   "assist": {
-    "p": 0.4251,
-    "fair": 135,
-    "price": 115,
-    "book": "DraftKings",
-    "ev": -0.0859
-   }
-  },
-  {
-   "id": 8479442,
-   "name": "Troy Stecher",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 19.2,
-   "sog": 1.03,
-   "goal": {
-    "p": 0.0566,
-    "fair": 1666,
-    "price": 1900,
-    "book": "DraftKings",
-    "ev": 0.1326
-   },
-   "assist": {
-    "p": 0.1972,
-    "fair": 407
-   }
-  },
-  {
-   "id": 8479591,
-   "name": "Michael Eyssimont",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 10.9,
-   "sog": 1.81,
-   "goal": {
-    "p": 0.1774,
-    "fair": 464
-   },
-   "assist": {
-    "p": 0.1941,
-    "fair": 415
-   }
-  },
-  {
-   "id": 8479661,
-   "name": "Tanner Jeannot",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "L",
-   "game_id": 2026020003,
-   "toi": 12.6,
-   "sog": 1.07,
-   "goal": {
-    "p": 0.1148,
-    "fair": 771,
-    "price": 900,
-    "book": "DraftKings",
-    "ev": 0.1481
-   },
-   "assist": {
-    "p": 0.1931,
-    "fair": 418
-   }
-  },
-  {
-   "id": 8479987,
-   "name": "Morgan Geekie",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 17.4,
-   "sog": 2.21,
-   "goal": {
-    "p": 0.3256,
-    "fair": 207,
-    "price": 210,
-    "book": "FanDuel",
-    "ev": 0.0093
-   },
-   "assist": {
-    "p": 0.2825,
-    "fair": 254,
-    "price": 215,
-    "book": "DraftKings",
-    "ev": -0.1101
-   }
-  },
-  {
-   "id": 8479999,
-   "name": "Casey Mittelstadt",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 15.2,
-   "sog": 1.2,
-   "goal": {
-    "p": 0.1669,
-    "fair": 499,
-    "price": 470,
-    "book": "FanDuel",
-    "ev": -0.0489
-   },
-   "assist": {
-    "p": 0.2939,
-    "fair": 240,
-    "price": 255,
-    "book": "DraftKings",
-    "ev": 0.0435
-   }
-  },
-  {
-   "id": 8480012,
-   "name": "Elias Pettersson",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 19.0,
-   "sog": 1.82,
-   "goal": {
-    "p": 0.2021,
-    "fair": 395,
-    "price": 330,
-    "book": "FanDuel",
-    "ev": -0.1308
-   },
-   "assist": {
-    "p": 0.4213,
-    "fair": 137,
-    "price": 135,
-    "book": "DraftKings",
-    "ev": -0.01
-   }
-  },
-  {
-   "id": 8480018,
-   "name": "Nick Suzuki",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 20.8,
-   "sog": 2.24,
-   "goal": {
-    "p": 0.2811,
-    "fair": 256,
-    "price": 210,
-    "book": "DraftKings",
-    "ev": -0.1287
-   },
-   "assist": {
-    "p": 0.4798,
-    "fair": 108,
-    "price": -135,
-    "book": "DraftKings",
-    "ev": -0.1648
-   }
-  },
-  {
-   "id": 8480074,
-   "name": "Alexandre Texier",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "L",
-   "game_id": 2026020002,
-   "toi": 13.7,
-   "sog": 1.47,
-   "goal": {
-    "p": 0.1677,
-    "fair": 496,
-    "price": 550,
-    "book": "FanDuel",
-    "ev": 0.0902
-   },
-   "assist": {
-    "p": 0.2105,
-    "fair": 375
-   }
-  },
-  {
-   "id": 8480078,
-   "name": "Filip Chytil",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 15.0,
-   "sog": 1.87,
-   "goal": {
-    "p": 0.2186,
-    "fair": 357
-   },
-   "assist": {
-    "p": 0.1778,
-    "fair": 463
-   }
-  },
-  {
-   "id": 8480185,
-   "name": "Eetu Luostarinen",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 16.6,
-   "sog": 1.51,
-   "goal": {
-    "p": 0.1667,
-    "fair": 500,
-    "price": 500,
-    "book": "BetMGM",
-    "ev": 0.0001
-   },
-   "assist": {
-    "p": 0.2664,
-    "fair": 275,
-    "price": 350,
-    "book": "DraftKings",
-    "ev": 0.1988
-   }
-  },
-  {
-   "id": 8480336,
-   "name": "Sean Walker",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 21.8,
-   "sog": 2.15,
-   "goal": {
-    "p": 0.1116,
-    "fair": 796,
-    "price": 950,
-    "book": "DraftKings",
-    "ev": 0.172
-   },
-   "assist": {
-    "p": 0.1957,
-    "fair": 411,
-    "price": 310,
-    "book": "DraftKings",
-    "ev": -0.1978
-   }
-  },
-  {
-   "id": 8480355,
-   "name": "Mark Kastelic",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 12.6,
-   "sog": 1.25,
-   "goal": {
-    "p": 0.1475,
-    "fair": 578,
-    "price": 700,
-    "book": "BetRivers",
-    "ev": 0.1799
-   },
-   "assist": {
-    "p": 0.1354,
-    "fair": 639
-   }
-  },
-  {
-   "id": 8480434,
-   "name": "Sean Durzi",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 19.3,
-   "sog": 1.39,
-   "goal": {
-    "p": 0.0802,
-    "fair": 1147,
-    "price": 1000,
-    "book": "FanDuel",
-    "ev": -0.1178
-   },
-   "assist": {
-    "p": 0.2684,
-    "fair": 273,
-    "price": 205,
-    "book": "DraftKings",
-    "ev": -0.1813
-   }
-  },
-  {
-   "id": 8480762,
-   "name": "Eric Robinson",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 11.4,
-   "sog": 1.26,
-   "goal": {
-    "p": 0.1584,
-    "fair": 531,
-    "price": 430,
-    "book": "FanDuel",
-    "ev": -0.1605
-   },
-   "assist": {
-    "p": 0.099,
-    "fair": 910,
-    "price": 340,
-    "book": "DraftKings",
-    "ev": -0.5642
-   }
-  },
-  {
-   "id": 8480801,
-   "name": "Brady Tkachuk",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "L",
-   "game_id": 2026020001,
-   "toi": 17.0,
-   "sog": 3.46,
-   "goal": {
-    "p": 0.3239,
-    "fair": 209,
-    "price": 200,
-    "book": "BetRivers",
-    "ev": -0.0283
-   },
-   "assist": {
-    "p": 0.3992,
-    "fair": 151,
-    "price": 180,
-    "book": "DraftKings",
-    "ev": 0.1176
-   }
-  },
-  {
-   "id": 8480803,
-   "name": "Evan Bouchard",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 24.7,
-   "sog": 2.62,
-   "goal": {
-    "p": 0.1917,
-    "fair": 422,
-    "price": 340,
-    "book": "BetRivers",
-    "ev": -0.1565
-   },
-   "assist": {
-    "p": 0.5348,
-    "fair": -115,
-    "price": -185,
-    "book": "DraftKings",
-    "ev": -0.1761
-   }
-  },
-  {
-   "id": 8480817,
-   "name": "K'Andre Miller",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 22.4,
-   "sog": 1.69,
-   "goal": {
-    "p": 0.1005,
-    "fair": 895,
-    "price": 800,
-    "book": "DraftKings",
-    "ev": -0.0956
-   },
-   "assist": {
-    "p": 0.2599,
-    "fair": 285,
-    "price": 195,
-    "book": "DraftKings",
-    "ev": -0.2333
-   }
-  },
-  {
-   "id": 8480829,
-   "name": "Jesperi Kotkaniemi",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 11.4,
-   "sog": 1.07,
-   "goal": {
-    "p": 0.1153,
-    "fair": 767
-   },
-   "assist": {
-    "p": 0.1574,
-    "fair": 535
-   }
-  },
-  {
-   "id": 8480830,
-   "name": "Andrei Svechnikov",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "R",
-   "game_id": 2026020001,
-   "toi": 17.0,
-   "sog": 2.51,
-   "goal": {
-    "p": 0.3037,
-    "fair": 229,
-    "price": 210,
-    "book": "DraftKings",
-    "ev": -0.0586
-   },
-   "assist": {
-    "p": 0.3112,
-    "fair": 221,
-    "price": 165,
-    "book": "DraftKings",
-    "ev": -0.1753
-   }
-  },
-  {
-   "id": 8480834,
-   "name": "Ty Emberson",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 15.5,
-   "sog": 0.69,
-   "goal": {
-    "p": 0.0381,
-    "fair": 2523
-   },
-   "assist": {
-    "p": 0.14,
-    "fair": 614
-   }
-  },
-  {
-   "id": 8480865,
-   "name": "Noah Dobson",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 22.5,
-   "sog": 1.94,
-   "goal": {
-    "p": 0.1244,
-    "fair": 704,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": 0.0573
-   },
-   "assist": {
-    "p": 0.2885,
-    "fair": 247,
-    "price": 200,
-    "book": "DraftKings",
-    "ev": -0.1346
-   }
-  },
-  {
-   "id": 8480870,
-   "name": "Bo Groulx",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 15.7,
-   "sog": 1.42,
-   "goal": {
-    "p": 0.1797,
-    "fair": 456
-   },
-   "assist": {
-    "p": 0.2189,
-    "fair": 357
-   }
-  },
-  {
-   "id": 8480893,
-   "name": "Kirill Marchenko",
-   "team": "TOR",
-   "opp": "MTL",
-   "pos": "R",
-   "game_id": 2026020002,
-   "toi": 18.9,
-   "sog": 2.8,
-   "goal": {
-    "p": 0.3007,
-    "fair": 233,
-    "price": 235,
-    "book": "BetRivers",
-    "ev": 0.0074
-   },
-   "assist": {
-    "p": 0.4028,
-    "fair": 148,
-    "price": 130,
-    "book": "DraftKings",
-    "ev": -0.0736
-   }
-  },
-  {
-   "id": 8481024,
-   "name": "Linus Karlsson",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 12.5,
-   "sog": 1.46,
-   "goal": {
-    "p": 0.175,
-    "fair": 471,
-    "price": 450,
-    "book": "BetRivers",
-    "ev": -0.0374
-   },
-   "assist": {
-    "p": 0.2693,
-    "fair": 271
-   }
-  },
-  {
-   "id": 8481056,
-   "name": "Spencer Stastney",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 15.5,
-   "sog": 0.87,
-   "goal": {
-    "p": 0.0459,
-    "fair": 2077
-   },
-   "assist": {
-    "p": 0.1421,
-    "fair": 604
-   }
-  },
-  {
-   "id": 8481219,
-   "name": "Jonathan Aspirot",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 16.7,
-   "sog": 0.82,
-   "goal": {
-    "p": 0.0489,
-    "fair": 1947,
-    "price": 2200,
-    "book": "BetMGM",
-    "ev": 0.1236
-   },
-   "assist": {
-    "p": 0.1599,
-    "fair": 525
-   }
-  },
-  {
-   "id": 8481523,
-   "name": "Kirby Dach",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 13.7,
-   "sog": 1.34,
-   "goal": {
-    "p": 0.1728,
-    "fair": 479,
-    "price": 500,
-    "book": "FanDuel",
-    "ev": 0.0369
-   },
-   "assist": {
-    "p": 0.1709,
-    "fair": 485
-   }
-  },
-  {
-   "id": 8481524,
-   "name": "Bowen Byram",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 22.3,
-   "sog": 1.34,
-   "goal": {
-    "p": 0.0989,
-    "fair": 911,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": -0.1593
-   },
-   "assist": {
-    "p": 0.2556,
-    "fair": 291,
-    "price": 180,
-    "book": "DraftKings",
-    "ev": -0.2844
-   }
-  },
-  {
-   "id": 8481525,
-   "name": "Matthew Robertson",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 17.4,
-   "sog": 1.1,
-   "goal": {
-    "p": 0.0702,
-    "fair": 1324
-   },
-   "assist": {
-    "p": 0.1766,
-    "fair": 466
-   }
-  },
-  {
-   "id": 8481540,
-   "name": "Cole Caufield",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "R",
-   "game_id": 2026020002,
-   "toi": 18.2,
-   "sog": 3.08,
-   "goal": {
-    "p": 0.4151,
-    "fair": 141,
-    "price": 138,
-    "book": "BetRivers",
-    "ev": -0.0121
-   },
-   "assist": {
-    "p": 0.3018,
-    "fair": 231,
-    "price": 145,
-    "book": "DraftKings",
-    "ev": -0.2607
-   }
-  },
-  {
-   "id": 8481568,
-   "name": "Alex Vlasic",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 21.1,
-   "sog": 1.09,
-   "goal": {
-    "p": 0.05,
-    "fair": 1900,
-    "price": 2200,
-    "book": "BetMGM",
-    "ev": 0.1497
-   },
-   "assist": {
-    "p": 0.2428,
-    "fair": 312
-   }
-  },
-  {
-   "id": 8481593,
-   "name": "Jayden Struble",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 14.0,
-   "sog": 0.52,
-   "goal": {
-    "p": 0.0321,
-    "fair": 3016,
-    "price": 2500,
-    "book": "DraftKings",
-    "ev": -0.1657
-   },
-   "assist": {
-    "p": 0.1523,
-    "fair": 557
-   }
-  },
-  {
-   "id": 8481604,
-   "name": "Pavel Dorofeyev",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "R",
-   "game_id": 2026020003,
-   "toi": 17.6,
-   "sog": 2.73,
-   "goal": {
-    "p": 0.3359,
-    "fair": 198,
-    "price": 175,
-    "book": "BetRivers",
-    "ev": -0.0762
-   },
-   "assist": {
-    "p": 0.2769,
-    "fair": 261,
-    "price": 225,
-    "book": "DraftKings",
-    "ev": -0.1
-   }
-  },
-  {
-   "id": 8481617,
-   "name": "Vasily Podkolzin",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "R",
-   "game_id": 2026020004,
-   "toi": 15.4,
-   "sog": 1.7,
-   "goal": {
-    "p": 0.2051,
-    "fair": 388,
-    "price": 230,
-    "book": "BetRivers",
-    "ev": -0.3233
-   },
-   "assist": {
-    "p": 0.2,
-    "fair": 400,
-    "price": 135,
-    "book": "DraftKings",
-    "ev": -0.5299
-   }
-  },
-  {
-   "id": 8481618,
-   "name": "Alex Newhook",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 14.5,
-   "sog": 1.49,
-   "goal": {
-    "p": 0.208,
-    "fair": 381,
-    "price": 400,
-    "book": "BetMGM",
-    "ev": 0.0398
-   },
-   "assist": {
-    "p": 0.2215,
-    "fair": 351
-   }
-  },
-  {
-   "id": 8481789,
-   "name": "Tye Kartye",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "L",
-   "game_id": 2026020003,
-   "toi": 12.0,
-   "sog": 0.95,
-   "goal": {
-    "p": 0.1217,
-    "fair": 722,
-    "price": 900,
-    "book": "FanDuel",
-    "ev": 0.2166
-   },
-   "assist": {
-    "p": 0.2259,
-    "fair": 343
-   }
-  },
-  {
-   "id": 8482055,
-   "name": "Drew O'Connor",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "L",
-   "game_id": 2026020004,
-   "toi": 14.6,
-   "sog": 1.66,
-   "goal": {
-    "p": 0.1931,
-    "fair": 418,
-    "price": 525,
-    "book": "FanDuel",
-    "ev": 0.2068
-   },
-   "assist": {
-    "p": 0.186,
-    "fair": 438
-   }
-  },
-  {
-   "id": 8482073,
-   "name": "Braden Schneider",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 20.4,
-   "sog": 1.25,
-   "goal": {
-    "p": 0.0538,
-    "fair": 1760,
-    "price": 1700,
-    "book": "FanDuel",
-    "ev": -0.0325
-   },
-   "assist": {
-    "p": 0.191,
-    "fair": 424
-   }
-  },
-  {
-   "id": 8482079,
-   "name": "Marco Rossi",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 17.5,
-   "sog": 1.42,
-   "goal": {
-    "p": 0.1894,
-    "fair": 428,
-    "price": 400,
-    "book": "FanDuel",
-    "ev": -0.0529
-   },
-   "assist": {
-    "p": 0.3877,
-    "fair": 158,
-    "price": 155,
-    "book": "DraftKings",
-    "ev": -0.0114
-   }
-  },
-  {
-   "id": 8482109,
-   "name": "Alexis Lafreni\u00e8re",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "L",
-   "game_id": 2026020003,
-   "toi": 17.6,
-   "sog": 2.0,
-   "goal": {
-    "p": 0.2444,
-    "fair": 309,
-    "price": 260,
-    "book": "FanDuel",
-    "ev": -0.1202
-   },
-   "assist": {
-    "p": 0.3269,
-    "fair": 206,
-    "price": 165,
-    "book": "DraftKings",
-    "ev": -0.1336
-   }
-  },
-  {
-   "id": 8482113,
-   "name": "Anton Lundell",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 19.2,
-   "sog": 2.16,
-   "goal": {
-    "p": 0.2478,
-    "fair": 304,
-    "price": 400,
-    "book": "FanDuel",
-    "ev": 0.2391
-   },
-   "assist": {
-    "p": 0.3142,
-    "fair": 218,
-    "price": 285,
-    "book": "DraftKings",
-    "ev": 0.2096
-   }
-  },
-  {
-   "id": 8482157,
-   "name": "Will Cuylle",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "L",
-   "game_id": 2026020003,
-   "toi": 16.9,
-   "sog": 1.92,
-   "goal": {
-    "p": 0.2208,
-    "fair": 353,
-    "price": 325,
-    "book": "BetRivers",
-    "ev": -0.0617
-   },
-   "assist": {
-    "p": 0.2125,
-    "fair": 371,
-    "price": 350,
-    "book": "DraftKings",
-    "ev": -0.0438
-   }
-  },
-  {
-   "id": 8482166,
-   "name": "Shakir Mukhamadullin",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 17.1,
-   "sog": 1.0,
-   "goal": {
-    "p": 0.0687,
-    "fair": 1355,
-    "price": 1500,
-    "book": "FanDuel",
-    "ev": 0.0998
-   },
-   "assist": {
-    "p": 0.1697,
-    "fair": 489
-   }
-  },
-  {
-   "id": 8482175,
-   "name": "JJ Peterka",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "R",
-   "game_id": 2026020003,
-   "toi": 16.0,
-   "sog": 1.93,
-   "goal": {
-    "p": 0.2446,
-    "fair": 309,
-    "price": 230,
-    "book": "FanDuel",
-    "ev": -0.1928
-   },
-   "assist": {
-    "p": 0.2175,
-    "fair": 360,
-    "price": 205,
-    "book": "DraftKings",
-    "ev": -0.3365
-   }
-  },
-  {
-   "id": 8482176,
-   "name": "Wyatt Kaiser",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 19.6,
-   "sog": 1.0,
-   "goal": {
-    "p": 0.0652,
-    "fair": 1434,
-    "price": 1700,
-    "book": "FanDuel",
-    "ev": 0.1737
-   },
-   "assist": {
-    "p": 0.1709,
-    "fair": 485
-   }
-  },
-  {
-   "id": 8482177,
-   "name": "Marat Khusnutdinov",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 14.5,
-   "sog": 1.09,
-   "goal": {
-    "p": 0.1538,
-    "fair": 550,
-    "price": 700,
-    "book": "FanDuel",
-    "ev": 0.2307
-   },
-   "assist": {
-    "p": 0.211,
-    "fair": 374,
-    "price": 390,
-    "book": "DraftKings",
-    "ev": 0.0341
-   }
-  },
-  {
-   "id": 8482511,
-   "name": "Mason Lohrei",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 16.9,
-   "sog": 1.0,
-   "goal": {
-    "p": 0.0701,
-    "fair": 1327,
-    "price": 1000,
-    "book": "BetMGM",
-    "ev": -0.2289
-   },
-   "assist": {
-    "p": 0.2205,
-    "fair": 353
-   }
-  },
-  {
-   "id": 8482691,
-   "name": "Aatu R\u00e4ty",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 12.0,
-   "sog": 1.05,
-   "goal": {
-    "p": 0.1101,
-    "fair": 808,
-    "price": 1000,
-    "book": "FanDuel",
-    "ev": 0.2116
-   },
-   "assist": {
-    "p": 0.1923,
-    "fair": 420
-   }
-  },
-  {
-   "id": 8482702,
-   "name": "Logan Stankoven",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020001,
-   "toi": 15.5,
-   "sog": 2.02,
-   "goal": {
-    "p": 0.2303,
-    "fair": 334,
-    "price": 245,
-    "book": "BetRivers",
-    "ev": -0.2053
-   },
-   "assist": {
-    "p": 0.2073,
-    "fair": 382,
-    "price": 215,
-    "book": "DraftKings",
-    "ev": -0.3471
-   }
-  },
-  {
-   "id": 8482703,
-   "name": "Colton Dach",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 11.5,
-   "sog": 1.01,
-   "goal": {
-    "p": 0.1147,
-    "fair": 772,
-    "price": 1000,
-    "book": "DraftKings",
-    "ev": 0.2612
-   },
-   "assist": {
-    "p": 0.1646,
-    "fair": 507
-   }
-  },
-  {
-   "id": 8482737,
-   "name": "Zachary Bolduc",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "R",
-   "game_id": 2026020002,
-   "toi": 13.6,
-   "sog": 1.33,
-   "goal": {
-    "p": 0.1556,
-    "fair": 543
-   },
-   "assist": {
-    "p": 0.1817,
-    "fair": 450
-   }
-  },
-  {
-   "id": 8482775,
-   "name": "Oliver Kapanen",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "C",
-   "game_id": 2026020002,
-   "toi": 14.5,
-   "sog": 1.6,
-   "goal": {
-    "p": 0.213,
-    "fair": 369
-   },
-   "assist": {
-    "p": 0.1552,
-    "fair": 544
-   }
-  },
-  {
-   "id": 8482807,
-   "name": "Ethan Del Mastro",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 14.1,
-   "sog": 0.95,
-   "goal": {
-    "p": 0.05,
-    "fair": 1900
-   },
-   "assist": {
-    "p": 0.1668,
-    "fair": 500
-   }
-  },
-  {
-   "id": 8482809,
-   "name": "Jackson Blake",
-   "team": "CAR",
-   "opp": "FLA",
-   "pos": "R",
-   "game_id": 2026020001,
-   "toi": 16.5,
-   "sog": 2.12,
-   "goal": {
-    "p": 0.2403,
-    "fair": 316,
-    "price": 240,
-    "book": "DraftKings",
-    "ev": -0.1829
-   },
-   "assist": {
-    "p": 0.2585,
-    "fair": 287,
-    "price": 175,
-    "book": "DraftKings",
-    "ev": -0.2892
-   }
-  },
-  {
-   "id": 8482861,
-   "name": "Vincent Iorio",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "D",
-   "game_id": 2026020003,
-   "toi": 15.7,
-   "sog": 0.69,
-   "goal": {
-    "p": 0.0371,
-    "fair": 2595
-   },
-   "assist": {
-    "p": 0.1566,
-    "fair": 539
-   }
-  },
-  {
-   "id": 8482964,
-   "name": "Arber Xhekaj",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 11.4,
-   "sog": 0.64,
-   "goal": {
-    "p": 0.0335,
-    "fair": 2887,
-    "price": 2500,
-    "book": "DraftKings",
-    "ev": -0.1296
-   },
-   "assist": {
-    "p": 0.0741,
-    "fair": 1249
-   }
-  },
-  {
-   "id": 8483450,
-   "name": "Ryan Greene",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 16.7,
-   "sog": 1.4,
-   "goal": {
-    "p": 0.1589,
-    "fair": 529,
-    "price": 750,
-    "book": "FanDuel",
-    "ev": 0.3511
-   },
-   "assist": {
-    "p": 0.228,
-    "fair": 339
-   }
-  },
-  {
-   "id": 8483457,
-   "name": "Lane Hutson",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 23.8,
-   "sog": 1.52,
-   "goal": {
-    "p": 0.1103,
-    "fair": 806,
-    "price": 575,
-    "book": "BetRivers",
-    "ev": -0.2553
-   },
-   "assist": {
-    "p": 0.4499,
-    "fair": 122,
-    "price": -130,
-    "book": "DraftKings",
-    "ev": -0.2041
-   }
-  },
-  {
-   "id": 8483466,
-   "name": "Kevin Korchinski",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 13.6,
-   "sog": 0.71,
-   "goal": {
-    "p": 0.0403,
-    "fair": 2380
-   },
-   "assist": {
-    "p": 0.2181,
-    "fair": 359
-   }
-  },
-  {
-   "id": 8483489,
-   "name": "Fraser Minten",
-   "team": "BOS",
-   "opp": "NYR",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 15.6,
-   "sog": 1.45,
-   "goal": {
-    "p": 0.1828,
-    "fair": 447,
-    "price": 380,
-    "book": "BetRivers",
-    "ev": -0.1224
-   },
-   "assist": {
-    "p": 0.2007,
-    "fair": 398,
-    "price": 360,
-    "book": "DraftKings",
-    "ev": -0.0768
-   }
-  },
-  {
-   "id": 8483493,
-   "name": "Frank Nazar",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 18.3,
-   "sog": 2.09,
-   "goal": {
-    "p": 0.2243,
-    "fair": 346,
-    "price": 340,
-    "book": "FanDuel",
-    "ev": -0.0132
-   },
-   "assist": {
-    "p": 0.3555,
-    "fair": 181,
-    "price": 310,
-    "book": "DraftKings",
-    "ev": 0.4577
-   }
-  },
-  {
-   "id": 8483499,
-   "name": "Liam Ohgren",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "L",
-   "game_id": 2026020004,
-   "toi": 13.2,
-   "sog": 1.29,
-   "goal": {
-    "p": 0.1418,
-    "fair": 605,
-    "price": 540,
-    "book": "BetRivers",
-    "ev": -0.0926
-   },
-   "assist": {
-    "p": 0.1932,
-    "fair": 418
-   }
-  },
-  {
-   "id": 8483506,
-   "name": "Sam Rinzel",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020005,
-   "toi": 18.3,
-   "sog": 1.5,
-   "goal": {
-    "p": 0.0807,
-    "fair": 1140,
-    "price": 1250,
-    "book": "BetMGM",
-    "ev": 0.0889
-   },
-   "assist": {
-    "p": 0.2011,
-    "fair": 397
-   }
-  },
-  {
-   "id": 8483512,
-   "name": "Matt Savoie",
-   "team": "EDM",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 14.8,
-   "sog": 1.68,
-   "goal": {
-    "p": 0.1991,
-    "fair": 402
-   },
-   "assist": {
-    "p": 0.2078,
-    "fair": 381
-   }
-  },
-  {
-   "id": 8483515,
-   "name": "Juraj Slafkovsk\u00fd",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "L",
-   "game_id": 2026020002,
-   "toi": 18.5,
-   "sog": 2.19,
-   "goal": {
-    "p": 0.2821,
-    "fair": 255,
-    "price": 245,
-    "book": "BetRivers",
-    "ev": -0.0269
-   },
-   "assist": {
-    "p": 0.3342,
-    "fair": 199,
-    "price": 140,
-    "book": "DraftKings",
-    "ev": -0.1978
-   }
-  },
-  {
-   "id": 8483669,
-   "name": "Adam Sykora",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "L",
-   "game_id": 2026020003,
-   "toi": 11.2,
-   "sog": 1.31,
-   "goal": {
-    "p": 0.1672,
-    "fair": 498
-   },
-   "assist": {
-    "p": 0.19,
-    "fair": 426
-   }
-  },
-  {
-   "id": 8483678,
-   "name": "Elias Pettersson",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 15.0,
-   "sog": 0.7,
-   "goal": {
-    "p": 0.0423,
-    "fair": 2263,
-    "price": 330,
-    "book": "FanDuel",
-    "ev": -0.818
-   },
-   "assist": {
-    "p": 0.1412,
-    "fair": 608,
-    "price": 135,
-    "book": "DraftKings",
-    "ev": -0.6683
-   }
-  },
-  {
-   "id": 8483686,
-   "name": "Adam Engstrom",
-   "team": "MTL",
-   "opp": "TOR",
-   "pos": "D",
-   "game_id": 2026020002,
-   "toi": 13.1,
-   "sog": 0.79,
-   "goal": {
-    "p": 0.0439,
-    "fair": 2178
-   },
-   "assist": {
-    "p": 0.1491,
-    "fair": 571
-   }
-  },
-  {
-   "id": 8483690,
-   "name": "Noah Laba",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "C",
-   "game_id": 2026020003,
-   "toi": 13.5,
-   "sog": 1.06,
-   "goal": {
-    "p": 0.1285,
-    "fair": 678,
-    "price": 725,
-    "book": "BetMGM",
-    "ev": 0.0601
-   },
-   "assist": {
-    "p": 0.2023,
-    "fair": 394,
-    "price": 400,
-    "book": "DraftKings",
-    "ev": 0.0115
-   }
-  },
-  {
-   "id": 8483768,
-   "name": "Victor Mancini",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 13.7,
-   "sog": 0.69,
-   "goal": {
-    "p": 0.0375,
-    "fair": 2568
-   },
-   "assist": {
-    "p": 0.1831,
-    "fair": 446
-   }
-  },
-  {
-   "id": 8483890,
-   "name": "Braeden Bowman",
-   "team": "VGK",
-   "opp": "CHI",
-   "pos": "R",
-   "game_id": 2026020005,
-   "toi": 14.1,
-   "sog": 1.42,
-   "goal": {
-    "p": 0.1624,
-    "fair": 516,
-    "price": 500,
-    "book": "FanDuel",
-    "ev": -0.0253
-   },
-   "assist": {
-    "p": 0.2815,
-    "fair": 255
-   }
-  },
-  {
-   "id": 8484136,
-   "name": "Max Sasson",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020004,
-   "toi": 11.7,
-   "sog": 1.0,
-   "goal": {
-    "p": 0.1446,
-    "fair": 592,
-    "price": 600,
-    "book": "DraftKings",
-    "ev": 0.012
-   },
-   "assist": {
-    "p": 0.1409,
-    "fair": 610
-   }
-  },
-  {
-   "id": 8484185,
-   "name": "Nick Lardis",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020005,
-   "toi": 12.7,
-   "sog": 1.4,
-   "goal": {
-    "p": 0.1838,
-    "fair": 444,
-    "price": 500,
-    "book": "BetRivers",
-    "ev": 0.1029
+    "p": 0.0522,
+    "fair": 1816
    },
    "assist": {
     "p": 0.1955,
@@ -3413,65 +456,489 @@
    }
   },
   {
-   "id": 8484197,
-   "name": "Oliver Moore",
-   "team": "CHI",
-   "opp": "VGK",
+   "id": 8475754,
+   "name": "Brock Nelson",
+   "team": "COL",
+   "opp": "LAK",
    "pos": "C",
-   "game_id": 2026020005,
-   "toi": 12.8,
-   "sog": 1.18,
+   "game_id": 2026020007,
+   "toi": 19.7,
+   "sog": 2.29,
    "goal": {
-    "p": 0.133,
-    "fair": 652,
-    "price": 650,
+    "p": 0.3033,
+    "fair": 230,
+    "price": 270,
     "book": "BetMGM",
-    "ev": -0.0028
+    "prices": {
+     "DraftKings": 225,
+     "BetRivers": 255,
+     "BetMGM": 270,
+     "FanDuel": 235
+    },
+    "ev": 0.1221
    },
    "assist": {
-    "p": 0.2778,
-    "fair": 260
-   }
-  },
-  {
-   "id": 8484210,
-   "name": "Gabe Perreault",
-   "team": "NYR",
-   "opp": "BOS",
-   "pos": "R",
-   "game_id": 2026020003,
-   "toi": 16.0,
-   "sog": 1.54,
-   "goal": {
-    "p": 0.1985,
-    "fair": 404,
-    "price": 350,
-    "book": "FanDuel",
-    "ev": -0.1066
-   },
-   "assist": {
-    "p": 0.2439,
-    "fair": 310,
-    "price": 300,
+    "p": 0.2704,
+    "fair": 270,
+    "price": 240,
     "book": "DraftKings",
-    "ev": -0.0245
+    "prices": {
+     "DraftKings": 240,
+     "Hard Rock Bet": 240,
+     "theScore Bet": 225
+    },
+    "ev": -0.0807
    }
   },
   {
-   "id": 8484240,
-   "name": "Tom Willander",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 17.0,
-   "sog": 0.88,
+   "id": 8475810,
+   "name": "Bryan Rust",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 19.9,
+   "sog": 2.52,
    "goal": {
-    "p": 0.0574,
-    "fair": 1643,
+    "p": 0.3094,
+    "fair": 223
+   },
+   "assist": {
+    "p": 0.3637,
+    "fair": 175
+   }
+  },
+  {
+   "id": 8476292,
+   "name": "Ondrej Palat",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "L",
+   "game_id": 2026020008,
+   "toi": 12.8,
+   "sog": 1.09,
+   "goal": {
+    "p": 0.1109,
+    "fair": 801,
     "price": 1000,
     "book": "DraftKings",
-    "ev": -0.3688
+    "prices": {
+     "DraftKings": 1000,
+     "BetMGM": 775,
+     "BetRivers": 700,
+     "FanDuel": 800
+    },
+    "ev": 0.2204
+   },
+   "assist": {
+    "p": 0.1601,
+    "fair": 525
+   }
+  },
+  {
+   "id": 8476312,
+   "name": "Josh Manson",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 17.8,
+   "sog": 1.58,
+   "goal": {
+    "p": 0.077,
+    "fair": 1199,
+    "price": 1800,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 1800,
+     "BetRivers": 850,
+     "BetMGM": 1400
+    },
+    "ev": 0.4623
+   },
+   "assist": {
+    "p": 0.2294,
+    "fair": 336
+   }
+  },
+  {
+   "id": 8476372,
+   "name": "Nick Seeler",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 17.7,
+   "sog": 1.18,
+   "goal": {
+    "p": 0.0612,
+    "fair": 1534,
+    "price": 2000,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 1800,
+     "BetRivers": 950,
+     "BetMGM": 2000,
+     "FanDuel": 1800
+    },
+    "ev": 0.2849
+   },
+   "assist": {
+    "p": 0.0995,
+    "fair": 905
+   }
+  },
+  {
+   "id": 8476419,
+   "name": "Jean-Gabriel Pageau",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 15.7,
+   "sog": 1.17,
+   "goal": {
+    "p": 0.172,
+    "fair": 481,
+    "price": 550,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 500,
+     "BetMGM": 475,
+     "BetRivers": 500,
+     "FanDuel": 550
+    },
+    "ev": 0.1182
+   },
+   "assist": {
+    "p": 0.2508,
+    "fair": 299
+   }
+  },
+  {
+   "id": 8476429,
+   "name": "Scott Mayfield",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 16.5,
+   "sog": 0.91,
+   "goal": {
+    "p": 0.0449,
+    "fair": 2129
+   },
+   "assist": {
+    "p": 0.1912,
+    "fair": 423
+   }
+  },
+  {
+   "id": 8476441,
+   "name": "Joel Edmundson",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 18.5,
+   "sog": 1.27,
+   "goal": {
+    "p": 0.0538,
+    "fair": 1758
+   },
+   "assist": {
+    "p": 0.271,
+    "fair": 269
+   }
+  },
+  {
+   "id": 8476455,
+   "name": "Gabriel Landeskog",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "L",
+   "game_id": 2026020007,
+   "toi": 16.4,
+   "sog": 2.16,
+   "goal": {
+    "p": 0.2289,
+    "fair": 337,
+    "price": 285,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 255,
+     "BetRivers": 285,
+     "BetMGM": 240,
+     "FanDuel": 250
+    },
+    "ev": -0.1189
+   },
+   "assist": {
+    "p": 0.2377,
+    "fair": 321,
+    "price": 200,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 170,
+     "Hard Rock Bet": 200,
+     "theScore Bet": 190
+    },
+    "ev": -0.287
+   }
+  },
+  {
+   "id": 8476461,
+   "name": "Sean Couturier",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 16.7,
+   "sog": 1.56,
+   "goal": {
+    "p": 0.1697,
+    "fair": 489,
+    "price": 650,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 650,
+     "BetRivers": 575,
+     "BetMGM": 475,
+     "FanDuel": 600
+    },
+    "ev": 0.2729
+   },
+   "assist": {
+    "p": 0.264,
+    "fair": 279
+   }
+  },
+  {
+   "id": 8476469,
+   "name": "Joel Armia",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "R",
+   "game_id": 2026020007,
+   "toi": 14.1,
+   "sog": 1.4,
+   "goal": {
+    "p": 0.1742,
+    "fair": 474,
+    "price": 750,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 700,
+     "BetRivers": 600,
+     "BetMGM": 625,
+     "FanDuel": 750
+    },
+    "ev": 0.481
+   },
+   "assist": {
+    "p": 0.2194,
+    "fair": 356
+   }
+  },
+  {
+   "id": 8476483,
+   "name": "Rickard Rakell",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 18.9,
+   "sog": 2.7,
+   "goal": {
+    "p": 0.3129,
+    "fair": 220,
+    "price": 240,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 240,
+     "BetRivers": 205,
+     "BetMGM": 220,
+     "FanDuel": 240
+    },
+    "ev": 0.0638
+   },
+   "assist": {
+    "p": 0.3089,
+    "fair": 224,
+    "price": 190,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 190,
+     "Hard Rock Bet": 170,
+     "theScore Bet": 160
+    },
+    "ev": -0.104
+   }
+  },
+  {
+   "id": 8476853,
+   "name": "Morgan Rielly",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 21.2,
+   "sog": 1.76,
+   "goal": {
+    "p": 0.1138,
+    "fair": 779,
+    "price": 725,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 650,
+     "BetMGM": 650,
+     "BetRivers": 650,
+     "FanDuel": 725
+    },
+    "ev": -0.061
+   },
+   "assist": {
+    "p": 0.2983,
+    "fair": 235,
+    "price": 220,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 190,
+     "Hard Rock Bet": 220,
+     "theScore Bet": 210
+    },
+    "ev": -0.0454
+   }
+  },
+  {
+   "id": 8476879,
+   "name": "Cody Ceci",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 17.6,
+   "sog": 0.76,
+   "goal": {
+    "p": 0.0362,
+    "fair": 2664,
+    "price": 2100,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 2000,
+     "BetRivers": 1000,
+     "BetMGM": 1850,
+     "FanDuel": 2100
+    },
+    "ev": -0.2039
+   },
+   "assist": {
+    "p": 0.1421,
+    "fair": 604
+   }
+  },
+  {
+   "id": 8476917,
+   "name": "Adam Pelech",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 20.9,
+   "sog": 1.48,
+   "goal": {
+    "p": 0.0691,
+    "fair": 1346,
+    "price": 1700,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1500,
+     "BetMGM": 1500,
+     "BetRivers": 850,
+     "FanDuel": 1700
+    },
+    "ev": 0.2445
+   },
+   "assist": {
+    "p": 0.1761,
+    "fair": 468
+   }
+  },
+  {
+   "id": 8476931,
+   "name": "Jake McCabe",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 21.4,
+   "sog": 0.97,
+   "goal": {
+    "p": 0.0584,
+    "fair": 1612,
+    "price": 1600,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1500,
+     "BetMGM": 1500,
+     "BetRivers": 800,
+     "FanDuel": 1600
+    },
+    "ev": -0.0071
+   },
+   "assist": {
+    "p": 0.2408,
+    "fair": 315
+   }
+  },
+  {
+   "id": 8476967,
+   "name": "Brett Kulak",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 19.0,
+   "sog": 1.16,
+   "goal": {
+    "p": 0.0465,
+    "fair": 2050,
+    "price": 2000,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 2000,
+     "BetRivers": 750,
+     "BetMGM": 1450,
+     "FanDuel": 1700
+    },
+    "ev": -0.023
+   },
+   "assist": {
+    "p": 0.1385,
+    "fair": 622
+   }
+  },
+  {
+   "id": 8477407,
+   "name": "Anthony Duclair",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "L",
+   "game_id": 2026020008,
+   "toi": 13.2,
+   "sog": 1.24,
+   "goal": {
+    "p": 0.1632,
+    "fair": 513,
+    "price": 480,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 425,
+     "BetMGM": 450,
+     "BetRivers": 480,
+     "FanDuel": 460
+    },
+    "ev": -0.0537
    },
    "assist": {
     "p": 0.2473,
@@ -3479,116 +946,1826 @@
    }
   },
   {
-   "id": 8484304,
-   "name": "Uvis Balinskis",
-   "team": "FLA",
-   "opp": "CAR",
-   "pos": "D",
-   "game_id": 2026020001,
-   "toi": 16.4,
-   "sog": 1.2,
+   "id": 8477426,
+   "name": "Nick Paul",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "L",
+   "game_id": 2026020008,
+   "toi": 13.8,
+   "sog": 1.35,
    "goal": {
-    "p": 0.0756,
-    "fair": 1223
+    "p": 0.1535,
+    "fair": 551,
+    "price": 500,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 500,
+     "BetMGM": 475,
+     "BetRivers": 480
+    },
+    "ev": -0.0789
    },
    "assist": {
-    "p": 0.182,
-    "fair": 449
+    "p": 0.1479,
+    "fair": 576
    }
   },
   {
-   "id": 8484783,
-   "name": "Artyom Levshunov",
-   "team": "CHI",
-   "opp": "VGK",
+   "id": 8477476,
+   "name": "Artturi Lehkonen",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "L",
+   "game_id": 2026020007,
+   "toi": 18.5,
+   "sog": 2.18,
+   "goal": {
+    "p": 0.2551,
+    "fair": 292,
+    "price": 280,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 280,
+     "BetRivers": 255,
+     "BetMGM": 280,
+     "FanDuel": 270
+    },
+    "ev": -0.0305
+   },
+   "assist": {
+    "p": 0.2625,
+    "fair": 281,
+    "price": 190,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 190,
+     "Hard Rock Bet": 160,
+     "theScore Bet": 180
+    },
+    "ev": -0.2386
+   }
+  },
+  {
+   "id": 8477492,
+   "name": "Nathan MacKinnon",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 22.3,
+   "sog": 4.23,
+   "goal": {
+    "p": 0.4609,
+    "fair": 117,
+    "price": 120,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 105,
+     "BetRivers": 120,
+     "BetMGM": 110,
+     "FanDuel": 120
+    },
+    "ev": 0.0139
+   },
+   "assist": {
+    "p": 0.4919,
+    "fair": 103,
+    "price": -145,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": -175,
+     "Hard Rock Bet": -145,
+     "theScore Bet": -200
+    },
+    "ev": -0.1689
+   }
+  },
+  {
+   "id": 8477499,
+   "name": "Rasmus Ristolainen",
+   "team": "PHI",
+   "opp": "PIT",
    "pos": "D",
-   "game_id": 2026020005,
-   "toi": 19.6,
+   "game_id": 2026020006,
+   "toi": 21.4,
+   "sog": 1.33,
+   "goal": {
+    "p": 0.0627,
+    "fair": 1494,
+    "price": 725,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 650,
+     "BetRivers": 650,
+     "BetMGM": 725,
+     "FanDuel": 700
+    },
+    "ev": -0.4826
+   },
+   "assist": {
+    "p": 0.2536,
+    "fair": 294
+   }
+  },
+  {
+   "id": 8477500,
+   "name": "Bo Horvat",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 20.8,
+   "sog": 3.23,
+   "goal": {
+    "p": 0.3561,
+    "fair": 181,
+    "price": 180,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 175,
+     "BetMGM": 175,
+     "BetRivers": 180,
+     "FanDuel": 180
+    },
+    "ev": -0.0029
+   },
+   "assist": {
+    "p": 0.3527,
+    "fair": 184,
+    "price": 145,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 145,
+     "Hard Rock Bet": 145,
+     "theScore Bet": 140
+    },
+    "ev": -0.136
+   }
+  },
+  {
+   "id": 8477506,
+   "name": "Ryan Pulock",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 20.8,
    "sog": 1.24,
    "goal": {
-    "p": 0.0573,
-    "fair": 1646,
-    "price": 1650,
-    "book": "BetMGM",
-    "ev": 0.0021
+    "p": 0.0601,
+    "fair": 1565,
+    "price": 1600,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1300,
+     "BetMGM": 1350,
+     "BetRivers": 750,
+     "FanDuel": 1600
+    },
+    "ev": 0.0213
    },
    "assist": {
-    "p": 0.3028,
-    "fair": 230
+    "p": 0.2936,
+    "fair": 241
    }
   },
   {
-   "id": 8484798,
-   "name": "Zeev Buium",
-   "team": "VAN",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020004,
-   "toi": 19.6,
-   "sog": 0.99,
+   "id": 8477939,
+   "name": "William Nylander",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "R",
+   "game_id": 2026020008,
+   "toi": 19.4,
+   "sog": 2.45,
    "goal": {
-    "p": 0.065,
-    "fair": 1438,
-    "price": 750,
+    "p": 0.3359,
+    "fair": 198,
+    "price": 188,
     "book": "BetRivers",
-    "ev": -0.4474
+    "prices": {
+     "DraftKings": 175,
+     "BetMGM": 185,
+     "BetRivers": 188,
+     "FanDuel": 180
+    },
+    "ev": -0.0326
    },
    "assist": {
-    "p": 0.2739,
-    "fair": 265,
-    "price": 275,
-    "book": "DraftKings",
-    "ev": 0.027
+    "p": 0.5078,
+    "fair": -103,
+    "price": 130,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 110,
+     "Hard Rock Bet": 130,
+     "theScore Bet": 125
+    },
+    "ev": 0.168
    }
   },
   {
-   "id": 8484984,
-   "name": "Ivan Demidov",
-   "team": "MTL",
+   "id": 8477942,
+   "name": "Kevin Fiala",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "L",
+   "game_id": 2026020007,
+   "toi": 19.1,
+   "sog": 2.57,
+   "goal": {
+    "p": 0.2802,
+    "fair": 257
+   },
+   "assist": {
+    "p": 0.3847,
+    "fair": 160
+   }
+  },
+  {
+   "id": 8477948,
+   "name": "Travis Sanheim",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 24.2,
+   "sog": 1.2,
+   "goal": {
+    "p": 0.0941,
+    "fair": 963,
+    "price": 1100,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1000,
+     "BetRivers": 800,
+     "BetMGM": 800,
+     "FanDuel": 1100
+    },
+    "ev": 0.1294
+   },
+   "assist": {
+    "p": 0.2669,
+    "fair": 275
+   }
+  },
+  {
+   "id": 8477950,
+   "name": "Tony DeAngelo",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 19.1,
+   "sog": 1.89,
+   "goal": {
+    "p": 0.0857,
+    "fair": 1067,
+    "price": 900,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 900,
+     "BetMGM": 725,
+     "BetRivers": 750,
+     "FanDuel": 900
+    },
+    "ev": -0.1428
+   },
+   "assist": {
+    "p": 0.3464,
+    "fair": 189,
+    "price": 220,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 195,
+     "Hard Rock Bet": 220,
+     "theScore Bet": 210
+    },
+    "ev": 0.1086
+   }
+  },
+  {
+   "id": 8477960,
+   "name": "Adrian Kempe",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "R",
+   "game_id": 2026020007,
+   "toi": 19.3,
+   "sog": 2.74,
+   "goal": {
+    "p": 0.3349,
+    "fair": 199,
+    "price": 250,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 235,
+     "BetRivers": 250,
+     "BetMGM": 210,
+     "FanDuel": 230
+    },
+    "ev": 0.172
+   },
+   "assist": {
+    "p": 0.4136,
+    "fair": 142,
+    "price": 155,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 155,
+     "Hard Rock Bet": 125,
+     "theScore Bet": 135
+    },
+    "ev": 0.0546
+   }
+  },
+  {
+   "id": 8477989,
+   "name": "Christian Dvorak",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 18.5,
+   "sog": 1.91,
+   "goal": {
+    "p": 0.2139,
+    "fair": 367,
+    "price": 430,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 390,
+     "BetRivers": 425,
+     "BetMGM": 375,
+     "FanDuel": 430
+    },
+    "ev": 0.1339
+   },
+   "assist": {
+    "p": 0.3249,
+    "fair": 208,
+    "price": 300,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 280,
+     "Hard Rock Bet": 300,
+     "theScore Bet": 270
+    },
+    "ev": 0.2995
+   }
+  },
+  {
+   "id": 8478038,
+   "name": "Devon Toews",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 22.4,
+   "sog": 1.67,
+   "goal": {
+    "p": 0.0736,
+    "fair": 1259,
+    "price": 750,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 750,
+     "BetRivers": 650,
+     "BetMGM": 600,
+     "FanDuel": 750
+    },
+    "ev": -0.3745
+   },
+   "assist": {
+    "p": 0.2195,
+    "fair": 356,
+    "price": 190,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 190,
+     "Hard Rock Bet": 180,
+     "theScore Bet": 175
+    },
+    "ev": -0.3635
+   }
+  },
+  {
+   "id": 8478178,
+   "name": "Darren Raddysh",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 22.8,
+   "sog": 2.8,
+   "goal": {
+    "p": 0.2125,
+    "fair": 371,
+    "price": 475,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 425,
+     "BetMGM": 425,
+     "BetRivers": 475,
+     "FanDuel": 450
+    },
+    "ev": 0.2218
+   },
+   "assist": {
+    "p": 0.3898,
+    "fair": 157,
+    "price": 140,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 130,
+     "Hard Rock Bet": 140,
+     "theScore Bet": 135
+    },
+    "ev": -0.0645
+   }
+  },
+  {
+   "id": 8478438,
+   "name": "Tommy Novak",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 14.3,
+   "sog": 1.59,
+   "goal": {
+    "p": 0.1848,
+    "fair": 441,
+    "price": 400,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 380,
+     "BetRivers": 390,
+     "BetMGM": 350,
+     "FanDuel": 400
+    },
+    "ev": -0.0758
+   },
+   "assist": {
+    "p": 0.2713,
+    "fair": 269,
+    "price": 230,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "Hard Rock Bet": 230,
+     "theScore Bet": 215
+    },
+    "ev": -0.1048
+   }
+  },
+  {
+   "id": 8478439,
+   "name": "Travis Konecny",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 19.1,
+   "sog": 2.18,
+   "goal": {
+    "p": 0.2755,
+    "fair": 263,
+    "price": 240,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 240,
+     "BetRivers": 220,
+     "BetMGM": 240,
+     "FanDuel": 220
+    },
+    "ev": -0.0633
+   },
+   "assist": {
+    "p": 0.3833,
+    "fair": 161,
+    "price": 155,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 145,
+     "Hard Rock Bet": 155,
+     "theScore Bet": 145
+    },
+    "ev": -0.0225
+   }
+  },
+  {
+   "id": 8478462,
+   "name": "Nicolas Roy",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 14.5,
+   "sog": 1.1,
+   "goal": {
+    "p": 0.1277,
+    "fair": 683,
+    "price": 550,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 550,
+     "BetRivers": 450,
+     "BetMGM": 400,
+     "FanDuel": 490
+    },
+    "ev": -0.17
+   },
+   "assist": {
+    "p": 0.2325,
+    "fair": 330
+   }
+  },
+  {
+   "id": 8478550,
+   "name": "Artemi Panarin",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "L",
+   "game_id": 2026020007,
+   "toi": 20.8,
+   "sog": 2.83,
+   "goal": {
+    "p": 0.3045,
+    "fair": 228,
+    "price": 245,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 225,
+     "BetRivers": 245,
+     "BetMGM": 240,
+     "FanDuel": 240
+    },
+    "ev": 0.0504
+   },
+   "assist": {
+    "p": 0.5017,
+    "fair": -101,
+    "price": 105,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 105,
+     "Hard Rock Bet": 105,
+     "theScore Bet": 105
+    },
+    "ev": 0.0285
+   }
+  },
+  {
+   "id": 8479318,
+   "name": "Auston Matthews",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 21.0,
+   "sog": 3.63,
+   "goal": {
+    "p": 0.3619,
+    "fair": 176,
+    "price": 150,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 150,
+     "BetMGM": 150,
+     "BetRivers": 150,
+     "FanDuel": 150
+    },
+    "ev": -0.0952
+   },
+   "assist": {
+    "p": 0.3551,
+    "fair": 182,
+    "price": 145,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 140,
+     "Hard Rock Bet": 145,
+     "theScore Bet": 135
+    },
+    "ev": -0.13
+   }
+  },
+  {
+   "id": 8479398,
+   "name": "Samuel Girard",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 18.1,
+   "sog": 0.75,
+   "goal": {
+    "p": 0.0463,
+    "fair": 2062,
+    "price": 800,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 800,
+     "BetRivers": 700,
+     "BetMGM": 800,
+     "FanDuel": 800
+    },
+    "ev": -0.5837
+   },
+   "assist": {
+    "p": 0.2077,
+    "fair": 381
+   }
+  },
+  {
+   "id": 8479442,
+   "name": "Troy Stecher",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 19.2,
+   "sog": 1.0,
+   "goal": {
+    "p": 0.0551,
+    "fair": 1715,
+    "price": 2200,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 2200,
+     "BetMGM": 2000,
+     "BetRivers": 750
+    },
+    "ev": 0.267
+   },
+   "assist": {
+    "p": 0.1932,
+    "fair": 418
+   }
+  },
+  {
+   "id": 8479638,
+   "name": "Justin Brazeau",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 12.7,
+   "sog": 1.6,
+   "goal": {
+    "p": 0.2074,
+    "fair": 382
+   },
+   "assist": {
+    "p": 0.2353,
+    "fair": 325
+   }
+  },
+  {
+   "id": 8479675,
+   "name": "Trevor Moore",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "L",
+   "game_id": 2026020007,
+   "toi": 16.7,
+   "sog": 2.26,
+   "goal": {
+    "p": 0.2142,
+    "fair": 367,
+    "price": 425,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 425,
+     "BetRivers": 375,
+     "BetMGM": 400,
+     "FanDuel": 400
+    },
+    "ev": 0.1248
+   },
+   "assist": {
+    "p": 0.2841,
+    "fair": 252
+   }
+  },
+  {
+   "id": 8479998,
+   "name": "Mikey Anderson",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 20.6,
+   "sog": 0.81,
+   "goal": {
+    "p": 0.0493,
+    "fair": 1929,
+    "price": 2000,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1800,
+     "BetRivers": 800,
+     "BetMGM": 1800,
+     "FanDuel": 2000
+    },
+    "ev": 0.0348
+   },
+   "assist": {
+    "p": 0.2248,
+    "fair": 345
+   }
+  },
+  {
+   "id": 8480015,
+   "name": "Owen Tippett",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 16.8,
+   "sog": 2.64,
+   "goal": {
+    "p": 0.2897,
+    "fair": 245,
+    "price": 270,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 255,
+     "BetRivers": 230,
+     "BetMGM": 240,
+     "FanDuel": 270
+    },
+    "ev": 0.0718
+   },
+   "assist": {
+    "p": 0.2485,
+    "fair": 302,
+    "price": 230,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 215,
+     "Hard Rock Bet": 230,
+     "theScore Bet": 215
+    },
+    "ev": -0.18
+   }
+  },
+  {
+   "id": 8480039,
+   "name": "Martin Necas",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 21.5,
+   "sog": 2.63,
+   "goal": {
+    "p": 0.3479,
+    "fair": 187,
+    "price": 180,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 175,
+     "BetRivers": 180,
+     "BetMGM": 175,
+     "FanDuel": 175
+    },
+    "ev": -0.0258
+   },
+   "assist": {
+    "p": 0.443,
+    "fair": 126,
+    "price": -115,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": -125,
+     "Hard Rock Bet": -115,
+     "theScore Bet": -115
+    },
+    "ev": -0.1718
+   }
+  },
+  {
+   "id": 8480069,
+   "name": "Cale Makar",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 24.8,
+   "sog": 2.58,
+   "goal": {
+    "p": 0.1935,
+    "fair": 417,
+    "price": 330,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 330,
+     "BetRivers": 285,
+     "BetMGM": 310,
+     "FanDuel": 320
+    },
+    "ev": -0.1678
+   },
+   "assist": {
+    "p": 0.4338,
+    "fair": 131,
+    "price": -155,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": -175,
+     "Hard Rock Bet": -155,
+     "theScore Bet": -155
+    },
+    "ev": -0.2864
+   }
+  },
+  {
+   "id": 8480220,
+   "name": "Noah Cates",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "L",
+   "game_id": 2026020006,
+   "toi": 16.2,
+   "sog": 1.63,
+   "goal": {
+    "p": 0.1976,
+    "fair": 406,
+    "price": 400,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 400,
+     "BetRivers": 390,
+     "BetMGM": 375,
+     "FanDuel": 400
+    },
+    "ev": -0.0121
+   },
+   "assist": {
+    "p": 0.2897,
+    "fair": 245
+   }
+  },
+  {
+   "id": 8480448,
+   "name": "Parker Kelly",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 12.7,
+   "sog": 1.29,
+   "goal": {
+    "p": 0.188,
+    "fair": 432,
+    "price": 800,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 700,
+     "BetRivers": 650,
+     "BetMGM": 725,
+     "FanDuel": 800
+    },
+    "ev": 0.6922
+   },
+   "assist": {
+    "p": 0.1475,
+    "fair": 578
+   }
+  },
+  {
+   "id": 8480842,
+   "name": "Filip Hallander",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 13.1,
+   "sog": 1.6,
+   "goal": {
+    "p": 0.1774,
+    "fair": 464,
+    "price": 750,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 750,
+     "BetRivers": 650,
+     "BetMGM": 750,
+     "FanDuel": 750
+    },
+    "ev": 0.5081
+   },
+   "assist": {
+    "p": 0.2383,
+    "fair": 320
+   }
+  },
+  {
+   "id": 8480870,
+   "name": "Bo Groulx",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 15.7,
+   "sog": 1.42,
+   "goal": {
+    "p": 0.1797,
+    "fair": 456,
+    "price": 950,
+    "book": "FanDuel",
+    "prices": {
+     "FanDuel": 950
+    },
+    "ev": 0.8869
+   },
+   "assist": {
+    "p": 0.2165,
+    "fair": 362
+   }
+  },
+  {
+   "id": 8480893,
+   "name": "Kirill Marchenko",
+   "team": "TOR",
+   "opp": "NYI",
+   "pos": "R",
+   "game_id": 2026020008,
+   "toi": 19.1,
+   "sog": 2.85,
+   "goal": {
+    "p": 0.302,
+    "fair": 231,
+    "price": 230,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 225,
+     "BetMGM": 220,
+     "BetRivers": 230,
+     "FanDuel": 220
+    },
+    "ev": -0.0036
+   },
+   "assist": {
+    "p": 0.4032,
+    "fair": 148,
+    "price": 150,
+    "book": "theScore Bet",
+    "prices": {
+     "DraftKings": 130,
+     "Hard Rock Bet": 140,
+     "theScore Bet": 150
+    },
+    "ev": 0.0081
+   }
+  },
+  {
+   "id": 8480980,
+   "name": "Connor Dewar",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 13.9,
+   "sog": 1.43,
+   "goal": {
+    "p": 0.1707,
+    "fair": 486,
+    "price": 800,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 750,
+     "BetRivers": 650,
+     "BetMGM": 800,
+     "FanDuel": 700
+    },
+    "ev": 0.536
+   },
+   "assist": {
+    "p": 0.1965,
+    "fair": 409
+   }
+  },
+  {
+   "id": 8481014,
+   "name": "Alexander Romanov",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 19.4,
+   "sog": 1.19,
+   "goal": {
+    "p": 0.0631,
+    "fair": 1485,
+    "price": 1700,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 1300,
+     "BetMGM": 1250,
+     "BetRivers": 850,
+     "FanDuel": 1700
+    },
+    "ev": 0.1359
+   },
+   "assist": {
+    "p": 0.1619,
+    "fair": 518
+   }
+  },
+  {
+   "id": 8481122,
+   "name": "Simon Benoit",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 17.3,
+   "sog": 0.86,
+   "goal": {
+    "p": 0.0365,
+    "fair": 2641,
+    "price": 2500,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 2200,
+     "BetRivers": 1100,
+     "BetMGM": 2500,
+     "FanDuel": 2000
+    },
+    "ev": -0.0514
+   },
+   "assist": {
+    "p": 0.1271,
+    "fair": 687
+   }
+  },
+  {
+   "id": 8481186,
+   "name": "Logan O'Connor",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "R",
+   "game_id": 2026020007,
+   "toi": 11.4,
+   "sog": 1.15,
+   "goal": {
+    "p": 0.1317,
+    "fair": 659
+   },
+   "assist": {
+    "p": 0.1998,
+    "fair": 401
+   }
+  },
+  {
+   "id": 8481237,
+   "name": "Kyle MacLean",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "C",
+   "game_id": 2026020008,
+   "toi": 10.5,
+   "sog": 0.82,
+   "goal": {
+    "p": 0.0896,
+    "fair": 1016
+   },
+   "assist": {
+    "p": 0.1396,
+    "fair": 616
+   }
+  },
+  {
+   "id": 8481481,
+   "name": "Blake Lizotte",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 13.9,
+   "sog": 1.0,
+   "goal": {
+    "p": 0.1273,
+    "fair": 686,
+    "price": 950,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 950,
+     "BetRivers": 650,
+     "BetMGM": 750,
+     "FanDuel": 850
+    },
+    "ev": 0.3367
+   },
+   "assist": {
+    "p": 0.2073,
+    "fair": 382
+   }
+  },
+  {
+   "id": 8481527,
+   "name": "Kaedan Korczak",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 16.0,
+   "sog": 0.8,
+   "goal": {
+    "p": 0.0451,
+    "fair": 2116,
+    "price": 2800,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 2800,
+     "BetRivers": 1100,
+     "BetMGM": 2500,
+     "FanDuel": 2200
+    },
+    "ev": 0.3089
+   },
+   "assist": {
+    "p": 0.1657,
+    "fair": 503
+   }
+  },
+  {
+   "id": 8481532,
+   "name": "Alex Turcotte",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 10.8,
+   "sog": 1.11,
+   "goal": {
+    "p": 0.1108,
+    "fair": 803,
+    "price": 500,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 475,
+     "BetRivers": 475,
+     "BetMGM": 475,
+     "FanDuel": 500
+    },
+    "ev": -0.3352
+   },
+   "assist": {
+    "p": 0.2207,
+    "fair": 353
+   }
+  },
+  {
+   "id": 8481533,
+   "name": "Trevor Zegras",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 18.7,
+   "sog": 2.07,
+   "goal": {
+    "p": 0.2592,
+    "fair": 286,
+    "price": 260,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 260,
+     "BetRivers": 255,
+     "BetMGM": 260,
+     "FanDuel": 260
+    },
+    "ev": -0.0669
+   },
+   "assist": {
+    "p": 0.3753,
+    "fair": 166,
+    "price": 120,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 120,
+     "Hard Rock Bet": 110,
+     "theScore Bet": 105
+    },
+    "ev": -0.1744
+   }
+  },
+  {
+   "id": 8481546,
+   "name": "Cam York",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 22.5,
+   "sog": 1.23,
+   "goal": {
+    "p": 0.0651,
+    "fair": 1436,
+    "price": 875,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 750,
+     "BetRivers": 650,
+     "BetMGM": 875,
+     "FanDuel": 800
+    },
+    "ev": -0.3653
+   },
+   "assist": {
+    "p": 0.2504,
+    "fair": 299
+   }
+  },
+  {
+   "id": 8481601,
+   "name": "Simon Holmstrom",
+   "team": "NYI",
    "opp": "TOR",
    "pos": "R",
-   "game_id": 2026020002,
-   "toi": 15.5,
-   "sog": 1.57,
+   "game_id": 2026020008,
+   "toi": 16.7,
+   "sog": 1.33,
    "goal": {
-    "p": 0.1984,
-    "fair": 404,
-    "price": 295,
-    "book": "DraftKings",
-    "ev": -0.2161
+    "p": 0.1882,
+    "fair": 431,
+    "price": 360,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 340,
+     "BetMGM": 340,
+     "BetRivers": 335,
+     "FanDuel": 360
+    },
+    "ev": -0.1342
    },
    "assist": {
-    "p": 0.3342,
-    "fair": 199,
-    "price": 165,
-    "book": "DraftKings",
-    "ev": -0.1143
+    "p": 0.2811,
+    "fair": 256,
+    "price": 300,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 275,
+     "Hard Rock Bet": 300,
+     "theScore Bet": 270
+    },
+    "ev": 0.1245
    }
   },
   {
-   "id": 8485391,
-   "name": "Anton Frondell",
-   "team": "CHI",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020005,
-   "toi": 17.7,
-   "sog": 2.59,
+   "id": 8481725,
+   "name": "Elmer Soderblom",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "L",
+   "game_id": 2026020006,
+   "toi": 11.1,
+   "sog": 1.19,
    "goal": {
-    "p": 0.2741,
-    "fair": 265,
-    "price": 335,
-    "book": "BetRivers",
-    "ev": 0.1923
+    "p": 0.1361,
+    "fair": 635,
+    "price": 1100,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 900,
+     "BetRivers": 575,
+     "BetMGM": 1000,
+     "FanDuel": 1100
+    },
+    "ev": 0.6334
    },
    "assist": {
-    "p": 0.3599,
-    "fair": 178,
+    "p": 0.1488,
+    "fair": 572
+   }
+  },
+  {
+   "id": 8482124,
+   "name": "Quinton Byfield",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "R",
+   "game_id": 2026020007,
+   "toi": 20.0,
+   "sog": 2.28,
+   "goal": {
+    "p": 0.2619,
+    "fair": 282,
+    "price": 300,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 260,
+     "BetRivers": 300,
+     "BetMGM": 260,
+     "FanDuel": 270
+    },
+    "ev": 0.0478
+   },
+   "assist": {
+    "p": 0.319,
+    "fair": 213,
+    "price": 210,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 180,
+     "Hard Rock Bet": 210,
+     "theScore Bet": 210
+    },
+    "ev": -0.0111
+   }
+  },
+  {
+   "id": 8482142,
+   "name": "Jamie Drysdale",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 21.6,
+   "sog": 1.31,
+   "goal": {
+    "p": 0.0852,
+    "fair": 1074,
+    "price": 675,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 550,
+     "BetRivers": 500,
+     "BetMGM": 675,
+     "FanDuel": 575
+    },
+    "ev": -0.3397
+   },
+   "assist": {
+    "p": 0.2551,
+    "fair": 292,
+    "price": 160,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 155,
+     "Hard Rock Bet": 160,
+     "theScore Bet": 150
+    },
+    "ev": -0.3367
+   }
+  },
+  {
+   "id": 8482155,
+   "name": "Alex Laferriere",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "R",
+   "game_id": 2026020007,
+   "toi": 18.3,
+   "sog": 2.51,
+   "goal": {
+    "p": 0.2489,
+    "fair": 302,
+    "price": 350,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 330,
+     "BetRivers": 330,
+     "BetMGM": 340,
+     "FanDuel": 350
+    },
+    "ev": 0.12
+   },
+   "assist": {
+    "p": 0.2942,
+    "fair": 240,
+    "price": 270,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 270,
+     "Hard Rock Bet": 260,
+     "theScore Bet": 240
+    },
+    "ev": 0.0884
+   }
+  },
+  {
+   "id": 8482159,
+   "name": "Tyson Foerster",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 17.3,
+   "sog": 2.07,
+   "goal": {
+    "p": 0.2768,
+    "fair": 261,
+    "price": 260,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 255,
+     "BetRivers": 250,
+     "BetMGM": 250,
+     "FanDuel": 260
+    },
+    "ev": -0.0036
+   },
+   "assist": {
+    "p": 0.171,
+    "fair": 485,
+    "price": 230,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 210,
+     "Hard Rock Bet": 230,
+     "theScore Bet": 215
+    },
+    "ev": -0.4355
+   }
+  },
+  {
+   "id": 8482470,
+   "name": "Ilya Solovyov",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 12.7,
+   "sog": 0.79,
+   "goal": {
+    "p": 0.0451,
+    "fair": 2115
+   },
+   "assist": {
+    "p": 0.2112,
+    "fair": 373
+   }
+  },
+  {
+   "id": 8482475,
+   "name": "Egor Chinakhov",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 13.5,
+   "sog": 1.89,
+   "goal": {
+    "p": 0.2344,
+    "fair": 327
+   },
+   "assist": {
+    "p": 0.2452,
+    "fair": 308
+   }
+  },
+  {
+   "id": 8482476,
+   "name": "Emil Heineman",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "L",
+   "game_id": 2026020008,
+   "toi": 16.6,
+   "sog": 2.1,
+   "goal": {
+    "p": 0.2391,
+    "fair": 318,
+    "price": 450,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 450,
+     "BetMGM": 425,
+     "BetRivers": 430,
+     "FanDuel": 430
+    },
+    "ev": 0.3153
+   },
+   "assist": {
+    "p": 0.1519,
+    "fair": 558
+   }
+  },
+  {
+   "id": 8482730,
+   "name": "Brandt Clarke",
+   "team": "LAK",
+   "opp": "COL",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 19.8,
+   "sog": 1.89,
+   "goal": {
+    "p": 0.0992,
+    "fair": 908,
+    "price": 700,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 650,
+     "BetRivers": 600,
+     "BetMGM": 625,
+     "FanDuel": 700
+    },
+    "ev": -0.2066
+   },
+   "assist": {
+    "p": 0.3648,
+    "fair": 174,
+    "price": 170,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 165,
+     "Hard Rock Bet": 170,
+     "theScore Bet": 165
+    },
+    "ev": -0.015
+   }
+  },
+  {
+   "id": 8482758,
+   "name": "Ville Koivunen",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 12.7,
+   "sog": 1.05,
+   "goal": {
+    "p": 0.1162,
+    "fair": 760,
+    "price": 480,
+    "book": "BetRivers",
+    "prices": {
+     "DraftKings": 390,
+     "BetRivers": 480,
+     "BetMGM": 400,
+     "FanDuel": 430
+    },
+    "ev": -0.3258
+   },
+   "assist": {
+    "p": 0.1795,
+    "fair": 457
+   }
+  },
+  {
+   "id": 8482768,
+   "name": "Fedor Svechkov",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "C",
+   "game_id": 2026020007,
+   "toi": 12.1,
+   "sog": 1.06,
+   "goal": {
+    "p": 0.1088,
+    "fair": 819,
+    "price": 700,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 700,
+     "BetRivers": 550,
+     "BetMGM": 625,
+     "FanDuel": 625
+    },
+    "ev": -0.1295
+   },
+   "assist": {
+    "p": 0.2233,
+    "fair": 348
+   }
+  },
+  {
+   "id": 8483460,
+   "name": "David Jiricek",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "D",
+   "game_id": 2026020006,
+   "toi": 12.0,
+   "sog": 0.68,
+   "goal": {
+    "p": 0.0364,
+    "fair": 2646
+   },
+   "assist": {
+    "p": 0.0982,
+    "fair": 918
+   }
+  },
+  {
+   "id": 8483731,
+   "name": "Alex Bump",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "L",
+   "game_id": 2026020006,
+   "toi": 12.6,
+   "sog": 1.39,
+   "goal": {
+    "p": 0.1817,
+    "fair": 450,
+    "price": 400,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 400,
+     "BetRivers": 390,
+     "BetMGM": 400,
+     "FanDuel": 380
+    },
+    "ev": -0.0915
+   },
+   "assist": {
+    "p": 0.2266,
+    "fair": 341
+   }
+  },
+  {
+   "id": 8483733,
+   "name": "Nikita Grebenkin",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 11.3,
+   "sog": 0.72,
+   "goal": {
+    "p": 0.0904,
+    "fair": 1007
+   },
+   "assist": {
+    "p": 0.201,
+    "fair": 398
+   }
+  },
+  {
+   "id": 8484142,
+   "name": "Denver Barkey",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 13.4,
+   "sog": 1.11,
+   "goal": {
+    "p": 0.1337,
+    "fair": 648
+   },
+   "assist": {
+    "p": 0.2482,
+    "fair": 303
+   }
+  },
+  {
+   "id": 8484258,
+   "name": "Sam Malinski",
+   "team": "COL",
+   "opp": "LAK",
+   "pos": "D",
+   "game_id": 2026020007,
+   "toi": 17.6,
+   "sog": 1.92,
+   "goal": {
+    "p": 0.0994,
+    "fair": 906,
+    "price": 900,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 900,
+     "BetRivers": 575,
+     "BetMGM": 775,
+     "FanDuel": 850
+    },
+    "ev": -0.0058
+   },
+   "assist": {
+    "p": 0.2646,
+    "fair": 278
+   }
+  },
+  {
+   "id": 8484387,
+   "name": "Matvei Michkov",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 14.8,
+   "sog": 1.98,
+   "goal": {
+    "p": 0.2232,
+    "fair": 348,
+    "price": 285,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 285,
+     "BetRivers": 260,
+     "BetMGM": 280,
+     "FanDuel": 280
+    },
+    "ev": -0.1408
+   },
+   "assist": {
+    "p": 0.3087,
+    "fair": 224,
+    "price": 190,
+    "book": "Hard Rock Bet",
+    "prices": {
+     "DraftKings": 185,
+     "Hard Rock Bet": 190,
+     "theScore Bet": 180
+    },
+    "ev": -0.1047
+   }
+  },
+  {
+   "id": 8485366,
+   "name": "Matthew Schaefer",
+   "team": "NYI",
+   "opp": "TOR",
+   "pos": "D",
+   "game_id": 2026020008,
+   "toi": 24.7,
+   "sog": 2.64,
+   "goal": {
+    "p": 0.2042,
+    "fair": 390,
+    "price": 380,
+    "book": "FanDuel",
+    "prices": {
+     "DraftKings": 370,
+     "BetMGM": 340,
+     "BetRivers": 350,
+     "FanDuel": 380
+    },
+    "ev": -0.0199
+   },
+   "assist": {
+    "p": 0.3812,
+    "fair": 162,
+    "price": 115,
+    "book": "DraftKings",
+    "prices": {
+     "DraftKings": 115,
+     "Hard Rock Bet": 110,
+     "theScore Bet": 105
+    },
+    "ev": -0.1805
+   }
+  },
+  {
+   "id": 8485406,
+   "name": "Porter Martone",
+   "team": "PHI",
+   "opp": "PIT",
+   "pos": "R",
+   "game_id": 2026020006,
+   "toi": 17.0,
+   "sog": 2.76,
+   "goal": {
+    "p": 0.3047,
+    "fair": 228,
+    "price": 200,
+    "book": "BetMGM",
+    "prices": {
+     "DraftKings": 195,
+     "BetRivers": 180,
+     "BetMGM": 200,
+     "FanDuel": 190
+    },
+    "ev": -0.086
+   },
+   "assist": {
+    "p": 0.3353,
+    "fair": 198,
     "price": 180,
     "book": "DraftKings",
-    "ev": 0.0077
+    "prices": {
+     "DraftKings": 180,
+     "Hard Rock Bet": 175,
+     "theScore Bet": 165
+    },
+    "ev": -0.0612
+   }
+  },
+  {
+   "id": 8485414,
+   "name": "Ben Kindel",
+   "team": "PIT",
+   "opp": "PHI",
+   "pos": "C",
+   "game_id": 2026020006,
+   "toi": 15.1,
+   "sog": 1.93,
+   "goal": {
+    "p": 0.2114,
+    "fair": 373
+   },
+   "assist": {
+    "p": 0.2147,
+    "fair": 366
    }
   }
  ],
- "odds_status": "Odds from 5 games. 480 odds credits left this month."
+ "odds_status": "Odds from 3 games. 474 odds credits left this month."
 }
