@@ -31,7 +31,13 @@
         b.onclick=function(){game=g.id; render();};
         chips.appendChild(b);
       });
-    $("status").textContent=DATA.odds_status;
+    var st=DATA.odds_status;
+    if(DATA.goalies){
+      var gm=DATA.games.filter(function(g){return String(g.id)===game})[0];
+      st+=gm ? " Projected goalies: "+(DATA.goalies[gm.away]||"unknown")+" ("+gm.away+"), "+(DATA.goalies[gm.home]||"unknown")+" ("+gm.home+"). Check confirmed starters before betting."
+             : " Tap a game to see its projected goalies.";
+    }
+    $("status").textContent=st;
 
     var rs=rows(), priced=rs.filter(function(r){return r.m.ev!=null});
     var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG}).sort(function(a,b){return b.m.ev-a.m.ev});
