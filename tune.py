@@ -11,7 +11,9 @@ docs/data/backtest.json so the Backtest page shows the tuned model.
 import itertools, json, time
 from datetime import datetime, timezone
 import numpy as np
+import pandas as pd
 import nhl_pipeline as m
+from goalies import starter_accuracy
 
 SPLIT = "2026-01-01"
 TUNED = m.ROOT / "data" / "tuned_config.json"
@@ -22,6 +24,7 @@ GROUPS = [
     ("shot rate", "shots", {"recent_n": [5, 10, 15], "recent_weight": [0.2, 0.35, 0.5],
                             "prior_games": [20, 35, 50]}),
     ("home and rest", "all", {"home_edge": [0.0, 0.01, 0.02, 0.03], "b2b_drop": [0.0, 0.02, 0.04]}),
+    ("goalies", "goals", {"goalie_weight": [0.0, 0.25, 0.5, 0.75, 1.0], "goalie_prior_shots": [750, 1500, 3000]}),
     ("goals", "goals", {"sh_prior_shots": [75, 150, 300], "save_prior_shots": [300, 600, 1200],
                         "role_prior_goals": [False, True]}),
     ("assists", "assists", {"assist_prior_team_goals": [20, 40, 80], "team_prior_games": [10, 20, 30],
@@ -63,11 +66,15 @@ def main():
     t0 = time.time()
     prior = m.fetch_season(m.PRIOR_SEASON)
     test = m.fetch_season(m.TEST_SEASON)
+    goalies = (m.fetch_goalies(m.PRIOR_SEASON), m.fetch_goalies(m.TEST_SEASON))
+    team_games = test.groupby(["game_id", "date", "team"]).size().reset_index()[["game_id", "date", "team"]]
+    acc = starter_accuracy(pd.concat(goalies), team_games)
+    print(f"Projected starting goalie was right {acc:.0%} of the time" if acc is not None else "No goalie data")
     cfg = dict(m.CONFIG)
     if TUNED.exists():
         cfg.update(json.loads(TUNED.read_text()))  # start from the last tuned settings
-    fit0, check0 = scores(m.build_projections(test, prior, cfg))
-    report = {"before": check0, "kept": {}}
+    fit0, check0 = scores(m.build_projections(test, prior, cfg, goalies))
+    report = {"before": check0, "kept": {}, "starter_accuracy": acc}
 
     for name, key, grid in GROUPS:
         keys = list(grid)
@@ -75,7 +82,7 @@ def main():
         best_cfg, best_fit, best_check = None, score_of(fit0, key, ref_fit), None
         for combo in itertools.product(*(grid[k] for k in keys)):
             trial = dict(cfg, **dict(zip(keys, combo)))
-            fit, check = scores(m.build_projections(test, prior, trial))
+            fit, check = scores(m.build_projections(test, prior, trial, goalies))
             if score_of(fit, key, ref_fit) < best_fit - 1e-9:
                 best_cfg, best_fit, best_check, best_fit_s = trial, score_of(fit, key, ref_fit), check, fit
         if best_cfg and score_of(best_check, key, ref_check) < score_of(check0, key, ref_check):
@@ -85,7 +92,7 @@ def main():
         else:
             print(f"{name}: nothing beat the current settings on the second half, kept as is")
 
-    proj = m.build_projections(test, prior, cfg)
+    proj = m.build_projections(test, prior, cfg, goalies)
     cfg["nb_dispersion"] = [best_dispersion(proj)]
     report["after"] = check0
     report["improvement"] = {k: round(1 - check0[k] / report["before"][k], 5) for k in check0}
