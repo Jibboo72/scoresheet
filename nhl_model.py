@@ -154,6 +154,8 @@ def build_projections(test, prior, cfg=CONFIG):
     team_gf_pg = (df["t_c_gf"].fillna(0) + df["lg_gf"] * tk) / (t_gp + tk)
     opp_ga_pg = (df["o_c_ga"].fillna(0) + df["lg_gf"] * tk) / (o_gp + tk)
     team_proj = team_gf_pg * (opp_ga_pg / df["lg_gf"]).clip(lo, hi) * df["ctx"]
+        df["team_proj"] = team_proj  # the model's expected goals for the player's team
+
     lg_share = role(base["role_share"], "assist_share") if cfg["role_prior_assists"] else lg.map(lambda d: d["assist_share"])
     ak = cfg["assist_prior_team_goals"]
     share = (df["p_assists"] + df["c_assists"] + lg_share * ak) / (df["p_team_gf"] + df["c_team_gf"] + ak)
