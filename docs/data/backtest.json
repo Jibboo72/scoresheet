@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T04:11+00:00",
+ "generated": "2026-10-02T17:06+00:00",
  "season_tested": "2025-26",
  "prior_season": "2024-25",
  "counts": {
@@ -23,6 +23,8 @@
   ],
   "sh_prior_shots": 150,
   "save_prior_shots": 1200,
+  "goalie_weight": 1.0,
+  "goalie_prior_shots": 1500,
   "assist_prior_team_goals": 80,
   "role_prior_goals": true,
   "role_prior_assists": true,
@@ -39,40 +41,26 @@
  },
  "tuning": {
   "before": {
-   "shots": 1.5418408147302793,
-   "goals": 0.12419938401060794,
-   "assists": 0.17493019876631924
-  },
-  "kept": {
-   "usage": {
-    "pp_weight": 2.0,
-    "sh_weight": 1.0,
-    "toi_recent_weight": 0.4
-   },
-   "home and rest": {
-    "home_edge": 0.02,
-    "b2b_drop": 0.04
-   },
-   "goals": {
-    "sh_prior_shots": 150,
-    "save_prior_shots": 1200,
-    "role_prior_goals": true
-   },
-   "assists": {
-    "assist_prior_team_goals": 80,
-    "team_prior_games": 30,
-    "role_prior_assists": true
-   }
-  },
-  "after": {
    "shots": 1.5417973423283993,
    "goals": 0.12415004858618754,
    "assists": 0.17469401847034163
   },
+  "kept": {
+   "goalies": {
+    "goalie_weight": 1.0,
+    "goalie_prior_shots": 1500
+   }
+  },
+  "starter_accuracy": 0.6352896341463414,
+  "after": {
+   "shots": 1.5417973423283993,
+   "goals": 0.12412191963042149,
+   "assists": 0.17469401847034163
+  },
   "improvement": {
-   "shots": 3e-05,
-   "goals": 0.0004,
-   "assists": 0.00135
+   "shots": 0.0,
+   "goals": 0.00023,
+   "assists": 0.0
   }
  },
  "markets": {
@@ -354,15 +342,15 @@
   "goals": {
    "n": 44705,
    "base_rate": 0.1563,
-   "avg_pred": 0.1531,
-   "brier_model": 0.12283,
+   "avg_pred": 0.1514,
+   "brier_model": 0.12279,
    "brier_naive": 0.12631,
-   "skill": 0.0275,
-   "logloss_model": 0.39945,
+   "skill": 0.0279,
+   "logloss_model": 0.39937,
    "logloss_naive": 0.48858,
-   "ece": 0.0032,
-   "early_skill": 0.0652,
-   "late_skill": 0.0163,
+   "ece": 0.005,
+   "early_skill": 0.0654,
+   "late_skill": 0.0167,
    "confident": {
     "threshold": 0.6,
     "n": 0,
@@ -371,48 +359,48 @@
    },
    "top5": {
     "n": 2236,
-    "pred": 0.3782,
-    "hit": 0.3752
+    "pred": 0.375,
+    "hit": 0.3743
    },
    "calibration": [
     {
      "lo": 0.0,
      "hi": 0.1,
-     "n": 16224,
-     "pred": 0.0617,
-     "actual": 0.0643
+     "n": 16531,
+     "pred": 0.0616,
+     "actual": 0.0644
     },
     {
      "lo": 0.1,
      "hi": 0.2,
-     "n": 15720,
+     "n": 15675,
      "pred": 0.1443,
-     "actual": 0.1477
+     "actual": 0.1502
     },
     {
      "lo": 0.2,
      "hi": 0.3,
-     "n": 8420,
+     "n": 8357,
      "pred": 0.2443,
-     "actual": 0.2461
+     "actual": 0.2506
     },
     {
      "lo": 0.3,
      "hi": 0.4,
-     "n": 3845,
-     "pred": 0.3407,
-     "actual": 0.3485
+     "n": 3706,
+     "pred": 0.3403,
+     "actual": 0.3473
     },
     {
      "lo": 0.4,
      "hi": 0.5,
-     "n": 496,
-     "pred": 0.4219,
-     "actual": 0.4234
+     "n": 436,
+     "pred": 0.4222,
+     "actual": 0.4312
     }
    ],
    "label": "Anytime goal",
-   "avg_proj": 0.1731,
+   "avg_proj": 0.1708,
    "avg_actual": 0.1766
   },
   "assists": {

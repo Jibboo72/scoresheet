@@ -7,6 +7,8 @@
  "prior_games": 35,
  "home_edge": 0.02,
  "b2b_drop": 0.04,
+ "goalie_weight": 1.0,
+ "goalie_prior_shots": 1500,
  "sh_prior_shots": 150,
  "save_prior_shots": 1200,
  "role_prior_goals": true,
