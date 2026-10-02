@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 import numpy as np
 from scipy import stats
 
-from nhl_data import BASE, DATA_DIR, ROOT, TEAMS, fetch_games, fetch_season, get_json, name_of  # noqa: F401
+from nhl_data import BASE, DATA_DIR, ROOT, TEAMS, fetch_games, fetch_goalies, fetch_season, get_json, name_of  # noqa: F401
 from nhl_model import CONFIG, build_projections, team_games  # noqa: F401
 
 PRIOR_SEASON = "20242025"
