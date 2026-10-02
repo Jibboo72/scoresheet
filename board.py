@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
+import goalies
 import market
 import nhl_pipeline as m
 
@@ -119,8 +120,14 @@ def main():
                 "shots": 0, "goals": 0, "assists": 0, "pp_points": 0}
                for pid, p in players.items() if p["team"] in matchup]
     prior = m.fetch_season(PRIOR)
-    proj = m.build_projections(pd.concat([played, pd.DataFrame(tonight)], ignore_index=True), prior)
+    gg_now = m.fetch_goalies(SEASON, refresh=True)
+    gg = (m.fetch_goalies(PRIOR), gg_now[gg_now["date"] < date])
+    proj = m.build_projections(pd.concat([played, pd.DataFrame(tonight)], ignore_index=True), prior, goalies=gg)
     proj = proj[proj["date"] == date]
+    tg = pd.DataFrame([{"game_id": g["id"], "date": date, "team": t} for g in games for t in (g["away"], g["home"])])
+    starters = goalies.predict_starters(pd.concat(gg), tg)
+    names = dict(zip(pd.concat(gg)["player_id"], pd.concat(gg)["name"]))
+    out["goalies"] = {t: names.get(g, "Unknown") for t, g in zip(starters["team"], starters["goalie_id"])}
 
     odds, out["odds_status"] = fetch_odds(date)
     try:  # the market's expected goals for each team, from moneylines and totals
