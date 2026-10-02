@@ -1,24 +1,20 @@
 """Scoresheet model: projects shots, goals and assists for each skater-game using only earlier games."""
 import numpy as np
 import pandas as pd
+from goalies import goalie_factors
 
 # Every tunable number lives here. tune.py picks the best values and saves them to data/tuned_config.json.
 CONFIG = {
     "prior_games": 20,          # last season counts as this many games of evidence
-    "recent_n": 10,             # recency window
-    "recent_weight": 0.35,      # tilt toward the last 10
+    "recent_n": 10, "recent_weight": 0.35,  # recency window and how much to tilt toward it
     "toi_recent_weight": 0.60,  # ice time follows recent usage more closely
-    "pp_weight": 1.0,           # a power-play minute counts this many even-strength minutes
-    "sh_weight": 1.0,           # a penalty-kill minute counts this many even-strength minutes
-    "home_edge": 0.0,           # home +x, away -x on every projection
-    "b2b_drop": 0.0,            # second night of a back-to-back
+    "pp_weight": 1.0, "sh_weight": 1.0,  # a power-play / penalty-kill minute counts this many even-strength minutes
+    "home_edge": 0.0, "b2b_drop": 0.0,  # home +x / away -x, and the second night of a back-to-back
     "team_prior_games": 10, "opp_clamp": [0.85, 1.15],  # shrink team/opponent rates toward league
-    "sh_prior_shots": 150,      # shooting % regression (shots of evidence)
-    "save_prior_shots": 600,    # opponent save % regression
-    "assist_prior_team_goals": 40,
-    "role_prior_goals": False, "role_prior_assists": False,  # regress toward similar-ice-time players
-    "min_history_games": 5,     # skip players with almost no history
-    "min_proj_toi": 10.0,       # books rarely post lines below this
+    "sh_prior_shots": 150, "save_prior_shots": 600,  # shooting % / opponent save % regression (shots)
+    "goalie_weight": 0.0, "goalie_prior_shots": 1500,  # projected starter vs team save %, his regression
+    "assist_prior_team_goals": 40, "role_prior_goals": False, "role_prior_assists": False,  # role priors: similar ice time
+    "min_history_games": 5, "min_proj_toi": 10.0,  # skip players with almost no history or tiny roles
     "nb_dispersion": [None, 40, 20, 10, 6], "sog_lines": [1.5, 2.5, 3.5],  # None = Poisson
 }
 ROLE_BINS = [0, 13, 15, 17, 19, 40]  # minutes per game
@@ -71,7 +67,8 @@ def prior_player_table(prior_rows):
         p_goals=("goals", "sum"), p_assists=("assists", "sum"), p_team_gf=("team_gf", "sum")).reset_index()
 
 
-def build_projections(test, prior, cfg=CONFIG):
+def build_projections(test, prior, cfg=CONFIG, goalies=None):
+    """goalies: optional (last season, this season) goalie-games, for projected starters."""
     base, prior_rows = league_baselines(prior, cfg)
     df = prep(test, cfg).sort_values(["player_id", "date", "game_id"]).reset_index(drop=True)
 
@@ -133,6 +130,12 @@ def build_projections(test, prior, cfg=CONFIG):
     sk, lg_gps = cfg["save_prior_shots"], df["lg_gf"] / df["lg_sf"]
     opp_gps = (df["o_c_ga"].fillna(0) + lg_gps * sk) / (df["o_c_sa"].fillna(0) + sk)
     df["opp_finish_factor"] = (opp_gps / lg_gps).clip(lo, hi)
+    if goalies is not None and cfg["goalie_weight"] > 0:  # blend in the projected starting goalie
+        gf = goalie_factors(goalies[0], goalies[1], tg[["game_id", "date", "team"]], cfg["goalie_prior_shots"])
+        look = dict(zip(zip(gf["game_id"], gf["team"]), gf["g_factor"]))
+        df["g_factor"] = [look.get(k, 1.0) for k in zip(df["game_id"], df["opp"])]
+        w = cfg["goalie_weight"]
+        df["opp_finish_factor"] = (1 - w) * df["opp_finish_factor"] + w * df["g_factor"]
     # Home ice and the second night of a back-to-back
     h, b = cfg["home_edge"], cfg["b2b_drop"]
     df["ctx"] = np.where(df["home"] == 1, 1 + h, 1 - h) * np.where(df["rest"] == 1, 1 - b, 1.0)
@@ -154,8 +157,7 @@ def build_projections(test, prior, cfg=CONFIG):
     team_gf_pg = (df["t_c_gf"].fillna(0) + df["lg_gf"] * tk) / (t_gp + tk)
     opp_ga_pg = (df["o_c_ga"].fillna(0) + df["lg_gf"] * tk) / (o_gp + tk)
     team_proj = team_gf_pg * (opp_ga_pg / df["lg_gf"]).clip(lo, hi) * df["ctx"]
-        df["team_proj"] = team_proj  # the model's expected goals for the player's team
-
+    df["team_proj"] = team_proj  # the model's expected goals for the player's team
     lg_share = role(base["role_share"], "assist_share") if cfg["role_prior_assists"] else lg.map(lambda d: d["assist_share"])
     ak = cfg["assist_prior_team_goals"]
     share = (df["p_assists"] + df["c_assists"] + lg_share * ak) / (df["p_team_gf"] + df["c_team_gf"] + ak)
