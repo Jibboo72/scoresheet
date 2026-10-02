@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Scoresheet tonight's board: model odds for goals + assists vs. sportsbook prices."""
 import json, math, os, sys, unicodedata
-from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import pandas as pd
@@ -17,7 +16,7 @@ OUT = m.ROOT / "docs" / "data" / "board.json"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 ODDS_BASE = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"
 MARKETS = {"goal": "player_goal_scorer_anytime", "assist": "player_assists"}
-# Only books you can bet. Fanatics (fanatics) and Hard Rock (hardrockbet) need the paid odds plan.
+# Only books you can bet (up to 10 costs the same). Fanatics (fanatics) needs the paid odds plan.
 BOOKS = "draftkings,fanduel,betmgm,hardrockbet,espnbet,betrivers,betparx"
 TEAM_WORDS = {"ANA": "ducks", "BOS": "bruins", "BUF": "sabres", "CAR": "hurricanes", "CBJ": "jackets",
     "CGY": "flames", "CHI": "blackhawks", "COL": "avalanche", "DAL": "stars", "DET": "wings",
@@ -63,15 +62,10 @@ def current_players():
     return players
 
 
-def season_rows(players):
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        futs = [pool.submit(m.game_log_rows, pid, info, SEASON) for pid, info in players.items()]
-        rows = [r for f in futs for r in f.result()]
-    cols = ["season", "player_id", "name", "pos", "game_id", "date", "team", "opp", "home",
-            "toi", "shots", "goals", "assists", "pp_points"]
-    df = pd.DataFrame(rows, columns=cols)
-    num = ["player_id", "game_id", "home", "toi", "shots", "goals", "assists", "pp_points"]
-    return df.astype({c: float for c in num})
+def season_rows(date):
+    """Every skater-game this season before today (all players, including traded and called-up)."""
+    df = m.fetch_season(SEASON, refresh=True)
+    return df[df["date"] < date]
 
 
 def fetch_odds(date):
@@ -114,7 +108,7 @@ def main():
         OUT.write_text(json.dumps(out, indent=1)); print(out["odds_status"]); return
 
     players = current_players()
-    played = season_rows(players)
+    played = season_rows(date)
     matchup = {g["away"]: (g["home"], 0, g["id"]) for g in games}
     matchup.update({g["home"]: (g["away"], 1, g["id"]) for g in games})
     tonight = [{"season": SEASON, "player_id": pid, "name": p["name"], "pos": p["pos"],
