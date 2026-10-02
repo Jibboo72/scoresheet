@@ -1,12 +1,18 @@
 {
+ "pp_weight": 2.0,
+ "sh_weight": 1.0,
+ "toi_recent_weight": 0.4,
  "recent_n": 10,
  "recent_weight": 0.2,
  "prior_games": 35,
- "toi_recent_weight": 0.4,
+ "home_edge": 0.02,
+ "b2b_drop": 0.04,
  "sh_prior_shots": 150,
- "save_prior_shots": 600,
- "assist_prior_team_goals": 40,
- "team_prior_games": 20,
+ "save_prior_shots": 1200,
+ "role_prior_goals": true,
+ "assist_prior_team_goals": 80,
+ "team_prior_games": 30,
+ "role_prior_assists": true,
  "nb_dispersion": [
   20
  ]
