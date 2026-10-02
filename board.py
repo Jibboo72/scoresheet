@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
+import market
 import nhl_pipeline as m
 
 TUNED = m.ROOT / "data" / "tuned_config.json"
@@ -88,9 +89,10 @@ def fetch_odds(date):
                 for mk in book.get("markets", []):
                     kind = next((k for k, v in MARKETS.items() if v == mk["key"]), None)
                     for o in mk.get("outcomes", []) if kind else []:
-                        if o.get("name") not in ("Yes", "Over") or (kind == "assist" and o.get("point") != 0.5):
+                        if kind == "assist" and o.get("point") != 0.5:
                             continue
-                        key = (kind, norm(o.get("description")), teams)
+                        side = kind if o.get("name") in ("Yes", "Over") else kind + "_other"  # No / Under
+                        key = (side, norm(o.get("description")), teams)
                         odds.setdefault(key, {})[book.get("title", book.get("key"))] = o["price"]
         n = len(todays)
         return odds, f"Odds from {n} game{'' if n == 1 else 's'}. {left} odds credits left this month."
@@ -121,21 +123,35 @@ def main():
     proj = proj[proj["date"] == date]
 
     odds, out["odds_status"] = fetch_odds(date)
+    try:  # the market's expected goals for each team, from moneylines and totals
+        lines = market.game_lines(ODDS_KEY, ODDS_BASE, BOOKS, date, TEAM_WORDS, ZoneInfo("America/New_York")) if ODDS_KEY else {}
+    except Exception:
+        lines = {}
+    out["odds_status"] += f" Game lines for {len(lines) // 2} games."
     for _, r in proj.iterrows():
+        env = market.env_factor(lines.get(r["team"]), r["team_proj"])
         row = {"id": int(r["player_id"]), "name": r["name"], "team": r["team"], "opp": r["opp"],
                "pos": r["pos"], "game_id": int(r["game_id"]), "toi": round(r["proj_toi"], 1),
-               "sog": round(r["lam_sog"], 2)}
+               "sog": round(r["lam_sog"], 2), "env": round(env, 3)}
+        word = TEAM_WORDS.get(r["team"], "~")
+        find = lambda side: next((v for (k, n, t), v in odds.items()
+                                  if k == side and n == norm(r["name"]) and word in t), None)
         for kind, lam in (("goal", r["lam_goal"]), ("assist", r["lam_assist"])):
-            p = 1 - math.exp(-float(lam))
-            row[kind] = {"p": round(p, 4), "fair": fair_american(p)}
-            word = TEAM_WORDS.get(r["team"], "~")
-            hit = next((v for (k, n, t), v in odds.items()
-                        if k == kind and n == norm(r["name"]) and word in t), None)
-            if hit:
-                book = max(hit, key=hit.get)
-                row[kind].update(price=hit[book], book=book, prices=hit,
-                                 ev=round(p * decimal(hit[book]) - 1, 4))
+            row[kind] = {"p_model": round(1 - math.exp(-float(lam) * env), 4)}
+            if find(kind):
+                row[kind].update(prices=find(kind), other=find(kind + "_other") or {})
         out["players"].append(row)
+    market.market_view(out["players"])
+    for row in out["players"]:  # final chance = model blended with the market, then EV at the best price
+        for kind in ("goal", "assist"):
+            mk = row[kind]
+            p = mk["p_model"] if mk.get("p_mkt") is None else (
+                market.MODEL_WEIGHT * mk["p_model"] + (1 - market.MODEL_WEIGHT) * mk["p_mkt"])
+            mk.update(p=round(p, 4), fair=fair_american(p))
+            if mk.get("prices"):
+                book = max(mk["prices"], key=mk["prices"].get)
+                mk.update(price=mk["prices"][book], book=book, ev=round(p * decimal(mk["prices"][book]) - 1, 4))
+            mk.pop("other", None)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
     print(f"{date}: {len(games)} games, {len(out['players'])} players. {out['odds_status']}")
