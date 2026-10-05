@@ -2,7 +2,9 @@ name: Tonight
 
 on:
   schedule:
-    - cron: 0 14 * * *
+    - cron: 0 13 * * *
+    - cron: 0 16 * * *
+    - cron: 0 19 * * *
   workflow_dispatch:
     inputs:
       date:
@@ -18,15 +20,28 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Skip if today's board is already up
+        id: check
+        run: |
+          today=$(TZ=America/New_York date +%F)
+          if [ "${{ github.event_name }}" = schedule ] && grep -q "\"date\": \"$today\"" docs/data/board.json; then
+            echo "Board for $today already built, skipping so no odds credits are spent"
+            echo skip=1 >> $GITHUB_OUTPUT
+          fi
+      - if: ${{ steps.check.outputs.skip != 1 }}
+        uses: actions/setup-python@v5
         with:
           python-version: 3.12
-      - run: pip install requests pandas numpy scipy
-      - run: python board.py ${{ inputs.date }}
+      - if: ${{ steps.check.outputs.skip != 1 }}
+        run: pip install requests pandas numpy scipy
+      - if: ${{ steps.check.outputs.skip != 1 }}
+        run: python board.py ${{ inputs.date }}
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-      - run: python sim.py
-      - run: |
+      - if: ${{ steps.check.outputs.skip != 1 }}
+        run: python sim.py
+      - if: ${{ steps.check.outputs.skip != 1 }}
+        run: |
           git config user.name github-actions
           git config user.email actions@github.com
           git add docs/data/board.json docs/data/sim_log.json
