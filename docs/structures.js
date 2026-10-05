@@ -1,7 +1,7 @@
 (function(){
   // Grades the same nightly props as singles and round robins, $33 a night each.
   // A parlay lives at one book, so each combo is priced at the single book that pays most for it.
-  var BUDGET=33, SIZES=[6,8,12], size=8, LOG=[];
+  var BUDGET=33, SIZES=[6,8,12], size=8, LOG=[], MAX_PRICE=750; // longer prices never make the slate
   var OFFSHORE=["Bovada","BetOnline.ag","MyBookie.ag","BetUS","LowVig.ag"]; // never used, even in old logs
   var STRUCTS=[{name:"Singles",k:[1]},{name:"2-pick round robin",k:[2]},
                {name:"3-pick round robin",k:[3]},{name:"2s + 3s round robin",k:[2,3]}];
@@ -42,10 +42,10 @@
     })});
     return out;
   }
-  // Top props by edge: one per player, at most two per game, flagged plays left out.
+  // Top props by edge at +750 or shorter: one per player, at most two per game, flagged plays left out.
   function slate(bets){
     var players={}, games={}, out=[];
-    bets.filter(function(b){return b.kind==="bet"&&!b.flag&&Object.keys(books(b)).length})
+    bets.filter(function(b){return b.kind==="bet"&&!b.flag&&b.price!=null&&b.price<=MAX_PRICE&&Object.keys(books(b)).length})
       .sort(function(a,b){return b.ev-a.ev}).forEach(function(b){
         if(out.length>=size||players[b.player_id]||(games[b.game_id]||0)>=2) return;
         players[b.player_id]=1; games[b.game_id]=(games[b.game_id]||0)+1;
