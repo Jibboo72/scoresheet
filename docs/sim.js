@@ -32,6 +32,8 @@
     var tb=$("splits"); tb.innerHTML="";
     [group("All picks",log), group(label.goal,log.filter(function(b){return b.market==="goal"})),
      group(label.assist,log.filter(function(b){return b.market==="assist"})),
+     group("Main bets, +750 or shorter",log.filter(function(b){return b.kind==="bet"&&b.price!=null&&b.price<=750})),
+     group("Long shots, over +750",log.filter(function(b){return b.kind==="bet"&&b.price>750})),
      group("Edge 5–30%",log.filter(function(b){return b.kind==="bet"&&!b.flag})),
      group("Edge 30%+",log.filter(function(b){return b.flag})),
      group("Top picks, no price",log.filter(function(b){return b.kind==="watch"}))]
