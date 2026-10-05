@@ -40,13 +40,14 @@
     $("status").textContent=st;
 
     var rs=rows(), priced=rs.filter(function(r){return r.m.ev!=null});
-    var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG}).sort(function(a,b){return b.m.ev-a.m.ev});
+    var max=DATA.max_price||750;
+    var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG&&r.m.price<=max}).sort(function(a,b){return b.m.ev-a.m.ev});
     var flags=priced.filter(function(r){return r.m.ev>=FLAG}).sort(function(a,b){return b.m.ev-a.m.ev});
     var ol=$("best"); ol.innerHTML=""; best.forEach(function(r){ol.appendChild(playItem(r))});
     $("bestNote").textContent = !priced.length
       ? "No sportsbook prices yet. Use the Fair column below and compare it to your book."
-      : best.length ? "Model edge of 5% or more against the best available price."
-      : "Nothing clears a 5% edge right now. Passing is a fine bet.";
+      : best.length ? "Model edge of 5% or more against the best available price, at +"+max+" or shorter. Longer shots stay in the table below."
+      : "Nothing at +"+max+" or shorter clears a 5% edge right now. Passing is a fine bet.";
     var fl=$("flags"); fl.innerHTML=""; fl.className="plays flagged";
     flags.forEach(function(r){fl.appendChild(playItem(r))});
     $("flagBlock").hidden=!flags.length;
