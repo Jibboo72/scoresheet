@@ -153,12 +153,13 @@ def main():
         for kind in ("goal", "assist"):
             mk = row[kind]
             p = mk["p_model"] if mk.get("p_mkt") is None else (
-                market.MODEL_WEIGHT * mk["p_model"] + (1 - market.MODEL_WEIGHT) * mk["p_mkt"])
+                market.MODEL_WEIGHT[kind] * mk["p_model"] + (1 - market.MODEL_WEIGHT[kind]) * mk["p_mkt"])
             mk.update(p=round(p, 4), fair=fair_american(p))
             if mk.get("prices"):
                 book = max(mk["prices"], key=mk["prices"].get)
                 mk.update(price=mk["prices"][book], book=book, ev=round(p * decimal(mk["prices"][book]) - 1, 4))
             mk.pop("other", None)
+    out["max_price"] = market.MAX_PRICE
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
     print(f"{date}: {len(games)} games, {len(out['players'])} players. {out['odds_status']}")
