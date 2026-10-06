@@ -42,14 +42,26 @@
     })});
     return out;
   }
+  // Every 2-pick and 3-pick combo with this new prop must have one book offering all its legs.
+  function fits(out,leg){
+    for(var i=0;i<out.length;i++){
+      if(!route([out[i],leg])) return false;
+      for(var j=i+1;j<out.length;j++) if(!route([out[i],out[j],leg])) return false;
+    }
+    return true;
+  }
   // Top props by edge at +750 or shorter: one per player, at most two per game, flagged plays left out.
+  // A prop that can't share a book with the props already picked is skipped for the next best one,
+  // so every round robin combo can be placed and none get dropped.
   function slate(bets){
     var players={}, games={}, out=[];
     bets.filter(function(b){return b.kind==="bet"&&!b.flag&&b.price!=null&&b.price<=MAX_PRICE&&Object.keys(books(b)).length})
       .sort(function(a,b){return b.ev-a.ev}).forEach(function(b){
         if(out.length>=size||players[b.player_id]||(games[b.game_id]||0)>=2) return;
+        var leg={b:b, px:books(b)};
+        if(!fits(out,leg)) return;
         players[b.player_id]=1; games[b.game_id]=(games[b.game_id]||0)+1;
-        out.push({b:b, px:books(b)});
+        out.push(leg);
       });
     return out;
   }
