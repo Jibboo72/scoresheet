@@ -13,7 +13,10 @@ from scipy import stats
 from scipy.optimize import brentq
 
 ENV_WEIGHT = 0.7     # how far team scoring moves toward the market's game lines
-MODEL_WEIGHT = 0.5   # final chance = this much model + the rest market (the sim tracks both to tune it)
+# Final chance = this much model + the rest market. Goals lean on the market harder because the
+# model ran hot on goal props in the first week of the sim. The sim logs both to keep tuning this.
+MODEL_WEIGHT = {"goal": 0.3, "assist": 0.5}
+MAX_PRICE = 750      # main bets stop here; longer prices are still logged as long shots
 ENV_CLAMP = (0.75, 1.33)
 
 
