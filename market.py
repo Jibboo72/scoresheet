@@ -13,10 +13,15 @@ from scipy import stats
 from scipy.optimize import brentq
 
 ENV_WEIGHT = 0.7     # how far team scoring moves toward the market's game lines
-# Final chance = this much model + the rest market. Goals lean on the market harder because the
-# model ran hot on goal props in the first week of the sim. The sim logs both to keep tuning this.
-MODEL_WEIGHT = {"goal": 0.3, "assist": 0.5}
+# Final chance = this much model + the rest market. Through 9 graded nights the model ran hot on
+# both markets (most of all where it disagreed with the books by 25%+), so both lean on the market.
+# The sim and the calibration log record both chances to keep tuning this.
+MODEL_WEIGHT = {"goal": 0.3, "assist": 0.3}
 MAX_PRICE = 750      # main bets stop here; longer prices are still logged as long shots
+# Anytime-goal props usually only have a Yes price. Fair chance = book's chance ** this power,
+# which takes more of the book's cut off long shots than favorites (books pad long shots most).
+# 1.15 matched the first 300 graded goal bets; the calibration log will keep checking it.
+GOAL_DEVIG_POWER = 1.15
 ENV_CLAMP = (0.75, 1.33)
 
 
@@ -86,29 +91,20 @@ def env_factor(market_goals, model_goals):
 
 
 def market_view(rows):
-    """Adds the market's fair chance and the blended final chance to every priced prop.
+    """Adds the market's fair chance to every priced prop.
 
-    Fair chance comes from books posting both sides (Yes/No, Over/Under). Anytime-goal props
-    with only a Yes price are scaled so each team's chances add up to the goals the model
-    expects that team to score, which removes the book's cut across the roster.
+    Fair chance comes from books posting both sides (Yes/No, Over/Under) when they do.
+    Anytime-goal props with only a Yes price use the median book's chance raised to
+    GOAL_DEVIG_POWER. This no longer leans on the model's own team total, which left
+    most of the book's cut in and made long shots look like value every night.
     """
-    teams = {}
     for r in rows:
-        teams.setdefault(r["team"], []).append(r)
-    for kind in ("goal", "assist"):
-        for team_rows in teams.values():
-            yes_only = []
-            for r in team_rows:
-                m = r[kind]
-                fair = [two_way(m["prices"][b], m["other"][b]) for b in m.get("prices", {}) if b in m.get("other", {})]
-                if fair:
-                    m["p_mkt"] = round(statistics.median(fair), 4)
-                elif m.get("prices"):
-                    yes_only.append(r)
-            if kind == "goal" and len(yes_only) >= 6:
-                raw = [statistics.median(implied(p) for p in r[kind]["prices"].values()) for r in yes_only]
-                expected = sum(r[kind]["p_model"] for r in yes_only)
-                scale = expected / sum(raw)
-                for r, p in zip(yes_only, raw):
-                    r[kind]["p_mkt"] = round(min(p * scale, 0.95), 4)
+        for kind in ("goal", "assist"):
+            m = r[kind]
+            fair = [two_way(m["prices"][b], m["other"][b]) for b in m.get("prices", {}) if b in m.get("other", {})]
+            if fair:
+                m["p_mkt"] = round(statistics.median(fair), 4)
+            elif kind == "goal" and m.get("prices"):
+                raw = statistics.median(implied(p) for p in m["prices"].values())
+                m["p_mkt"] = round(raw ** GOAL_DEVIG_POWER, 4)
     return rows
