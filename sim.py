@@ -4,6 +4,8 @@
 Each run:
   1. Grades pending plays whose games are final.
   2. Logs today's qualifying plays from docs/data/board.json (games not yet started only).
+  3. Logs every priced prop (bet or not) to docs/data/calib/<date>.json and grades it later,
+     so the model and the book's cut can be checked on thousands of props, not just our picks.
 Nothing here places real bets. Every play is a flat 1-unit paper bet.
 """
 import json
@@ -12,6 +14,7 @@ import nhl_pipeline as m
 
 BOARD = m.ROOT / "docs" / "data" / "board.json"
 LOG = m.ROOT / "docs" / "data" / "sim_log.json"
+CALIB = m.ROOT / "docs" / "data" / "calib"   # one small file per day
 MIN_EV = 0.05      # same bar as "Best plays" on the board
 FLAG_EV = 0.30     # logged, but tagged so we can see if these lose
 WATCH_N = 8        # with no prices, track the model's top picks per market instead
@@ -85,13 +88,51 @@ def log_today(log, board):
             mk = p[market]
             new.append({"date": board["date"], "game_id": p["game_id"], "player_id": p["id"],
                         "name": p["name"], "team": p["team"], "opp": p["opp"], "market": market,
-                                                "kind": kind, "p": mk["p"], "p_model": mk.get("p_model"), "p_mkt": mk.get("p_mkt"), "fair": mk["fair"], "price": mk.get("price"),
-
-                        "book": mk.get("book"), "prices": mk.get("prices"), "ev": mk.get("ev"),
+                        "kind": kind, "p": mk["p"], "p_model": mk.get("p_model"), "p_mkt": mk.get("p_mkt"),
+                        "fair": mk["fair"], "price": mk.get("price"), "book": mk.get("book"),
+                        "prices": mk.get("prices"), "ev": mk.get("ev"),
                         "flag": bool(mk.get("ev") is not None and mk["ev"] >= FLAG_EV),
                         "logged": now.isoformat(timespec="minutes"), "status": "pending",
                         "units": None})
     return log + new, len(new)
+
+
+def calibration(board):
+    """Grades old calibration files and adds tonight's priced props (first price seen is kept)."""
+    CALIB.mkdir(parents=True, exist_ok=True)
+    cache = {}
+    for path in sorted(CALIB.glob("*.json")):
+        rows = load(path, [])
+        if not any(r["hit"] is None for r in rows):
+            continue
+        for r in rows:
+            if r["hit"] is not None:
+                continue
+            if r["game_id"] not in cache:
+                cache[r["game_id"]] = boxscore_stats(r["game_id"])
+            final, stats = cache[r["game_id"]]
+            if final:
+                r["hit"] = -1 if r["player_id"] not in stats else int(stats[r["player_id"]][r["market"]] >= 1)
+        path.write_text(json.dumps(rows, separators=(",", ":")))
+    if not board.get("players"):
+        return
+    now = datetime.now(timezone.utc)
+    starts = {g["id"]: g.get("start") for g in board.get("games", [])}
+    path = CALIB / f"{board['date']}.json"
+    rows = load(path, [])
+    seen = {(r["player_id"], r["market"]) for r in rows}
+    for p in board["players"]:
+        start = starts.get(p["game_id"])
+        if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
+            continue
+        for market in ("goal", "assist"):
+            mk = p.get(market) or {}
+            if not mk.get("prices") or (p["id"], market) in seen:
+                continue
+            rows.append({"game_id": p["game_id"], "player_id": p["id"], "name": p["name"], "pos": p.get("pos"),
+                         "market": market, "p_model": mk.get("p_model"), "p_mkt": mk.get("p_mkt"),
+                         "prices": mk["prices"], "hit": None})  # hit: 1 yes, 0 no, -1 did not play
+    path.write_text(json.dumps(rows, separators=(",", ":")))
 
 
 def main():
@@ -102,6 +143,7 @@ def main():
         log, added = log_today(log, board)
     LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_text(json.dumps(log, indent=1))
+    calibration(board)
     done = [b for b in log if b["status"] in ("win", "loss")]
     units = sum(b["units"] or 0 for b in done)
     print(f"Logged {added} new plays. Graded record {sum(b['status'] == 'win' for b in done)}-"
