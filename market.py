@@ -22,6 +22,10 @@ MAX_PRICE = 750      # main bets stop here; longer prices are still logged as lo
 # which takes more of the book's cut off long shots than favorites (books pad long shots most).
 # 1.15 matched the first 300 graded goal bets; the calibration log will keep checking it.
 GOAL_DEVIG_POWER = 1.15
+# "Most likely to hit" strategy: pick by chance first, then let price decide.
+LIKELY_MIN = {"goal": 0.30, "assist": 0.35}   # final chance needed to make the pool
+LIKELY_MAX_PRICE = 200                        # nothing longer than +200
+PRICE_CHECK = -0.03                           # never pay more than 3% over our fair price
 ENV_CLAMP = (0.75, 1.33)
 
 
