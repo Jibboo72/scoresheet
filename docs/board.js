@@ -19,7 +19,26 @@
       "<span class='ev'><b>"+ev(r.m.ev)+"</b><span>EV</span></span>";
     return li;
   }
+  function renderLikely(){
+    var r=DATA.likely_rules, list=[];
+    DATA.players.forEach(function(p){
+      if(game!=="all"&&String(p.game_id)!==game) return;
+      ["goal","assist"].forEach(function(k){ if(p[k]&&p[k].likely) list.push({p:p, m:p[k], k:k}) });
+    });
+    list.sort(function(a,b){return b.m.ev-a.m.ev});
+    var ol=$("likely"); ol.innerHTML="";
+    list.forEach(function(x){
+      var li=playItem(x);
+      li.querySelector(".game").textContent=x.p.team+" vs "+x.p.opp+", "+(x.k==="goal"?"goal":"assist");
+      ol.appendChild(li);
+    });
+    $("likelyBlock").hidden=!r;
+    if(r) $("likelyNote").textContent = list.length
+      ? "Assists at "+pct(r.min.assist)+"+ or goals at "+pct(r.min.goal)+"+, priced +"+r.max_price+" or shorter, never more than "+Math.round(-r.price_check*100)+"% over fair. Ranked by price edge, best first."
+      : "Nothing passes the hit-chance and price checks right now.";
+  }
   function render(){
+    renderLikely();
     document.querySelectorAll(".switch button").forEach(function(b){
       b.setAttribute("aria-pressed", b.dataset.market===market?"true":"false");
     });
