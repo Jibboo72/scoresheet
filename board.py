@@ -158,8 +158,12 @@ def main():
             if mk.get("prices"):
                 book = max(mk["prices"], key=mk["prices"].get)
                 mk.update(price=mk["prices"][book], book=book, ev=round(p * decimal(mk["prices"][book]) - 1, 4))
+                mk["likely"] = bool(p >= market.LIKELY_MIN[kind] and mk["price"] <= market.LIKELY_MAX_PRICE
+                                    and mk["ev"] >= market.PRICE_CHECK)
             mk.pop("other", None)
     out["max_price"] = market.MAX_PRICE
+    out["likely_rules"] = {"min": market.LIKELY_MIN, "max_price": market.LIKELY_MAX_PRICE,
+                           "price_check": market.PRICE_CHECK}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
     print(f"{date}: {len(games)} games, {len(out['players'])} players. {out['odds_status']}")
