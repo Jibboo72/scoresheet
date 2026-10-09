@@ -2,6 +2,7 @@
   // Grades the same nightly props as singles and round robins, $33 a night each.
   // A parlay lives at one book, so each combo is priced at the single book that pays most for it.
   var BUDGET=33, SIZES=[6,8,12], size=8, LOG=[], MAX_PRICE=750; // longer prices never make the slate
+  var STRATS=[{id:"value",label:"Best value"},{id:"likely",label:"Most likely"}], strat="value";
   var OFFSHORE=["Bovada","BetOnline.ag","MyBookie.ag","BetUS","LowVig.ag"]; // never used, even in old logs
   var STRUCTS=[{name:"Singles",k:[1]},{name:"2-pick round robin",k:[2]},
                {name:"3-pick round robin",k:[3]},{name:"2s + 3s round robin",k:[2,3]}];
@@ -50,12 +51,18 @@
     }
     return true;
   }
-  // Top props by edge at +750 or shorter: one per player, at most two per game, flagged plays left out.
+  // Which props a strategy can use. Best value: 5%+ edge at +750 or shorter, flagged plays left out.
+  // Most likely: the likely-to-hit pool (high chance, +200 or shorter, price checked), best price first.
+  function eligible(b){
+    if(b.price==null||!Object.keys(books(b)).length) return false;
+    return strat==="likely" ? !!b.likely : b.kind==="bet"&&!b.flag&&b.price<=MAX_PRICE;
+  }
+  // Top props by edge: one per player, at most two per game.
   // A prop that can't share a book with the props already picked is skipped for the next best one,
   // so every round robin combo can be placed and none get dropped.
   function slate(bets){
     var players={}, games={}, out=[];
-    bets.filter(function(b){return b.kind==="bet"&&!b.flag&&b.price!=null&&b.price<=MAX_PRICE&&Object.keys(books(b)).length})
+    bets.filter(eligible)
       .sort(function(a,b){return b.ev-a.ev}).forEach(function(b){
         if(out.length>=size||players[b.player_id]||(games[b.game_id]||0)>=2) return;
         var leg={b:b, px:books(b)};
@@ -76,6 +83,15 @@
     return ret-BUDGET;
   }
   function render(){
+    var sc=$("strats");
+    if(!sc){sc=document.createElement("div"); sc.id="strats"; sc.className="chips"; $("sizes").parentNode.insertBefore(sc,$("sizes"))}
+    sc.innerHTML="";
+    STRATS.forEach(function(s){
+      var b=document.createElement("button"); b.textContent=s.label;
+      b.setAttribute("aria-pressed", s.id===strat?"true":"false");
+      b.onclick=function(){strat=s.id; render()};
+      sc.appendChild(b);
+    });
     var chips=$("sizes"); chips.innerHTML="";
     SIZES.forEach(function(n){
       var b=document.createElement("button"); b.textContent=n+" props";
@@ -109,7 +125,7 @@
       tb.appendChild(tr);
     });
     $("structNote").textContent = !graded.length
-      ? "Nothing graded yet. The first results show up the day after the first priced night."
+      ? (strat==="likely" ? "Most likely started Oct 9. Results show up the day after its first night." : "Nothing graded yet. The first results show up the day after the first priced night.")
       : graded.length<20 ? graded.length+" night"+(graded.length===1?"":"s")+" graded. The gaps between structures mean little before about 20 nights."
       : graded.length+" nights graded.";
     var ol=$("slate"); ol.innerHTML="";
@@ -137,7 +153,7 @@
   fetch("data/sim_log.json",{cache:"no-store"})
     .then(function(r){if(!r.ok) throw 0; return r.json()})
     .then(function(log){
-      LOG=log; if(!log.some(function(b){return b.kind==="bet"})) return;
+      LOG=log; if(!log.some(function(b){return b.kind==="bet"||b.likely})) return;
       $("structBlock").hidden=false; render();
     })
     .catch(function(){});
