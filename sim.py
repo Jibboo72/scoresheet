@@ -15,7 +15,8 @@ import nhl_pipeline as m
 BOARD = m.ROOT / "docs" / "data" / "board.json"
 LOG = m.ROOT / "docs" / "data" / "sim_log.json"
 CALIB = m.ROOT / "docs" / "data" / "calib"   # one small file per day
-MIN_EV = 0.05      # same bar as "Best plays" on the board
+MIN_EV = 0.05      # same bar as "Best plays" on the board (the value strategy)
+# The "most likely" strategy logs every prop board.py marks likely, even below MIN_EV (kind "likely").
 FLAG_EV = 0.30     # logged, but tagged so we can see if these lose
 WATCH_N = 8        # with no prices, track the model's top picks per market instead
 STALE_DAYS = 3     # postponed games void after this long
@@ -74,12 +75,11 @@ def log_today(log, board):
         rows = [p for p in board.get("players", []) if p.get(market)]
         priced = [p for p in rows if p[market].get("ev") is not None]
         if priced:
-            picks = [p for p in priced if p[market]["ev"] >= MIN_EV]
-            kind = "bet"
+            picks = [p for p in priced if p[market]["ev"] >= MIN_EV or p[market].get("likely")]
         else:
             picks = sorted(rows, key=lambda p: -p[market]["p"])[:WATCH_N]
-            kind = "watch"
         for p in picks:
+            kind = "watch" if not priced else "bet" if p[market]["ev"] >= MIN_EV else "likely"
             start = starts.get(p["game_id"])
             if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
                 continue  # never log after puck drop
@@ -92,6 +92,7 @@ def log_today(log, board):
                         "fair": mk["fair"], "price": mk.get("price"), "book": mk.get("book"),
                         "prices": mk.get("prices"), "ev": mk.get("ev"),
                         "flag": bool(mk.get("ev") is not None and mk["ev"] >= FLAG_EV),
+                        "likely": bool(mk.get("likely")),
                         "logged": now.isoformat(timespec="minutes"), "status": "pending",
                         "units": None})
     return log + new, len(new)
