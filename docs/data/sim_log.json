@@ -26235,8 +26235,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26263,8 +26263,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26291,8 +26291,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.952
  },
  {
   "date": "2026-10-16",
@@ -26319,8 +26319,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26347,8 +26347,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26431,8 +26431,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26459,8 +26459,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.3
  },
  {
   "date": "2026-10-16",
@@ -26487,8 +26487,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 2.1
  },
  {
   "date": "2026-10-16",
@@ -26515,8 +26515,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-16",
@@ -26599,8 +26599,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-16T17:05+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.05
  },
  {
   "date": "2026-10-16",
