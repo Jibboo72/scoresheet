@@ -34,7 +34,7 @@ def load(path, default):
 
 
 def boxscore_stats(game_id):
-    """Returns (is_final, {player_id: {"goal": n, "assist": n}})."""
+    """Returns (is_final, {player_id: {"goal": n, "assist": n, "sog": n}})."""
     data = m.get_json(f"{m.BASE}/gamecenter/{game_id}/boxscore") or {}
     final = data.get("gameState") in ("OFF", "FINAL")
     stats = {}
@@ -43,8 +43,15 @@ def boxscore_stats(game_id):
         for group in ("forwards", "defense"):
             for p in teams.get(side, {}).get(group, []):
                 stats[int(p["playerId"])] = {"goal": p.get("goals", 0) or 0,
-                                             "assist": p.get("assists", 0) or 0}
+                                             "assist": p.get("assists", 0) or 0, "sog": p.get("sog", 0) or 0}
     return final, stats
+
+
+def hit(line, market):
+    """Did the prop cash? "sog2.5" needs 3+ shots; goal and assist need 1+."""
+    if market.startswith("sog"):
+        return line["sog"] > float(market[3:])
+    return line[market] >= 1
 
 
 def grade(log):
@@ -57,7 +64,7 @@ def grade(log):
                 if b["player_id"] not in stats:
                     b["status"] = "void"  # scratched: books refund
                 else:
-                    b["status"] = "win" if stats[b["player_id"]][b["market"]] >= 1 else "loss"
+                    b["status"] = "win" if hit(stats[b["player_id"]], b["market"]) else "loss"
             elif now - datetime.fromisoformat(b["logged"]) > timedelta(days=STALE_DAYS):
                 b["status"] = "void"
             if b["status"] != "pending":
@@ -71,7 +78,7 @@ def log_today(log, board):
     starts = {g["id"]: g.get("start") for g in board.get("games", [])}
     seen = {(b["date"], b["player_id"], b["market"]) for b in log}
     new = []
-    for market in ("goal", "assist"):
+    for market in board.get("markets", ["goal", "assist"]):
         rows = [p for p in board.get("players", []) if p.get(market)]
         priced = [p for p in rows if p[market].get("ev") is not None]
         if priced:
@@ -113,7 +120,7 @@ def calibration(board):
                 cache[r["game_id"]] = boxscore_stats(r["game_id"])
             final, stats = cache[r["game_id"]]
             if final:
-                r["hit"] = -1 if r["player_id"] not in stats else int(stats[r["player_id"]][r["market"]] >= 1)
+                r["hit"] = -1 if r["player_id"] not in stats else int(hit(stats[r["player_id"]], r["market"]))
         path.write_text(json.dumps(rows, separators=(",", ":")))
     if not board.get("players"):
         return
@@ -126,7 +133,7 @@ def calibration(board):
         start = starts.get(p["game_id"])
         if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
             continue
-        for market in ("goal", "assist"):
+        for market in board.get("markets", ["goal", "assist"]):
             mk = p.get(market) or {}
             if not mk.get("prices") or (p["id"], market) in seen:
                 continue
