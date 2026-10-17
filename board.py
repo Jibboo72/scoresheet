@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scoresheet tonight's board: model odds for goals + assists vs. sportsbook prices."""
+"""Scoresheet tonight's board: model odds for shots on goal + assists vs. sportsbook prices."""
 import json, math, os, sys, unicodedata
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
@@ -14,10 +14,13 @@ if TUNED.exists():  # settings chosen by tune.py
     m.CONFIG.update(json.loads(TUNED.read_text()))
 
 SEASON, PRIOR = "20262027", "20252026"
+SOG_R = m.CONFIG["nb_dispersion"][0]  # shot-count spread chosen by tune.py (None = Poisson)
 OUT = m.ROOT / "docs" / "data" / "board.json"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 ODDS_BASE = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"
-MARKETS = {"goal": "player_goal_scorer_anytime", "assist": "player_assists"}
+# Two prop markets per game keeps the odds cost the same as before (goals were swapped out for shots).
+MARKETS = {"sog": "player_shots_on_goal", "assist": "player_assists"}
+SOG_LINES = (1.5, 2.5, 3.5, 4.5)   # each line is its own prop: "sog2.5" = over 2.5 shots
 # Only books you can bet (up to 10 costs the same). Fanatics (fanatics) needs the paid odds plan.
 BOOKS = "draftkings,fanduel,betmgm,hardrockbet,espnbet,betrivers,betparx"
 TEAM_WORDS = {"ANA": "ducks", "BOS": "bruins", "BUF": "sabres", "CAR": "hurricanes", "CBJ": "jackets",
@@ -92,7 +95,10 @@ def fetch_odds(date):
                     for o in mk.get("outcomes", []) if kind else []:
                         if kind == "assist" and o.get("point") != 0.5:
                             continue
-                        side = kind if o.get("name") in ("Yes", "Over") else kind + "_other"  # No / Under
+                        if kind == "sog" and o.get("point") not in SOG_LINES:
+                            continue
+                        key = f"sog{o['point']}" if kind == "sog" else kind
+                        side = key if o.get("name") in ("Yes", "Over") else key + "_other"  # No / Under
                         key = (side, norm(o.get("description")), teams)
                         odds.setdefault(key, {})[book.get("title", book.get("key"))] = o["price"]
         n = len(todays)
@@ -139,31 +145,38 @@ def main():
         env = market.env_factor(lines.get(r["team"]), r["team_proj"])
         row = {"id": int(r["player_id"]), "name": r["name"], "team": r["team"], "opp": r["opp"],
                "pos": r["pos"], "game_id": int(r["game_id"]), "toi": round(r["proj_toi"], 1),
-               "sog": round(r["lam_sog"], 2), "env": round(env, 3)}
+               "exp_sog": round(r["lam_sog"], 2), "env": round(env, 3)}
         word = TEAM_WORDS.get(r["team"], "~")
         find = lambda side: next((v for (k, n, t), v in odds.items()
                                   if k == side and n == norm(r["name"]) and word in t), None)
-        for kind, lam in (("goal", r["lam_goal"]), ("assist", r["lam_assist"])):
-            row[kind] = {"p_model": round(1 - math.exp(-float(lam) * env), 4)}
-            if find(kind):
-                row[kind].update(prices=find(kind), other=find(kind + "_other") or {})
+        row["assist"] = {"p_model": round(1 - math.exp(-float(r["lam_assist"]) * env), 4)}
+        if find("assist"):
+            row["assist"].update(prices=find("assist"), other=find("assist_other") or {})
+        for line in SOG_LINES:  # shots aren't scaled by the game-line env (that's about goals)
+            key = f"sog{line}"
+            if find(key) or (line == 1.5 and not odds):
+                row[key] = {"p_model": round(float(m.dist_sf(int(line), r["lam_sog"], SOG_R)), 4)}
+                if find(key):
+                    row[key].update(prices=find(key), other=find(key + "_other") or {})
         out["players"].append(row)
     market.market_view(out["players"])
+    keys = set()
     for row in out["players"]:  # final chance = model blended with the market, then EV at the best price
-        for kind in ("goal", "assist"):
-            mk = row[kind]
-            p = mk["p_model"] if mk.get("p_mkt") is None else (
-                market.MODEL_WEIGHT[kind] * mk["p_model"] + (1 - market.MODEL_WEIGHT[kind]) * mk["p_mkt"])
+        for kind in [k for k, v in row.items() if isinstance(v, dict) and "p_model" in v]:
+            keys.add(kind)
+            mk, w = row[kind], market.MODEL_WEIGHT[market.base(kind)]
+            p = mk["p_model"] if mk.get("p_mkt") is None else w * mk["p_model"] + (1 - w) * mk["p_mkt"]
             mk.update(p=round(p, 4), fair=fair_american(p))
             if mk.get("prices"):
                 book = max(mk["prices"], key=mk["prices"].get)
                 mk.update(price=mk["prices"][book], book=book, ev=round(p * decimal(mk["prices"][book]) - 1, 4))
-                mk["likely"] = bool(p >= market.LIKELY_MIN[kind] and mk["price"] <= market.LIKELY_MAX_PRICE
-                                    and mk["ev"] >= market.PRICE_CHECK)
+                mk["likely"] = bool(p >= market.LIKELY_MIN[market.base(kind)] and mk["ev"] >= market.PRICE_CHECK
+                                    and market.LIKELY_MIN_PRICE <= mk["price"] <= market.LIKELY_MAX_PRICE)
             mk.pop("other", None)
+    out["markets"] = sorted(keys, key=lambda k: (k != "assist", k))
     out["max_price"] = market.MAX_PRICE
     out["likely_rules"] = {"min": market.LIKELY_MIN, "max_price": market.LIKELY_MAX_PRICE,
-                           "price_check": market.PRICE_CHECK}
+                           "min_price": market.LIKELY_MIN_PRICE, "price_check": market.PRICE_CHECK}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
     print(f"{date}: {len(games)} games, {len(out['players'])} players. {out['odds_status']}")
