@@ -23,6 +23,9 @@ MARKETS = {"sog": "player_shots_on_goal", "assist": "player_assists"}
 SOG_LINES = (1.5, 2.5, 3.5, 4.5)   # each line is its own prop: "sog2.5" = over 2.5 shots
 # Only books you can bet (up to 10 costs the same). Fanatics (fanatics) needs the paid odds plan.
 BOOKS = "draftkings,fanduel,betmgm,hardrockbet,espnbet,betrivers,betparx"
+# Odds cost: 2 credits per game for props + 2 for game lines. When the month's credits run low,
+# skip game lines (they only nudge assists) so prop prices last until the plan resets.
+LINES_MIN_CREDITS = 150
 TEAM_WORDS = {"ANA": "ducks", "BOS": "bruins", "BUF": "sabres", "CAR": "hurricanes", "CBJ": "jackets",
     "CGY": "flames", "CHI": "blackhawks", "COL": "avalanche", "DAL": "stars", "DET": "wings",
     "EDM": "oilers", "FLA": "panthers", "LAK": "kings", "MIN": "wild", "MTL": "canadiens",
@@ -74,9 +77,9 @@ def season_rows(date):
 
 
 def fetch_odds(date):
-    """Every book's price per player for each market. Returns (odds, status)."""
+    """Every book's price per player for each market. Returns (odds, status, credits left)."""
     if not ODDS_KEY:
-        return {}, "No odds key set. Showing fair odds only."
+        return {}, "No odds key set. Showing fair odds only.", None
     try:
         events = requests.get(f"{ODDS_BASE}/events", params={"apiKey": ODDS_KEY}, timeout=30).json()
         et = ZoneInfo("America/New_York")
@@ -102,9 +105,9 @@ def fetch_odds(date):
                         key = (side, norm(o.get("description")), teams)
                         odds.setdefault(key, {})[book.get("title", book.get("key"))] = o["price"]
         n = len(todays)
-        return odds, f"Odds from {n} game{'' if n == 1 else 's'}. {left} odds credits left this month."
+        return odds, f"Odds from {n} game{'' if n == 1 else 's'}. {left} odds credits left this month.", left
     except Exception as exc:  # the board still works without odds
-        return {}, f"Odds pull failed ({exc.__class__.__name__}). Showing fair odds only."
+        return {}, f"Odds pull failed ({exc.__class__.__name__}). Showing fair odds only.", None
 
 
 def main():
@@ -135,12 +138,14 @@ def main():
     names = dict(zip(pd.concat(gg)["player_id"], pd.concat(gg)["name"]))
     out["goalies"] = {t: names.get(g, "Unknown") for t, g in zip(starters["team"], starters["goalie_id"])}
 
-    odds, out["odds_status"] = fetch_odds(date)
+    odds, out["odds_status"], left = fetch_odds(date)
+    low = left is not None and str(left).isdigit() and int(left) < LINES_MIN_CREDITS
     try:  # the market's expected goals for each team, from moneylines and totals
-        lines = market.game_lines(ODDS_KEY, ODDS_BASE, BOOKS, date, TEAM_WORDS, ZoneInfo("America/New_York")) if ODDS_KEY else {}
+        lines = market.game_lines(ODDS_KEY, ODDS_BASE, BOOKS, date, TEAM_WORDS,
+                                  ZoneInfo("America/New_York")) if ODDS_KEY and not low else {}
     except Exception:
         lines = {}
-    out["odds_status"] += f" Game lines for {len(lines) // 2} games."
+    out["odds_status"] += " Game lines skipped to save credits." if low else f" Game lines for {len(lines) // 2} games."
     for _, r in proj.iterrows():
         env = market.env_factor(lines.get(r["team"]), r["team_proj"])
         row = {"id": int(r["player_id"]), "name": r["name"], "team": r["team"], "opp": r["opp"],
