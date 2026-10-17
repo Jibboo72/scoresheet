@@ -1,5 +1,5 @@
 (function(){
-  var DATA=null, market="goal", game="all";
+  var DATA=null, market="sog", game="all";
   var BEST=0.05, FLAG=0.30;
   var $=function(id){return document.getElementById(id)};
   var pct=function(v){return (v*100).toFixed(0)+"%"};
@@ -7,14 +7,24 @@
   var ev=function(v){return (v>0?"+":"")+(v*100).toFixed(0)+"%"};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
 
+  // "sog2.5" is over 2.5 shots. The Shots tab shows every line; other tabs show their one market.
+  var lab=function(k){return k.indexOf("sog")===0?"over "+k.slice(3)+" shots":k==="goal"?"goal":"assist"};
+  function keys(){
+    var all=DATA.markets||["goal","assist"];
+    return market==="sog"?all.filter(function(k){return k.indexOf("sog")===0}):[market];
+  }
   function rows(){
-    return DATA.players.filter(function(p){return game==="all"||String(p.game_id)===game})
-      .map(function(p){return {p:p, m:p[market]}});
+    var out=[], ks=keys();
+    DATA.players.forEach(function(p){
+      if(game!=="all"&&String(p.game_id)!==game) return;
+      ks.forEach(function(k){ if(p[k]) out.push({p:p, m:p[k], k:k}) });
+    });
+    return out;
   }
   function playItem(r){
     var li=document.createElement("li"); li.className="play";
     li.innerHTML="<span class='who'>"+esc(r.p.name)+"</span>"+
-      "<span class='game'>"+r.p.team+" vs "+r.p.opp+"</span>"+
+      "<span class='game'>"+r.p.team+" vs "+r.p.opp+(r.k?", "+lab(r.k):"")+"</span>"+
       "<span class='nums'>Model <b>"+pct(r.m.p)+"</b>, fair "+am(r.m.fair)+", best <b>"+am(r.m.price)+"</b> "+esc(r.m.book)+"</span>"+
       "<span class='ev'><b>"+ev(r.m.ev)+"</b><span>EV</span></span>";
     return li;
@@ -23,18 +33,14 @@
     var r=DATA.likely_rules, list=[];
     DATA.players.forEach(function(p){
       if(game!=="all"&&String(p.game_id)!==game) return;
-      ["goal","assist"].forEach(function(k){ if(p[k]&&p[k].likely) list.push({p:p, m:p[k], k:k}) });
+      (DATA.markets||["goal","assist"]).forEach(function(k){ if(p[k]&&p[k].likely) list.push({p:p, m:p[k], k:k}) });
     });
     list.sort(function(a,b){return b.m.ev-a.m.ev});
     var ol=$("likely"); ol.innerHTML="";
-    list.forEach(function(x){
-      var li=playItem(x);
-      li.querySelector(".game").textContent=x.p.team+" vs "+x.p.opp+", "+(x.k==="goal"?"goal":"assist");
-      ol.appendChild(li);
-    });
+    list.forEach(function(x){ol.appendChild(playItem(x))});
     $("likelyBlock").hidden=!r;
     if(r) $("likelyNote").textContent = list.length
-      ? "Assists at "+pct(r.min.assist)+"+ or goals at "+pct(r.min.goal)+"+, priced +"+r.max_price+" or shorter, never more than "+Math.round(-r.price_check*100)+"% over fair. Ranked by price edge, best first."
+      ? "Shots at "+pct(r.min.sog||0.55)+"+ or assists at "+pct(r.min.assist)+"+, priced between "+(r.min_price||-250)+" and +"+r.max_price+", never more than "+Math.round(-r.price_check*100)+"% over fair. Ranked by price edge, best first."
       : "Nothing passes the hit-chance and price checks right now.";
   }
   function render(){
@@ -74,7 +80,7 @@
     var tb=$("all"); tb.innerHTML="";
     rs.sort(function(a,b){return b.m.p-a.m.p}).forEach(function(r){
       var tr=document.createElement("tr");
-      tr.innerHTML="<td>"+esc(r.p.name)+"<span class='sub'>"+r.p.team+" vs "+r.p.opp+"</span></td>"+
+      tr.innerHTML="<td>"+esc(r.p.name)+"<span class='sub'>"+r.p.team+" vs "+r.p.opp+(r.k.indexOf("sog")===0?", "+lab(r.k):"")+"</span></td>"+
         "<td>"+pct(r.m.p)+"</td><td>"+am(r.m.fair)+"</td><td>"+am(r.m.price)+"</td>"+
         "<td class='"+(r.m.ev>=BEST?"pos":"")+"'>"+(r.m.ev==null?"—":ev(r.m.ev))+"</td>";
       tb.appendChild(tr);
