@@ -16,15 +16,16 @@ ENV_WEIGHT = 0.7     # how far team scoring moves toward the market's game lines
 # Final chance = this much model + the rest market. Through 9 graded nights the model ran hot on
 # both markets (most of all where it disagreed with the books by 25%+), so both lean on the market.
 # The sim and the calibration log record both chances to keep tuning this.
-MODEL_WEIGHT = {"goal": 0.3, "assist": 0.3}
+MODEL_WEIGHT = {"goal": 0.3, "assist": 0.3, "sog": 0.5}  # shots: the model's best market in the backtest
 MAX_PRICE = 750      # main bets stop here; longer prices are still logged as long shots
 # Anytime-goal props usually only have a Yes price. Fair chance = book's chance ** this power,
 # which takes more of the book's cut off long shots than favorites (books pad long shots most).
 # 1.15 matched the first 300 graded goal bets; the calibration log will keep checking it.
 GOAL_DEVIG_POWER = 1.15
 # "Most likely to hit" strategy: pick by chance first, then let price decide.
-LIKELY_MIN = {"goal": 0.30, "assist": 0.35}   # final chance needed to make the pool
+LIKELY_MIN = {"goal": 0.30, "assist": 0.35, "sog": 0.55}   # final chance needed to make the pool
 LIKELY_MAX_PRICE = 200                        # nothing longer than +200
+LIKELY_MIN_PRICE = -250                       # nothing shorter than -250 (pays too little in parlays)
 PRICE_CHECK = -0.03                           # never pay more than 3% over our fair price
 ENV_CLAMP = (0.75, 1.33)
 
@@ -94,6 +95,11 @@ def env_factor(market_goals, model_goals):
     return float(np.clip(target / model_goals, *ENV_CLAMP))
 
 
+def base(key):
+    """Market family of a prop key: "sog2.5" -> "sog" (over 2.5 shots), "assist" -> "assist"."""
+    return "sog" if key.startswith("sog") else key
+
+
 def market_view(rows):
     """Adds the market's fair chance to every priced prop.
 
@@ -103,7 +109,7 @@ def market_view(rows):
     most of the book's cut in and made long shots look like value every night.
     """
     for r in rows:
-        for kind in ("goal", "assist"):
+        for kind in [k for k, v in r.items() if isinstance(v, dict) and "p_model" in v]:
             m = r[kind]
             fair = [two_way(m["prices"][b], m["other"][b]) for b in m.get("prices", {}) if b in m.get("other", {})]
             if fair:
