@@ -4,7 +4,8 @@
   var am=function(p){return p==null?"—":(p>0?"+"+p:""+p)};
   var u=function(v){return (v>0?"+":"")+v.toFixed(2)};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
-  var label={goal:"Anytime goal",assist:"1+ assist"};
+  var label=function(k){return k.indexOf("sog")===0?"Over "+k.slice(3)+" shots":k==="goal"?"Anytime goal":"1+ assist"};
+  var isSog=function(b){return b.market.indexOf("sog")===0};
 
   function sum(a,f){return a.reduce(function(t,x){return t+f(x)},0)}
   function group(name, picks){
@@ -30,8 +31,9 @@
     $("fExp").textContent=pct(graded.length?sum(graded,function(b){return b.p})/graded.length:null);
 
     var tb=$("splits"); tb.innerHTML="";
-    [group("All picks",log), group(label.goal,log.filter(function(b){return b.market==="goal"})),
-     group(label.assist,log.filter(function(b){return b.market==="assist"})),
+    [group("All picks",log), group("Shots on goal",log.filter(isSog)),
+     group("1+ assist",log.filter(function(b){return b.market==="assist"})),
+     group("Anytime goal (dropped Oct 17)",log.filter(function(b){return b.market==="goal"})),
      group("Value picks, 5%+ edge",log.filter(function(b){return b.kind==="bet"})),
      group("Most likely picks",log.filter(function(b){return b.likely})),
      group("Main bets, +750 or shorter",log.filter(function(b){return b.kind==="bet"&&b.price!=null&&b.price<=750})),
@@ -61,7 +63,7 @@
     var pl=$("pending"); pl.innerHTML="";
     pend.forEach(function(b){
       var li=document.createElement("li"); li.className="play";
-      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+label[b.market]+"</span>"+
+      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+label(b.market)+"</span>"+
         "<span class='nums'>Model <b>"+pct(b.p)+"</b>"+(b.price!=null?", logged at <b>"+am(b.price)+"</b> "+esc(b.book||""):", fair "+am(b.fair))+"</span>"+
         "<span class='ev'><b>"+(b.ev!=null?(b.ev>0?"+":"")+(b.ev*100).toFixed(0)+"%":"Watch")+"</b><span>"+(b.ev!=null?"EV":"")+"</span></span>";
       pl.appendChild(li);
@@ -72,7 +74,7 @@
     log.filter(function(b){return b.status!=="pending"}).slice().reverse().forEach(function(b){
       var res=b.status==="win"?"<span style='color:var(--blue);font-weight:600'>Win"+(b.units!=null?" "+u(b.units):"")+"</span>"
         :b.status==="loss"?"<span style='color:var(--goal)'>Loss</span>":"<span class='muted'>Void</span>";
-      hist.appendChild(row([esc(b.name)+"<span class='sub'>"+b.date+"</span>", label[b.market], am(b.price!=null?b.price:null), res]));
+      hist.appendChild(row([esc(b.name)+"<span class='sub'>"+b.date+"</span>", label(b.market), am(b.price!=null?b.price:null), res]));
     });
   }
   fetch("data/sim_log.json",{cache:"no-store"})
