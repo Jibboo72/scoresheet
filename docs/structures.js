@@ -10,7 +10,7 @@
   var money=function(v){return (v<0?"-$":"+$")+Math.abs(v).toFixed(0)};
   var am=function(p){return p>0?"+"+p:""+p};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
-  var label={goal:"goal",assist:"assist"};
+  var lab=function(k){return k.indexOf("sog")===0?"o"+k.slice(3)+" shots":k}; // "sog2.5" -> "o2.5 shots"
   function dec(p){return p>0?1+p/100:1+100/Math.abs(p)}
   function toAm(d){return d>=2?Math.round((d-1)*100):-Math.round(100/(d-1))}
   function books(b){ // this prop's prices at your books (board.py only pulls your books)
@@ -136,7 +136,7 @@
       (t.length?(BUDGET/t.length).toFixed(2):"0")+" each ("+Object.keys(per).map(function(k){return per[k]+" at "+k}).join(", ")+").";
     legs.forEach(function(l){
       var b=l.b, li=document.createElement("li"); li.className="play";
-      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+label[b.market]+"</span>"+
+      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+lab(b.market)+"</span>"+
         "<span class='nums'>"+Object.keys(l.px).map(function(k){return k+" <b>"+am(l.px[k])+"</b>"}).join(", ")+"</span>"+
         "<span class='ev'><b>"+(b.ev>0?"+":"")+(b.ev*100).toFixed(0)+"%</b><span>EV</span></span>";
       ol.appendChild(li);
@@ -144,7 +144,7 @@
     var slip=$("slip"); slip.innerHTML="";
     t.sort(function(a,b){return a.book<b.book?-1:a.book>b.book?1:b.dec-a.dec}).forEach(function(tk){
       var tr=document.createElement("tr");
-      tr.innerHTML="<td>"+tk.legs.map(function(l){return esc(l.b.name.split(" ").slice(-1)[0])+" "+label[l.b.market]}).join(" + ")+
+      tr.innerHTML="<td>"+tk.legs.map(function(l){return esc(l.b.name.split(" ").slice(-1)[0])+" "+lab(l.b.market)}).join(" + ")+
         "</td><td>"+tk.book+"</td><td>"+am(toAm(tk.dec))+"</td>";
       slip.appendChild(tr);
     });
