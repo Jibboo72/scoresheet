@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Sim">
+<meta name="apple-mobile-web-app-title" content="Scoresheet">
+<meta name="theme-color" content="#EDF2F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1D2E" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
 <title>Scoresheet — Sim</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +27,7 @@ td.lead{font-weight:600} td.lead::after{content:"Best so far";display:block;colo
 <main>
   <header class="masthead">
     <h1 class="wordmark">Scoresheet</h1>
-    <p>Sim mode<br><a href="board.html">Tonight</a> <a href="app.html">Backtest</a></p>
+    <p>Sim mode</p>
   </header>
   <div id="app" hidden>
     <div class="verdict">
@@ -87,5 +92,6 @@ td.lead{font-weight:600} td.lead::after{content:"Best so far";display:block;colo
 </main>
 <script src="sim.js"></script>
 <script src="structures.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>

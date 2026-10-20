@@ -93,3 +93,13 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
   .fact:first-child{padding-left:0} .fact:last-child{border-right:0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Bottom tab bar shared by every page (built by nav.js) */
+body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:repeat(3,1fr);
+  background:var(--board);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabbar a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  min-height:56px;color:var(--muted);text-decoration:none;font:600 13px/1 var(--body);letter-spacing:.2px}
+.tabbar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabbar a[aria-current="page"]{color:var(--blue)}
+.tabbar a[aria-current="page"]::before{content:"";position:absolute;top:0;left:22%;right:22%;height:3px;
+  border-radius:0 0 3px 3px;background:var(--blue)}

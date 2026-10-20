@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Scoresheet">
+<meta name="theme-color" content="#EDF2F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1D2E" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
 <title>Scoresheet — Tonight</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +21,7 @@
 <main>
   <header class="masthead">
     <h1 class="wordmark">Scoresheet</h1>
-    <p><span id="when">Tonight</span><br><a href="app.html">Backtest</a></p>
+    <p><span id="when">Tonight</span></p>
   </header>
   <div id="app" hidden>
     <div class="switch two" role="group" aria-label="Market">
@@ -58,5 +63,6 @@
   <footer>Projections from the Scoresheet model. Odds via The Odds API. Lineups aren’t confirmed here, so check scratches before betting.</footer>
 </main>
 <script src="board.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>
