@@ -82,11 +82,13 @@ def log_today(log, board):
         rows = [p for p in board.get("players", []) if p.get(market)]
         priced = [p for p in rows if p[market].get("ev") is not None]
         if priced:
-            picks = [p for p in priced if p[market]["ev"] >= MIN_EV or p[market].get("likely")]
+            picks = [p for p in priced if (p[market]["ev"] >= MIN_EV and not p[market].get("guard"))
+                     or p[market].get("likely")]
         else:
             picks = sorted(rows, key=lambda p: -p[market]["p"])[:WATCH_N]
         for p in picks:
-            kind = "watch" if not priced else "bet" if p[market]["ev"] >= MIN_EV else "likely"
+            kind = ("watch" if not priced else
+                    "bet" if p[market]["ev"] >= MIN_EV and not p[market].get("guard") else "likely")
             start = starts.get(p["game_id"])
             if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
                 continue  # never log after puck drop
@@ -97,7 +99,7 @@ def log_today(log, board):
                         "name": p["name"], "team": p["team"], "opp": p["opp"], "market": market,
                         "kind": kind, "p": mk["p"], "p_model": mk.get("p_model"), "p_mkt": mk.get("p_mkt"),
                         "fair": mk["fair"], "price": mk.get("price"), "book": mk.get("book"),
-                        "prices": mk.get("prices"), "ev": mk.get("ev"),
+                        "prices": mk.get("prices"), "under": mk.get("under"), "ev": mk.get("ev"),
                         "flag": bool(mk.get("ev") is not None and mk["ev"] >= FLAG_EV),
                         "likely": bool(mk.get("likely")),
                         "logged": now.isoformat(timespec="minutes"), "status": "pending",
@@ -139,7 +141,8 @@ def calibration(board):
                 continue
             rows.append({"game_id": p["game_id"], "player_id": p["id"], "name": p["name"], "pos": p.get("pos"),
                          "market": market, "p_model": mk.get("p_model"), "p_mkt": mk.get("p_mkt"),
-                         "prices": mk["prices"], "hit": None})  # hit: 1 yes, 0 no, -1 did not play
+                         "prices": mk["prices"], "under": mk.get("under"), "guard": bool(mk.get("guard")),
+                         "hit": None})  # hit: 1 yes, 0 no, -1 did not play
     path.write_text(json.dumps(rows, separators=(",", ":")))
 
 

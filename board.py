@@ -177,7 +177,13 @@ def main():
                 mk.update(price=mk["prices"][book], book=book, ev=round(p * decimal(mk["prices"][book]) - 1, 4))
                 mk["likely"] = bool(p >= market.LIKELY_MIN[market.base(kind)] and mk["ev"] >= market.PRICE_CHECK
                                     and market.LIKELY_MIN_PRICE <= mk["price"] <= market.LIKELY_MAX_PRICE)
-            mk.pop("other", None)
+            under = mk.pop("other", None)
+            if under:
+                mk["under"] = under  # No / Under prices, saved for the under-side study
+            limit = market.MAX_MODEL_OVER.get(market.base(kind))
+            if limit and mk.get("p_mkt") and mk["p_model"] > mk["p_mkt"] * limit:
+                mk["guard"] = True
+                mk["likely"] = False
     out["markets"] = sorted(keys, key=lambda k: (k != "assist", k))
     out["max_price"] = market.MAX_PRICE
     out["likely_rules"] = {"min": market.LIKELY_MIN, "max_price": market.LIKELY_MAX_PRICE,

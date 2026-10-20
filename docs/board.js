@@ -66,12 +66,12 @@
 
     var rs=rows(), priced=rs.filter(function(r){return r.m.ev!=null});
     var max=DATA.max_price||750;
-    var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG&&r.m.price<=max}).sort(function(a,b){return b.m.ev-a.m.ev});
-    var flags=priced.filter(function(r){return r.m.ev>=FLAG}).sort(function(a,b){return b.m.ev-a.m.ev});
+    var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG&&r.m.price<=max&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev});
+    var flags=priced.filter(function(r){return r.m.ev>=FLAG&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev});
     var ol=$("best"); ol.innerHTML=""; best.forEach(function(r){ol.appendChild(playItem(r))});
     $("bestNote").textContent = !priced.length
       ? "No sportsbook prices yet. Use the Fair column below and compare it to your book."
-      : best.length ? "Model edge of 5% or more against the best available price, at +"+max+" or shorter. Longer shots stay in the table below."
+      : best.length ? "Model edge of 5% or more against the best available price, at +"+max+" or shorter. Longer shots stay in the table below. Assists where the model is 15%+ above the books are skipped (marked “skip” below)."
       : "Nothing at +"+max+" or shorter clears a 5% edge right now. Passing is a fine bet.";
     var fl=$("flags"); fl.innerHTML=""; fl.className="plays flagged";
     flags.forEach(function(r){fl.appendChild(playItem(r))});
@@ -82,7 +82,7 @@
       var tr=document.createElement("tr");
       tr.innerHTML="<td>"+esc(r.p.name)+"<span class='sub'>"+r.p.team+" vs "+r.p.opp+(r.k.indexOf("sog")===0?", "+lab(r.k):"")+"</span></td>"+
         "<td>"+pct(r.m.p)+"</td><td>"+am(r.m.fair)+"</td><td>"+am(r.m.price)+"</td>"+
-        "<td class='"+(r.m.ev>=BEST?"pos":"")+"'>"+(r.m.ev==null?"—":ev(r.m.ev))+"</td>";
+        "<td class='"+(r.m.ev>=BEST&&!r.m.guard?"pos":"")+"'>"+(r.m.ev==null?"—":ev(r.m.ev))+(r.m.guard?"<span class='sub'>skip</span>":"")+"</td>";
       tb.appendChild(tr);
     });
   }

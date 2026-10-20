@@ -16,7 +16,12 @@ ENV_WEIGHT = 0.7     # how far team scoring moves toward the market's game lines
 # Final chance = this much model + the rest market. Through 9 graded nights the model ran hot on
 # both markets (most of all where it disagreed with the books by 25%+), so both lean on the market.
 # The sim and the calibration log record both chances to keep tuning this.
-MODEL_WEIGHT = {"goal": 0.3, "assist": 0.3, "sog": 0.5}  # shots: the model's best market in the backtest
+# Assists went to 0.5 on Oct 20: on 1,529 graded props, accuracy was best at a 40-50% model weight.
+MODEL_WEIGHT = {"goal": 0.3, "assist": 0.5, "sog": 0.5}  # shots: the model's best market in the backtest
+# Guard: when the model's chance is this far above the market's, the books usually know something
+# (line change, new role, injury). Through Oct 18 those assist props hit 17-19% vs 28% the market said.
+# Guarded props never count as plays; the sim and calibration log still record them.
+MAX_MODEL_OVER = {"assist": 1.15}
 MAX_PRICE = 750      # main bets stop here; longer prices are still logged as long shots
 # Anytime-goal props usually only have a Yes price. Fair chance = book's chance ** this power,
 # which takes more of the book's cut off long shots than favorites (books pad long shots most).
