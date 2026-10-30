@@ -45125,8 +45125,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45159,8 +45159,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.625
  },
  {
   "date": "2026-10-29",
@@ -45193,8 +45193,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.3
  },
  {
   "date": "2026-10-29",
@@ -45227,8 +45227,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45261,8 +45261,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45295,8 +45295,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.8
  },
  {
   "date": "2026-10-29",
@@ -45331,8 +45331,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45365,8 +45365,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.645
  },
  {
   "date": "2026-10-29",
@@ -45399,8 +45399,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.769
  },
  {
   "date": "2026-10-29",
@@ -45435,8 +45435,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45469,8 +45469,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.909
  },
  {
   "date": "2026-10-29",
@@ -45501,8 +45501,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.25
  },
  {
   "date": "2026-10-29",
@@ -45531,8 +45531,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45559,8 +45559,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.526
  },
  {
   "date": "2026-10-29",
@@ -45593,8 +45593,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.667
  },
  {
   "date": "2026-10-29",
@@ -45625,8 +45625,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45655,8 +45655,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.541
  },
  {
   "date": "2026-10-29",
@@ -45683,8 +45683,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.5
  },
  {
   "date": "2026-10-29",
@@ -45715,8 +45715,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.562
  },
  {
   "date": "2026-10-29",
@@ -45751,8 +45751,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45783,8 +45783,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.8
  },
  {
   "date": "2026-10-29",
@@ -45811,8 +45811,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 2.2
  },
  {
   "date": "2026-10-29",
@@ -45845,8 +45845,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.714
  },
  {
   "date": "2026-10-29",
@@ -45877,8 +45877,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.606
  },
  {
   "date": "2026-10-29",
@@ -45913,8 +45913,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -45945,8 +45945,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.667
  },
  {
   "date": "2026-10-29",
@@ -45981,8 +45981,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -46013,8 +46013,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.6
  },
  {
   "date": "2026-10-29",
@@ -46045,8 +46045,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.6
  },
  {
   "date": "2026-10-29",
@@ -46073,8 +46073,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -46101,8 +46101,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -46131,8 +46131,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.5
  },
  {
   "date": "2026-10-29",
@@ -46159,8 +46159,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-10-29",
@@ -46187,8 +46187,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 3.8
  },
  {
   "date": "2026-10-29",
@@ -46215,6 +46215,390 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-29T18:44+00:00",
+  "status": "win",
+  "units": 3.2
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8478403,
+  "name": "Jack Eichel",
+  "team": "VGK",
+  "opp": "NJD",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5555,
+  "p_model": 0.5555,
+  "p_mkt": null,
+  "fair": -125,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8479314,
+  "name": "Matthew Tkachuk",
+  "team": "FLA",
+  "opp": "WPG",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5161,
+  "p_model": 0.5161,
+  "p_mkt": null,
+  "fair": -107,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8481559,
+  "name": "Jack Hughes",
+  "team": "NJD",
+  "opp": "VGK",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5153,
+  "p_model": 0.5153,
+  "p_mkt": null,
+  "fair": -106,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8476460,
+  "name": "Mark Scheifele",
+  "team": "WPG",
+  "opp": "FLA",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5136,
+  "p_model": 0.5136,
+  "p_mkt": null,
+  "fair": -106,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8478483,
+  "name": "Mitch Marner",
+  "team": "VGK",
+  "opp": "NJD",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5034,
+  "p_model": 0.5034,
+  "p_mkt": null,
+  "fair": -101,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8475913,
+  "name": "Mark Stone",
+  "team": "VGK",
+  "opp": "NJD",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.4842,
+  "p_model": 0.4842,
+  "p_mkt": null,
+  "fair": 107,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8479407,
+  "name": "Jesper Bratt",
+  "team": "NJD",
+  "opp": "VGK",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.4399,
+  "p_model": 0.4399,
+  "p_mkt": null,
+  "fair": 127,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8478398,
+  "name": "Kyle Connor",
+  "team": "WPG",
+  "opp": "FLA",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.4348,
+  "p_model": 0.4348,
+  "p_mkt": null,
+  "fair": 130,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8480801,
+  "name": "Brady Tkachuk",
+  "team": "FLA",
+  "opp": "WPG",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8416,
+  "p_model": 0.8416,
+  "p_mkt": null,
+  "fair": -531,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8481559,
+  "name": "Jack Hughes",
+  "team": "NJD",
+  "opp": "VGK",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8267,
+  "p_model": 0.8267,
+  "p_mkt": null,
+  "fair": -477,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8478398,
+  "name": "Kyle Connor",
+  "team": "WPG",
+  "opp": "FLA",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8119,
+  "p_model": 0.8119,
+  "p_mkt": null,
+  "fair": -432,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8478403,
+  "name": "Jack Eichel",
+  "team": "VGK",
+  "opp": "NJD",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.7969,
+  "p_model": 0.7969,
+  "p_mkt": null,
+  "fair": -392,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020214,
+  "player_id": 8478414,
+  "name": "Timo Meier",
+  "team": "NJD",
+  "opp": "VGK",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.7771,
+  "p_model": 0.7771,
+  "p_mkt": null,
+  "fair": -349,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8477933,
+  "name": "Sam Reinhart",
+  "team": "FLA",
+  "opp": "WPG",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.7583,
+  "p_model": 0.7583,
+  "p_mkt": null,
+  "fair": -314,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020216,
+  "player_id": 8482679,
+  "name": "Matt Coronato",
+  "team": "CGY",
+  "opp": "SEA",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.7262,
+  "p_model": 0.7262,
+  "p_mkt": null,
+  "fair": -265,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-10-30",
+  "game_id": 2026020215,
+  "player_id": 8479314,
+  "name": "Matthew Tkachuk",
+  "team": "FLA",
+  "opp": "WPG",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.7233,
+  "p_model": 0.7233,
+  "p_mkt": null,
+  "fair": -261,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-10-30T18:20+00:00",
   "status": "pending",
   "units": null
  }
