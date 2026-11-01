@@ -46623,7 +46623,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46647,7 +46647,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46671,7 +46671,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46695,7 +46695,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46719,7 +46719,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -46743,7 +46743,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "void",
   "units": null
  },
  {
@@ -46767,7 +46767,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46791,7 +46791,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46815,7 +46815,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46839,7 +46839,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46863,7 +46863,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -46887,7 +46887,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -46911,6 +46911,1136 @@
   "flag": false,
   "likely": false,
   "logged": "2026-10-31T17:27+00:00",
+  "status": "win",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020230,
+  "player_id": 8476454,
+  "name": "Ryan Nugent-Hopkins",
+  "team": "EDM",
+  "opp": "NYR",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.3881,
+  "p_model": 0.4091,
+  "p_mkt": 0.3672,
+  "fair": 158,
+  "price": 165,
+  "book": "DraftKings",
+  "prices": {
+   "DraftKings": 165,
+   "theScore Bet": 150,
+   "BetMGM": 140,
+   "Hard Rock Bet": 155
+  },
+  "under": {
+   "DraftKings": -225,
+   "theScore Bet": -220,
+   "BetMGM": -190,
+   "Hard Rock Bet": -210
+  },
+  "ev": 0.0286,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020230,
+  "player_id": 8477934,
+  "name": "Leon Draisaitl",
+  "team": "EDM",
+  "opp": "NYR",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.5453,
+  "p_model": 0.5558,
+  "p_mkt": 0.5347,
+  "fair": -120,
+  "price": -120,
+  "book": "DraftKings",
+  "prices": {
+   "DraftKings": -120,
+   "theScore Bet": -135,
+   "BetMGM": -150,
+   "Hard Rock Bet": -135
+  },
+  "under": {
+   "DraftKings": -110,
+   "theScore Bet": 100,
+   "BetMGM": 110,
+   "Hard Rock Bet": 100
+  },
+  "ev": -0.0004,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8478440,
+  "name": "Dylan Strome",
+  "team": "WSH",
+  "opp": "MIN",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.3893,
+  "p_model": 0.3846,
+  "p_mkt": 0.394,
+  "fair": 157,
+  "price": 150,
+  "book": "Hard Rock Bet",
+  "prices": {
+   "DraftKings": 130,
+   "theScore Bet": 140,
+   "BetMGM": 105,
+   "Hard Rock Bet": 150
+  },
+  "under": {
+   "DraftKings": -180,
+   "theScore Bet": -200,
+   "BetMGM": -140,
+   "Hard Rock Bet": -200
+  },
+  "ev": -0.0268,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8479343,
+  "name": "Clayton Keller",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.527,
+  "p_model": 0.5266,
+  "p_mkt": 0.5274,
+  "fair": -111,
+  "price": -115,
+  "book": "BetMGM",
+  "prices": {
+   "DraftKings": -120,
+   "theScore Bet": -140,
+   "BetMGM": -115,
+   "Hard Rock Bet": -140
+  },
+  "under": {
+   "DraftKings": -110,
+   "theScore Bet": 105,
+   "BetMGM": -115,
+   "Hard Rock Bet": 105
+  },
+  "ev": -0.0147,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020230,
+  "player_id": 8480803,
+  "name": "Evan Bouchard",
+  "team": "EDM",
+  "opp": "NYR",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.5361,
+  "p_model": 0.5375,
+  "p_mkt": 0.5347,
+  "fair": -116,
+  "price": -120,
+  "book": "BetMGM",
+  "prices": {
+   "DraftKings": -140,
+   "theScore Bet": -135,
+   "BetMGM": -120,
+   "Hard Rock Bet": -135
+  },
+  "under": {
+   "DraftKings": 105,
+   "theScore Bet": 100,
+   "BetMGM": -110,
+   "Hard Rock Bet": 100
+  },
+  "ev": -0.0171,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8481533,
+  "name": "Trevor Zegras",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.3649,
+  "p_model": 0.3792,
+  "p_mkt": 0.3506,
+  "fair": 174,
+  "price": 175,
+  "book": "Hard Rock Bet",
+  "prices": {
+   "DraftKings": 165,
+   "theScore Bet": 165,
+   "BetMGM": 140,
+   "Hard Rock Bet": 175
+  },
+  "under": {
+   "DraftKings": -225,
+   "theScore Bet": -240,
+   "BetMGM": -190,
+   "Hard Rock Bet": -240
+  },
+  "ev": 0.0035,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8481656,
+  "name": "Aliaksei Protas",
+  "team": "WSH",
+  "opp": "MIN",
+  "market": "assist",
+  "kind": "bet",
+  "p": 0.2807,
+  "p_model": 0.2996,
+  "p_mkt": 0.2618,
+  "fair": 256,
+  "price": 275,
+  "book": "Hard Rock Bet",
+  "prices": {
+   "DraftKings": 265,
+   "theScore Bet": 240,
+   "BetMGM": 240,
+   "Hard Rock Bet": 275
+  },
+  "under": {
+   "DraftKings": -380,
+   "theScore Bet": -425,
+   "BetMGM": -325,
+   "Hard Rock Bet": -400
+  },
+  "ev": 0.0526,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020231,
+  "player_id": 8484153,
+  "name": "Leo Carlsson",
+  "team": "ANA",
+  "opp": "OTT",
+  "market": "assist",
+  "kind": "likely",
+  "p": 0.4632,
+  "p_model": 0.4695,
+  "p_mkt": 0.4569,
+  "fair": 116,
+  "price": 110,
+  "book": "Hard Rock Bet",
+  "prices": {
+   "DraftKings": -105,
+   "theScore Bet": 105,
+   "BetMGM": 100,
+   "Hard Rock Bet": 110
+  },
+  "under": {
+   "DraftKings": -130,
+   "theScore Bet": -150,
+   "BetMGM": -135,
+   "Hard Rock Bet": -150
+  },
+  "ev": -0.0273,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8471214,
+  "name": "Alex Ovechkin",
+  "team": "WSH",
+  "opp": "MIN",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.5995,
+  "p_model": 0.6346,
+  "p_mkt": 0.5644,
+  "fair": -150,
+  "price": -135,
+  "book": "Hard Rock Bet",
+  "prices": {
+   "DraftKings": -175,
+   "Hard Rock Bet": -135
+  },
+  "under": {
+   "DraftKings": 130,
+   "Hard Rock Bet": 100
+  },
+  "ev": 0.0436,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8475314,
+  "name": "Anders Lee",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.5639,
+  "p_model": 0.6048,
+  "p_mkt": 0.5231,
+  "fair": -129,
+  "price": -120,
+  "book": "theScore Bet",
+  "prices": {
+   "DraftKings": -130,
+   "theScore Bet": -120,
+   "BetMGM": -140,
+   "Hard Rock Bet": -140
+  },
+  "under": {
+   "DraftKings": -105,
+   "theScore Bet": -110,
+   "BetMGM": -105,
+   "Hard Rock Bet": -115
+  },
+  "ev": 0.0339,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8476399,
+  "name": "Blake Coleman",
+  "team": "MIN",
+  "opp": "WSH",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.6289,
+  "p_model": 0.656,
+  "p_mkt": 0.6017,
+  "fair": -169,
+  "price": -178,
+  "book": "FanDuel",
+  "prices": {
+   "FanDuel": -178,
+   "DraftKings": -195,
+   "theScore Bet": -180,
+   "Hard Rock Bet": -180
+  },
+  "under": {
+   "FanDuel": 136,
+   "DraftKings": 145,
+   "theScore Bet": 135,
+   "Hard Rock Bet": 135
+  },
+  "ev": -0.0179,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8476432,
+  "name": "Boone Jenner",
+  "team": "WSH",
+  "opp": "MIN",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.5035,
+  "p_model": 0.5675,
+  "p_mkt": 0.4396,
+  "fair": -101,
+  "price": 115,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 115,
+   "Hard Rock Bet": 110
+  },
+  "under": {
+   "theScore Bet": -150,
+   "Hard Rock Bet": -150
+  },
+  "ev": 0.0826,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8477951,
+  "name": "Nick Schmaltz",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.6489,
+  "p_model": 0.6865,
+  "p_mkt": 0.6113,
+  "fair": -185,
+  "price": -190,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": -190
+  },
+  "under": {
+   "theScore Bet": 140
+  },
+  "ev": -0.0096,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8477989,
+  "name": "Christian Dvorak",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.4492,
+  "p_model": 0.4778,
+  "p_mkt": 0.4206,
+  "fair": 123,
+  "price": 135,
+  "book": "theScore Bet",
+  "prices": {
+   "DraftKings": 120,
+   "theScore Bet": 135,
+   "BetMGM": 105,
+   "Hard Rock Bet": 120
+  },
+  "under": {
+   "DraftKings": -165,
+   "theScore Bet": -180,
+   "BetMGM": -150,
+   "Hard Rock Bet": -170
+  },
+  "ev": 0.0556,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8478439,
+  "name": "Travis Konecny",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.5558,
+  "p_model": 0.5702,
+  "p_mkt": 0.5414,
+  "fair": -125,
+  "price": -120,
+  "book": "DraftKings",
+  "prices": {
+   "DraftKings": -120,
+   "theScore Bet": -135,
+   "BetMGM": -145,
+   "Hard Rock Bet": -140
+  },
+  "under": {
+   "DraftKings": -110,
+   "theScore Bet": 105,
+   "BetMGM": 100,
+   "Hard Rock Bet": 105
+  },
+  "ev": 0.019,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8479410,
+  "name": "Mikhail Sergachev",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.6065,
+  "p_model": 0.6267,
+  "p_mkt": 0.5862,
+  "fair": -154,
+  "price": -155,
+  "book": "theScore Bet",
+  "prices": {
+   "FanDuel": -156,
+   "DraftKings": -170,
+   "theScore Bet": -155,
+   "BetMGM": -185,
+   "Hard Rock Bet": -175
+  },
+  "under": {
+   "FanDuel": 120,
+   "DraftKings": 125,
+   "theScore Bet": 120,
+   "BetMGM": 125,
+   "Hard Rock Bet": 130
+  },
+  "ev": -0.0023,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8480015,
+  "name": "Owen Tippett",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.6522,
+  "p_model": 0.6906,
+  "p_mkt": 0.6137,
+  "fair": -187,
+  "price": -190,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": -190,
+   "Hard Rock Bet": -190
+  },
+  "under": {
+   "theScore Bet": 140,
+   "Hard Rock Bet": 145
+  },
+  "ev": -0.0046,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8480849,
+  "name": "Barrett Hayton",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.4907,
+  "p_model": 0.5448,
+  "p_mkt": 0.4367,
+  "fair": 104,
+  "price": 115,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 115,
+   "BetMGM": -110,
+   "Hard Rock Bet": 115
+  },
+  "under": {
+   "theScore Bet": -150,
+   "BetMGM": -135,
+   "Hard Rock Bet": -150
+  },
+  "ev": 0.0551,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8481533,
+  "name": "Trevor Zegras",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.5806,
+  "p_model": 0.6381,
+  "p_mkt": 0.5231,
+  "fair": -138,
+  "price": -120,
+  "book": "theScore Bet",
+  "prices": {
+   "FanDuel": -138,
+   "DraftKings": -135,
+   "theScore Bet": -120,
+   "BetMGM": -125,
+   "Hard Rock Bet": -135
+  },
+  "under": {
+   "FanDuel": 106,
+   "DraftKings": 100,
+   "theScore Bet": -110,
+   "BetMGM": -115,
+   "Hard Rock Bet": -110
+  },
+  "ev": 0.0644,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020231,
+  "player_id": 8482116,
+  "name": "Tim St\u00fctzle",
+  "team": "OTT",
+  "opp": "ANA",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.6228,
+  "p_model": 0.6499,
+  "p_mkt": 0.5957,
+  "fair": -165,
+  "price": -174,
+  "book": "FanDuel",
+  "prices": {
+   "FanDuel": -174,
+   "DraftKings": -175,
+   "theScore Bet": -180
+  },
+  "under": {
+   "FanDuel": 132,
+   "DraftKings": 130,
+   "theScore Bet": 135
+  },
+  "ev": -0.0193,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020230,
+  "player_id": 8482157,
+  "name": "Will Cuylle",
+  "team": "NYR",
+  "opp": "EDM",
+  "market": "sog1.5",
+  "kind": "likely",
+  "p": 0.5829,
+  "p_model": 0.5963,
+  "p_mkt": 0.5695,
+  "fair": -140,
+  "price": -130,
+  "book": "BetMGM",
+  "prices": {
+   "FanDuel": -144,
+   "DraftKings": -160,
+   "theScore Bet": -155,
+   "BetMGM": -130,
+   "Hard Rock Bet": -175
+  },
+  "under": {
+   "FanDuel": 110,
+   "DraftKings": 115,
+   "theScore Bet": 120,
+   "BetMGM": -111,
+   "Hard Rock Bet": 130
+  },
+  "ev": 0.0313,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8482159,
+  "name": "Tyson Foerster",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.5583,
+  "p_model": 0.6165,
+  "p_mkt": 0.5,
+  "fair": -126,
+  "price": -113,
+  "book": "FanDuel",
+  "prices": {
+   "FanDuel": -113,
+   "DraftKings": -140,
+   "theScore Bet": -115,
+   "BetMGM": -145,
+   "Hard Rock Bet": -115
+  },
+  "under": {
+   "FanDuel": -115,
+   "DraftKings": 105,
+   "theScore Bet": -115,
+   "BetMGM": 100,
+   "Hard Rock Bet": -125
+  },
+  "ev": 0.0523,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8485406,
+  "name": "Porter Martone",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog1.5",
+  "kind": "bet",
+  "p": 0.5635,
+  "p_model": 0.6154,
+  "p_mkt": 0.5115,
+  "fair": -129,
+  "price": -115,
+  "book": "theScore Bet",
+  "prices": {
+   "DraftKings": -130,
+   "theScore Bet": -115,
+   "BetMGM": -135,
+   "Hard Rock Bet": -115
+  },
+  "under": {
+   "DraftKings": -105,
+   "theScore Bet": -115,
+   "BetMGM": -110,
+   "Hard Rock Bet": -115
+  },
+  "ev": 0.0534,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8476432,
+  "name": "Boone Jenner",
+  "team": "WSH",
+  "opp": "MIN",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.2596,
+  "p_model": 0.3096,
+  "p_mkt": 0.2096,
+  "fair": 285,
+  "price": 340,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 340
+  },
+  "under": {
+   "theScore Bet": -600
+  },
+  "ev": 0.1422,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8477951,
+  "name": "Nick Schmaltz",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.4138,
+  "p_model": 0.4389,
+  "p_mkt": 0.3887,
+  "fair": 142,
+  "price": 160,
+  "book": "theScore Bet",
+  "prices": {
+   "FanDuel": 134,
+   "DraftKings": 140,
+   "theScore Bet": 160,
+   "BetMGM": 125,
+   "Hard Rock Bet": 145
+  },
+  "under": {
+   "FanDuel": -176,
+   "DraftKings": -190,
+   "theScore Bet": -220,
+   "BetMGM": -185,
+   "Hard Rock Bet": -240
+  },
+  "ev": 0.0759,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8477989,
+  "name": "Christian Dvorak",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.1985,
+  "p_model": 0.2288,
+  "p_mkt": 0.1681,
+  "fair": 404,
+  "price": 450,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 450
+  },
+  "under": {
+   "theScore Bet": -900
+  },
+  "ev": 0.0915,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020230,
+  "player_id": 8478402,
+  "name": "Connor McDavid",
+  "team": "EDM",
+  "opp": "NYR",
+  "market": "sog2.5",
+  "kind": "likely",
+  "p": 0.5583,
+  "p_model": 0.5714,
+  "p_mkt": 0.5451,
+  "fair": -126,
+  "price": -135,
+  "book": "FanDuel",
+  "prices": {
+   "FanDuel": -135,
+   "DraftKings": -145,
+   "theScore Bet": -150,
+   "Hard Rock Bet": -145
+  },
+  "under": {
+   "FanDuel": 104,
+   "DraftKings": 105,
+   "theScore Bet": 115,
+   "Hard Rock Bet": 100
+  },
+  "ev": -0.0282,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020228,
+  "player_id": 8478493,
+  "name": "Joel Eriksson Ek",
+  "team": "MIN",
+  "opp": "WSH",
+  "market": "sog2.5",
+  "kind": "likely",
+  "p": 0.5675,
+  "p_model": 0.5779,
+  "p_mkt": 0.5572,
+  "fair": -131,
+  "price": -125,
+  "book": "DraftKings",
+  "prices": {
+   "FanDuel": -146,
+   "DraftKings": -125,
+   "theScore Bet": -150,
+   "BetMGM": -165,
+   "Hard Rock Bet": -155
+  },
+  "under": {
+   "FanDuel": 112,
+   "DraftKings": -110,
+   "theScore Bet": 115,
+   "BetMGM": 115,
+   "Hard Rock Bet": 105
+  },
+  "ev": 0.0216,
+  "flag": false,
+  "likely": true,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8480849,
+  "name": "Barrett Hayton",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.2488,
+  "p_model": 0.288,
+  "p_mkt": 0.2096,
+  "fair": 302,
+  "price": 340,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 340
+  },
+  "under": {
+   "theScore Bet": -600
+  },
+  "ev": 0.0947,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8481533,
+  "name": "Trevor Zegras",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.3244,
+  "p_model": 0.3831,
+  "p_mkt": 0.2657,
+  "fair": 208,
+  "price": 250,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 250
+  },
+  "under": {
+   "theScore Bet": -375
+  },
+  "ev": 0.1354,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020231,
+  "player_id": 8482116,
+  "name": "Tim St\u00fctzle",
+  "team": "OTT",
+  "opp": "ANA",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.3914,
+  "p_model": 0.3963,
+  "p_mkt": 0.3866,
+  "fair": 155,
+  "price": 170,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 170,
+   "BetMGM": 130,
+   "Hard Rock Bet": 140
+  },
+  "under": {
+   "theScore Bet": -240,
+   "BetMGM": -190,
+   "Hard Rock Bet": -195
+  },
+  "ev": 0.0569,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8482159,
+  "name": "Tyson Foerster",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.3051,
+  "p_model": 0.3596,
+  "p_mkt": 0.2507,
+  "fair": 228,
+  "price": 270,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 270
+  },
+  "under": {
+   "theScore Bet": -420
+  },
+  "ev": 0.1291,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8485406,
+  "name": "Porter Martone",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog2.5",
+  "kind": "bet",
+  "p": 0.3081,
+  "p_model": 0.3585,
+  "p_mkt": 0.2577,
+  "fair": 225,
+  "price": 260,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 260
+  },
+  "under": {
+   "theScore Bet": -400
+  },
+  "ev": 0.1092,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8477951,
+  "name": "Nick Schmaltz",
+  "team": "UTA",
+  "opp": "PHI",
+  "market": "sog3.5",
+  "kind": "bet",
+  "p": 0.2124,
+  "p_model": 0.2401,
+  "p_mkt": 0.1848,
+  "fair": 371,
+  "price": 400,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 400
+  },
+  "under": {
+   "theScore Bet": -750
+  },
+  "ev": 0.0622,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-01",
+  "game_id": 2026020229,
+  "player_id": 8480015,
+  "name": "Owen Tippett",
+  "team": "PHI",
+  "opp": "UTA",
+  "market": "sog3.5",
+  "kind": "bet",
+  "p": 0.2145,
+  "p_model": 0.2443,
+  "p_mkt": 0.1848,
+  "fair": 366,
+  "price": 400,
+  "book": "theScore Bet",
+  "prices": {
+   "theScore Bet": 400
+  },
+  "under": {
+   "theScore Bet": -750
+  },
+  "ev": 0.0727,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-01T18:12+00:00",
   "status": "pending",
   "units": null
  }
