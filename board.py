@@ -180,12 +180,18 @@ def main():
             under = mk.pop("other", None)
             if under:
                 mk["under"] = under  # No / Under prices, saved for the under-side study
+                fade = market.UNDER_FADE.get(market.base(kind))
+                if fade and mk.get("p_mkt") and mk["p_model"] <= mk["p_mkt"] * fade:
+                    ub = max(under, key=under.get)
+                    mk["fade"] = {"price": under[ub], "book": ub, "p": round(1 - p, 4),
+                                  "ev": round((1 - p) * decimal(under[ub]) - 1, 4)}
             limit = market.MAX_MODEL_OVER.get(market.base(kind))
             if limit and mk.get("p_mkt") and mk["p_model"] > mk["p_mkt"] * limit:
                 mk["guard"] = True
                 mk["likely"] = False
     out["markets"] = sorted(keys, key=lambda k: (k != "assist", k))
     out["max_price"] = market.MAX_PRICE
+    out["value_markets"] = list(market.VALUE_MARKETS)
     out["likely_rules"] = {"min": market.LIKELY_MIN, "max_price": market.LIKELY_MAX_PRICE,
                            "min_price": market.LIKELY_MIN_PRICE, "price_check": market.PRICE_CHECK}
     OUT.parent.mkdir(parents=True, exist_ok=True)

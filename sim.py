@@ -54,6 +54,11 @@ def hit(line, market):
     return line[market] >= 1
 
 
+def won(line, b):
+    """Over bets cash when the prop hits; under bets ("side": "under") cash when it doesn't."""
+    return hit(line, b["market"]) != (b.get("side") == "under")
+
+
 def grade(log):
     now = datetime.now(timezone.utc)
     pending_games = {b["game_id"] for b in log if b["status"] == "pending"}
@@ -64,7 +69,7 @@ def grade(log):
                 if b["player_id"] not in stats:
                     b["status"] = "void"  # scratched: books refund
                 else:
-                    b["status"] = "win" if hit(stats[b["player_id"]], b["market"]) else "loss"
+                    b["status"] = "win" if won(stats[b["player_id"]], b) else "loss"
             elif now - datetime.fromisoformat(b["logged"]) > timedelta(days=STALE_DAYS):
                 b["status"] = "void"
             if b["status"] != "pending":
@@ -76,23 +81,36 @@ def grade(log):
 def log_today(log, board):
     now = datetime.now(timezone.utc)
     starts = {g["id"]: g.get("start") for g in board.get("games", [])}
-    seen = {(b["date"], b["player_id"], b["market"]) for b in log}
+    seen = {(b["date"], b["player_id"], b["market"], b.get("side", "over")) for b in log}
+    value_markets = board.get("value_markets", ["goal", "assist", "sog"])
     new = []
     for market in board.get("markets", ["goal", "assist"]):
+        family = "sog" if market.startswith("sog") else market
         rows = [p for p in board.get("players", []) if p.get(market)]
         priced = [p for p in rows if p[market].get("ev") is not None]
+        is_bet = lambda m: family in value_markets and m["ev"] >= MIN_EV and not m.get("guard")
         if priced:
-            picks = [p for p in priced if (p[market]["ev"] >= MIN_EV and not p[market].get("guard"))
-                     or p[market].get("likely")]
+            picks = [p for p in priced if is_bet(p[market]) or p[market].get("likely")]
         else:
             picks = sorted(rows, key=lambda p: -p[market]["p"])[:WATCH_N]
+        for p in rows:  # shots under strategy: the under side of props the model fades
+            fade, start = p[market].get("fade"), starts.get(p["game_id"])
+            if not fade or (board["date"], p["id"], market, "under") in seen:
+                continue
+            if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
+                continue
+            new.append({"date": board["date"], "game_id": p["game_id"], "player_id": p["id"],
+                        "name": p["name"], "team": p["team"], "opp": p["opp"], "market": market,
+                        "side": "under", "kind": "under", "p": fade["p"], "p_model": p[market].get("p_model"),
+                        "p_mkt": p[market].get("p_mkt"), "price": fade["price"], "book": fade["book"],
+                        "prices": p[market].get("under"), "ev": fade["ev"], "flag": False, "likely": False,
+                        "logged": now.isoformat(timespec="minutes"), "status": "pending", "units": None})
         for p in picks:
-            kind = ("watch" if not priced else
-                    "bet" if p[market]["ev"] >= MIN_EV and not p[market].get("guard") else "likely")
+            kind = "watch" if not priced else "bet" if is_bet(p[market]) else "likely"
             start = starts.get(p["game_id"])
             if start and datetime.fromisoformat(start.replace("Z", "+00:00")) <= now:
                 continue  # never log after puck drop
-            if (board["date"], p["id"], market) in seen:
+            if (board["date"], p["id"], market, "over") in seen:
                 continue  # first price logged is the one we "bet"
             mk = p[market]
             new.append({"date": board["date"], "game_id": p["game_id"], "player_id": p["id"],

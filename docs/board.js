@@ -66,11 +66,23 @@
 
     var rs=rows(), priced=rs.filter(function(r){return r.m.ev!=null});
     var max=DATA.max_price||750;
-    var best=priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG&&r.m.price<=max&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev});
-    var flags=priced.filter(function(r){return r.m.ev>=FLAG&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev});
+    var vm=DATA.value_markets||["goal","assist","sog"], fam=market==="sog"?"sog":market, valued=vm.indexOf(fam)>=0;
+    var best=valued?priced.filter(function(r){return r.m.ev>=BEST&&r.m.ev<FLAG&&r.m.price<=max&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev}):[];
+    var flags=valued?priced.filter(function(r){return r.m.ev>=FLAG&&!r.m.guard}).sort(function(a,b){return b.m.ev-a.m.ev}):[];
+    var fades=rs.filter(function(r){return r.m.fade}).sort(function(a,b){return b.m.fade.ev-a.m.fade.ev});
     var ol=$("best"); ol.innerHTML=""; best.forEach(function(r){ol.appendChild(playItem(r))});
+    $("bestTitle").textContent=valued?"Best plays":"Shots unders";
+    if(!valued) fades.forEach(function(r){
+      var li=document.createElement("li"); li.className="play";
+      li.innerHTML="<span class='who'>"+esc(r.p.name)+"</span>"+
+        "<span class='game'>"+r.p.team+" vs "+r.p.opp+", under "+r.k.slice(3)+" shots</span>"+
+        "<span class='nums'>Model "+pct(r.m.p_model)+" vs books "+pct(r.m.p_mkt)+" for the over, best under <b>"+am(r.m.fade.price)+"</b> "+esc(r.m.fade.book)+"</span>"+
+        "<span class='ev'><b>"+ev(r.m.fade.ev)+"</b><span>EV</span></span>";
+      ol.appendChild(li);
+    });
     $("bestNote").textContent = !priced.length
       ? "No sportsbook prices yet. Use the Fair column below and compare it to your book."
+      : !valued ? (fades.length ? "Paper strategy: the under on props where the model's over chance is 15%+ below the books'. Shots overs aren't bet; they lost money in every stretch." : "No shots props pass the under rule right now.")
       : best.length ? "Model edge of 5% or more against the best available price, at +"+max+" or shorter. Longer shots stay in the table below. Assists where the model is 15%+ above the books are skipped (marked “skip” below)."
       : "Nothing at +"+max+" or shorter clears a 5% edge right now. Passing is a fine bet.";
     var fl=$("flags"); fl.innerHTML=""; fl.className="plays flagged";

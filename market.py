@@ -22,6 +22,11 @@ MODEL_WEIGHT = {"goal": 0.3, "assist": 0.5, "sog": 0.5}  # shots: the model's be
 # (line change, new role, injury). Through Oct 18 those assist props hit 17-19% vs 28% the market said.
 # Guarded props never count as plays; the sim and calibration log still record them.
 MAX_MODEL_OVER = {"assist": 1.15}
+# Best value only bets overs in these markets. Shots overs lost money in every stretch through Nov 4.
+VALUE_MARKETS = ("assist",)
+# Shots under (fade): bet the under when the model's over chance is this far below the market's.
+# Held up on new nights (Oct 29-Nov 4: +4.6% on 157 bets after +5.9% on 338 the week before).
+UNDER_FADE = {"sog": 0.85}
 MAX_PRICE = 750      # main bets stop here; longer prices are still logged as long shots
 # Anytime-goal props usually only have a Yes price. Fair chance = book's chance ** this power,
 # which takes more of the book's cut off long shots than favorites (books pad long shots most).

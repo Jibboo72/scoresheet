@@ -2,7 +2,7 @@
   // Grades the same nightly props as singles and round robins, $33 a night each.
   // A parlay lives at one book, so each combo is priced at the single book that pays most for it.
   var BUDGET=33, SIZES=[6,8,12], size=8, LOG=[], MAX_PRICE=750; // longer prices never make the slate
-  var STRATS=[{id:"value",label:"Best value"},{id:"likely",label:"Most likely"}], strat="value";
+  var STRATS=[{id:"value",label:"Best value"},{id:"likely",label:"Most likely"},{id:"under",label:"Shots under"}], strat="value";
   var OFFSHORE=["Bovada","BetOnline.ag","MyBookie.ag","BetUS","LowVig.ag"]; // never used, even in old logs
   var STRUCTS=[{name:"Singles",k:[1]},{name:"2-pick round robin",k:[2]},
                {name:"3-pick round robin",k:[3]},{name:"2s + 3s round robin",k:[2,3]}];
@@ -11,6 +11,7 @@
   var am=function(p){return p>0?"+"+p:""+p};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
   var lab=function(k){return k.indexOf("sog")===0?"o"+k.slice(3)+" shots":k}; // "sog2.5" -> "o2.5 shots"
+  var labB=function(b){return b.side==="under"?"u"+b.market.slice(3)+" shots":lab(b.market)}; // under bets: "u2.5 shots"
   function dec(p){return p>0?1+p/100:1+100/Math.abs(p)}
   function toAm(d){return d>=2?Math.round((d-1)*100):-Math.round(100/(d-1))}
   function books(b){ // this prop's prices at your books (board.py only pulls your books)
@@ -53,8 +54,10 @@
   }
   // Which props a strategy can use. Best value: 5%+ edge at +750 or shorter, flagged plays left out.
   // Most likely: the likely-to-hit pool (high chance, +200 or shorter, price checked), best price first.
+  // Shots under: unders on shots props the model rates 15%+ below the books (started Nov 6).
   function eligible(b){
     if(b.price==null||!Object.keys(books(b)).length) return false;
+    if(strat==="under") return b.side==="under";
     return strat==="likely" ? !!b.likely : b.kind==="bet"&&!b.flag&&b.price<=MAX_PRICE;
   }
   // Top props by edge: one per player, at most two per game.
@@ -125,7 +128,7 @@
       tb.appendChild(tr);
     });
     $("structNote").textContent = !graded.length
-      ? (strat==="likely" ? "Most likely started Oct 9. Results show up the day after its first night." : "Nothing graded yet. The first results show up the day after the first priced night.")
+      ? (strat==="likely" ? "Most likely started Oct 9. Results show up the day after its first night." : strat==="under" ? "Shots under started Nov 6. Results show up the day after its first night." : "Nothing graded yet. The first results show up the day after the first priced night.")
       : graded.length<20 ? graded.length+" night"+(graded.length===1?"":"s")+" graded. The gaps between structures mean little before about 20 nights."
       : graded.length+" nights graded.";
     var ol=$("slate"); ol.innerHTML="";
@@ -136,7 +139,7 @@
       (t.length?(BUDGET/t.length).toFixed(2):"0")+" each ("+Object.keys(per).map(function(k){return per[k]+" at "+k}).join(", ")+").";
     legs.forEach(function(l){
       var b=l.b, li=document.createElement("li"); li.className="play";
-      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+lab(b.market)+"</span>"+
+      li.innerHTML="<span class='who'>"+esc(b.name)+"</span><span class='game'>"+b.team+" vs "+b.opp+", "+labB(b)+"</span>"+
         "<span class='nums'>"+Object.keys(l.px).map(function(k){return k+" <b>"+am(l.px[k])+"</b>"}).join(", ")+"</span>"+
         "<span class='ev'><b>"+(b.ev>0?"+":"")+(b.ev*100).toFixed(0)+"%</b><span>EV</span></span>";
       ol.appendChild(li);
@@ -144,7 +147,7 @@
     var slip=$("slip"); slip.innerHTML="";
     t.sort(function(a,b){return a.book<b.book?-1:a.book>b.book?1:b.dec-a.dec}).forEach(function(tk){
       var tr=document.createElement("tr");
-      tr.innerHTML="<td>"+tk.legs.map(function(l){return esc(l.b.name.split(" ").slice(-1)[0])+" "+lab(l.b.market)}).join(" + ")+
+      tr.innerHTML="<td>"+tk.legs.map(function(l){return esc(l.b.name.split(" ").slice(-1)[0])+" "+labB(l.b)}).join(" + ")+
         "</td><td>"+tk.book+"</td><td>"+am(toAm(tk.dec))+"</td>";
       slip.appendChild(tr);
     });
@@ -153,7 +156,7 @@
   fetch("data/sim_log.json",{cache:"no-store"})
     .then(function(r){if(!r.ok) throw 0; return r.json()})
     .then(function(log){
-      LOG=log; if(!log.some(function(b){return b.kind==="bet"||b.likely})) return;
+      LOG=log; if(!log.some(function(b){return b.kind==="bet"||b.likely||b.side==="under"})) return;
       $("structBlock").hidden=false; render();
     })
     .catch(function(){});
