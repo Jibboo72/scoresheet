@@ -24,7 +24,7 @@ jobs:
         id: check
         run: |
           today=$(TZ=America/New_York date +%F)
-          if [ "${{ github.event_name }}" = schedule ] && grep -q "\"date\": \"$today\"" docs/data/board.json; then
+          if [ "${{ github.event_name }}" = schedule ] && [ "${{ vars.USE_ODDS }}" = true ] && grep -q "\"date\": \"$today\"" docs/data/board.json; then
             echo "Board for $today already built, skipping so no odds credits are spent"
             echo skip=1 >> $GITHUB_OUTPUT
           fi
@@ -37,7 +37,9 @@ jobs:
       - if: ${{ steps.check.outputs.skip != 1 }}
         run: python board.py ${{ inputs.date }}
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          # Odds are OFF unless the repo variable USE_ODDS is set to true (Settings > Secrets and variables > Actions > Variables).
+          # Off since Nov 6, 2026: the odds credits go to Buckets (NBA). The board and sim keep running model-only.
+          ODDS_API_KEY: ${{ vars.USE_ODDS == 'true' && secrets.ODDS_API_KEY || '' }}
       - if: ${{ steps.check.outputs.skip != 1 }}
         run: python sim.py
       - if: ${{ steps.check.outputs.skip != 1 }}
