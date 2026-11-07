@@ -55561,8 +55561,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55595,8 +55595,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.3
  },
  {
   "date": "2026-11-06",
@@ -55629,8 +55629,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55655,8 +55655,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55681,8 +55681,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.667
  },
  {
   "date": "2026-11-06",
@@ -55709,8 +55709,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55735,8 +55735,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55763,8 +55763,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 1.0
  },
  {
   "date": "2026-11-06",
@@ -55790,8 +55790,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55818,8 +55818,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.588
  },
  {
   "date": "2026-11-06",
@@ -55843,8 +55843,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.238
  },
  {
   "date": "2026-11-06",
@@ -55868,8 +55868,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.143
  },
  {
   "date": "2026-11-06",
@@ -55893,8 +55893,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -55918,8 +55918,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.167
  },
  {
   "date": "2026-11-06",
@@ -55943,8 +55943,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.4
  },
  {
   "date": "2026-11-06",
@@ -55968,8 +55968,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.222
  },
  {
   "date": "2026-11-06",
@@ -55993,8 +55993,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.222
  },
  {
   "date": "2026-11-06",
@@ -56018,8 +56018,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -56043,8 +56043,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -56068,8 +56068,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.25
  },
  {
   "date": "2026-11-06",
@@ -56093,8 +56093,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.303
  },
  {
   "date": "2026-11-06",
@@ -56118,8 +56118,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.312
  },
  {
   "date": "2026-11-06",
@@ -56143,8 +56143,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -56177,8 +56177,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.769
  },
  {
   "date": "2026-11-06",
@@ -56205,8 +56205,8 @@
   "flag": false,
   "likely": true,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.5
  },
  {
   "date": "2026-11-06",
@@ -56230,8 +56230,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "loss",
+  "units": -1.0
  },
  {
   "date": "2026-11-06",
@@ -56255,8 +56255,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.267
  },
  {
   "date": "2026-11-06",
@@ -56280,8 +56280,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.357
  },
  {
   "date": "2026-11-06",
@@ -56305,8 +56305,8 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T19:46+00:00",
-  "status": "pending",
-  "units": null
+  "status": "win",
+  "units": 0.182
  },
  {
   "date": "2026-11-06",
@@ -56329,7 +56329,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56353,7 +56353,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -56377,7 +56377,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56401,7 +56401,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56425,7 +56425,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56449,7 +56449,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56473,7 +56473,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -56497,7 +56497,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56521,7 +56521,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56545,7 +56545,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56569,7 +56569,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56593,7 +56593,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56617,7 +56617,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56641,7 +56641,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -56665,6 +56665,390 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-06T23:40+00:00",
+  "status": "win",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020276,
+  "player_id": 8478402,
+  "name": "Connor McDavid",
+  "team": "EDM",
+  "opp": "VAN",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.7362,
+  "p_model": 0.7362,
+  "p_mkt": null,
+  "fair": -279,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020276,
+  "player_id": 8477934,
+  "name": "Leon Draisaitl",
+  "team": "EDM",
+  "opp": "VAN",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.647,
+  "p_model": 0.647,
+  "p_mkt": null,
+  "fair": -183,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020276,
+  "player_id": 8480803,
+  "name": "Evan Bouchard",
+  "team": "EDM",
+  "opp": "VAN",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.6308,
+  "p_model": 0.6308,
+  "p_mkt": null,
+  "fair": -171,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020274,
+  "player_id": 8477492,
+  "name": "Nathan MacKinnon",
+  "team": "COL",
+  "opp": "DET",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5647,
+  "p_model": 0.5647,
+  "p_mkt": null,
+  "fair": -130,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020273,
+  "player_id": 8476453,
+  "name": "Nikita Kucherov",
+  "team": "TBL",
+  "opp": "MIN",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5603,
+  "p_model": 0.5603,
+  "p_mkt": null,
+  "fair": -127,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020268,
+  "player_id": 8480018,
+  "name": "Nick Suzuki",
+  "team": "MTL",
+  "opp": "TOR",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.55,
+  "p_model": 0.55,
+  "p_mkt": null,
+  "fair": -122,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020275,
+  "player_id": 8478550,
+  "name": "Artemi Panarin",
+  "team": "LAK",
+  "opp": "PIT",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5498,
+  "p_model": 0.5498,
+  "p_mkt": null,
+  "fair": -122,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020273,
+  "player_id": 8480800,
+  "name": "Quinn Hughes",
+  "team": "MIN",
+  "opp": "TBL",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.549,
+  "p_model": 0.549,
+  "p_mkt": null,
+  "fair": -122,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020274,
+  "player_id": 8477492,
+  "name": "Nathan MacKinnon",
+  "team": "COL",
+  "opp": "DET",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8719,
+  "p_model": 0.8719,
+  "p_mkt": null,
+  "fair": -681,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020270,
+  "player_id": 8481559,
+  "name": "Jack Hughes",
+  "team": "NJD",
+  "opp": "NYI",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8584,
+  "p_model": 0.8584,
+  "p_mkt": null,
+  "fair": -606,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020273,
+  "player_id": 8481557,
+  "name": "Matt Boldy",
+  "team": "MIN",
+  "opp": "TBL",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.857,
+  "p_model": 0.857,
+  "p_mkt": null,
+  "fair": -599,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020272,
+  "player_id": 8480027,
+  "name": "Jason Robertson",
+  "team": "DAL",
+  "opp": "SJS",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8521,
+  "p_model": 0.8521,
+  "p_mkt": null,
+  "fair": -576,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020276,
+  "player_id": 8478402,
+  "name": "Connor McDavid",
+  "team": "EDM",
+  "opp": "VAN",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8507,
+  "p_model": 0.8507,
+  "p_mkt": null,
+  "fair": -570,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020274,
+  "player_id": 8479337,
+  "name": "Alex DeBrincat",
+  "team": "DET",
+  "opp": "COL",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8454,
+  "p_model": 0.8454,
+  "p_mkt": null,
+  "fair": -547,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020276,
+  "player_id": 8477934,
+  "name": "Leon Draisaitl",
+  "team": "EDM",
+  "opp": "VAN",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8383,
+  "p_model": 0.8383,
+  "p_mkt": null,
+  "fair": -518,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-07",
+  "game_id": 2026020268,
+  "player_id": 8479318,
+  "name": "Auston Matthews",
+  "team": "TOR",
+  "opp": "MTL",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8295,
+  "p_model": 0.8295,
+  "p_mkt": null,
+  "fair": -487,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-07T17:55+00:00",
   "status": "pending",
   "units": null
  }
