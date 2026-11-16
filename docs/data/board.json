@@ -1,2783 +1,602 @@
 {
- "date": "2026-11-15",
- "generated": "2026-11-15T23:19+00:00",
+ "date": "2026-11-16",
+ "generated": "2026-11-16T22:39+00:00",
  "games": [
   {
-   "id": 2026020326,
-   "start": "2026-11-16T00:30:00Z",
-   "away": "EDM",
-   "home": "PHI"
+   "id": 2026020331,
+   "start": "2026-11-17T00:30:00Z",
+   "away": "MTL",
+   "home": "NYR"
   },
   {
-   "id": 2026020327,
-   "start": "2026-11-16T01:00:00Z",
-   "away": "FLA",
-   "home": "DAL"
-  },
-  {
-   "id": 2026020328,
-   "start": "2026-11-16T01:00:00Z",
-   "away": "CGY",
-   "home": "ANA"
-  },
-  {
-   "id": 2026020329,
-   "start": "2026-11-16T02:00:00Z",
+   "id": 2026020332,
+   "start": "2026-11-17T02:30:00Z",
    "away": "VAN",
-   "home": "VGK"
-  },
-  {
-   "id": 2026020330,
-   "start": "2026-11-16T02:00:00Z",
-   "away": "NSH",
-   "home": "SJS"
+   "home": "UTA"
   }
  ],
  "players": [
   {
-   "id": 8473419,
-   "name": "Brad Marchand",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 16.7,
-   "exp_sog": 2.18,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3463,
-    "p": 0.3463,
-    "fair": 189
-   },
-   "sog1.5": {
-    "p_model": 0.6265,
-    "p": 0.6265,
-    "fair": -168
-   }
-  },
-  {
-   "id": 8473986,
-   "name": "Alex Killorn",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "L",
-   "game_id": 2026020328,
-   "toi": 16.7,
-   "exp_sog": 1.56,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2157,
-    "p": 0.2157,
-    "fair": 364
-   },
-   "sog1.5": {
-    "p_model": 0.4562,
-    "p": 0.4562,
-    "fair": 119
-   }
-  },
-  {
-   "id": 8473994,
-   "name": "Jamie Benn",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 12.9,
-   "exp_sog": 1.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2277,
-    "p": 0.2277,
-    "fair": 339
-   },
-   "sog1.5": {
-    "p_model": 0.3326,
-    "p": 0.3326,
-    "fair": 201
-   }
-  },
-  {
-   "id": 8474102,
-   "name": "David Perron",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 12.1,
-   "exp_sog": 1.36,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1641,
-    "p": 0.1641,
-    "fair": 509
-   },
-   "sog1.5": {
-    "p_model": 0.3886,
-    "p": 0.3886,
-    "fair": 157
-   }
-  },
-  {
-   "id": 8474150,
-   "name": "Mikael Backlund",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 18.5,
-   "exp_sog": 2.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3004,
-    "p": 0.3004,
-    "fair": 233
-   },
-   "sog1.5": {
-    "p_model": 0.6275,
-    "p": 0.6275,
-    "fair": -168
-   }
-  },
-  {
-   "id": 8474189,
-   "name": "Lars Eller",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 15.4,
-   "exp_sog": 1.13,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1446,
-    "p": 0.1446,
-    "fair": 592
-   },
-   "sog1.5": {
-    "p_model": 0.3093,
-    "p": 0.3093,
-    "fair": 223
-   }
-  },
-  {
-   "id": 8474564,
-   "name": "Steven Stamkos",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 18.4,
-   "exp_sog": 2.69,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3151,
-    "p": 0.3151,
-    "fair": 217
-   },
-   "sog1.5": {
-    "p_model": 0.7293,
-    "p": 0.7293,
-    "fair": -269
-   }
-  },
-  {
    "id": 8474568,
    "name": "Luke Schenn",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "D",
-   "game_id": 2026020329,
+   "game_id": 2026020332,
    "toi": 12.7,
-   "exp_sog": 0.58,
+   "exp_sog": 0.55,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1123,
-    "p": 0.1123,
-    "fair": 790
+    "p_model": 0.1226,
+    "p": 0.1226,
+    "fair": 716
    },
    "sog1.5": {
-    "p_model": 0.1163,
-    "p": 0.1163,
-    "fair": 760
+    "p_model": 0.1065,
+    "p": 0.1065,
+    "fair": 839
    }
   },
   {
-   "id": 8474574,
-   "name": "Tyler Myers",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 18.0,
-   "exp_sog": 0.95,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1689,
-    "p": 0.1689,
-    "fair": 492
-   },
-   "sog1.5": {
-    "p_model": 0.2464,
-    "p": 0.2464,
-    "fair": 306
-   }
-  },
-  {
-   "id": 8474600,
-   "name": "Roman Josi",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 25.6,
-   "exp_sog": 2.83,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4849,
-    "p": 0.4849,
-    "fair": 106
-   },
-   "sog1.5": {
-    "p_model": 0.754,
-    "p": 0.754,
-    "fair": -307
-   }
-  },
-  {
-   "id": 8475158,
-   "name": "Ryan O'Reilly",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 20.8,
-   "exp_sog": 1.88,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.47,
-    "p": 0.47,
-    "fair": 113
-   },
-   "sog1.5": {
-    "p_model": 0.5505,
-    "p": 0.5505,
-    "fair": -122
-   }
-  },
-  {
-   "id": 8475168,
-   "name": "Matt Duchene",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 16.5,
-   "exp_sog": 1.54,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3246,
-    "p": 0.3246,
-    "fair": 208
-   },
-   "sog1.5": {
-    "p_model": 0.4477,
-    "p": 0.4477,
-    "fair": 123
-   }
-  },
-  {
-   "id": 8475179,
-   "name": "Dmitry Kulikov",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 15.7,
-   "exp_sog": 0.59,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.094,
-    "p": 0.094,
-    "fair": 964
-   },
-   "sog1.5": {
-    "p_model": 0.121,
-    "p": 0.121,
-    "fair": 726
-   }
-  },
-  {
-   "id": 8475188,
-   "name": "Brayden McNabb",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 20.8,
-   "exp_sog": 1.34,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2393,
-    "p": 0.2393,
-    "fair": 318
-   },
-   "sog1.5": {
-    "p_model": 0.3831,
-    "p": 0.3831,
-    "fair": 161
-   }
-  },
-  {
-   "id": 8475200,
-   "name": "Dmitry Orlov",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 17.5,
-   "exp_sog": 1.01,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2976,
-    "p": 0.2976,
-    "fair": 236
-   },
-   "sog1.5": {
-    "p_model": 0.266,
-    "p": 0.266,
-    "fair": 276
-   }
-  },
-  {
-   "id": 8475218,
-   "name": "Mattias Ekholm",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 20.8,
+   "id": 8475184,
+   "name": "Chris Kreider",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 13.5,
    "exp_sog": 1.35,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3154,
-    "p": 0.3154,
-    "fair": 217
+    "p_model": 0.2701,
+    "p": 0.2701,
+    "fair": 270
    },
    "sog1.5": {
-    "p_model": 0.3866,
-    "p": 0.3866,
-    "fair": 159
+    "p_model": 0.3879,
+    "p": 0.3879,
+    "fair": 158
    }
   },
   {
-   "id": 8475343,
-   "name": "Nic Dowd",
-   "team": "VGK",
+   "id": 8475314,
+   "name": "Anders Lee",
+   "team": "UTA",
    "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 11.8,
-   "exp_sog": 0.6,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2102,
-    "p": 0.2102,
-    "fair": 376
-   },
-   "sog1.5": {
-    "p_model": 0.1222,
-    "p": 0.1222,
-    "fair": 718
-   }
-  },
-  {
-   "id": 8475462,
-   "name": "Radko Gudas",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 14.7,
-   "exp_sog": 0.9,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.128,
-    "p": 0.128,
-    "fair": 681
-   },
-   "sog1.5": {
-    "p_model": 0.2286,
-    "p": 0.2286,
-    "fair": 337
-   }
-  },
-  {
-   "id": 8475726,
-   "name": "Tyler Toffoli",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 13.7,
-   "exp_sog": 2.12,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2619,
-    "p": 0.2619,
-    "fair": 282
-   },
-   "sog1.5": {
-    "p_model": 0.6111,
-    "p": 0.6111,
-    "fair": -157
-   }
-  },
-  {
-   "id": 8475786,
-   "name": "Zach Hyman",
-   "team": "EDM",
-   "opp": "PHI",
    "pos": "L",
-   "game_id": 2026020326,
-   "toi": 18.6,
-   "exp_sog": 2.29,
+   "game_id": 2026020332,
+   "toi": 14.7,
+   "exp_sog": 2.15,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3056,
-    "p": 0.3056,
-    "fair": 227
+    "p_model": 0.3073,
+    "p": 0.3073,
+    "fair": 225
    },
    "sog1.5": {
-    "p_model": 0.651,
-    "p": 0.651,
-    "fair": -187
-   }
-  },
-  {
-   "id": 8475794,
-   "name": "Tyler Seguin",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 15.4,
-   "exp_sog": 1.59,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2272,
-    "p": 0.2272,
-    "fair": 340
-   },
-   "sog1.5": {
-    "p_model": 0.4659,
-    "p": 0.4659,
-    "fair": 115
-   }
-  },
-  {
-   "id": 8475798,
-   "name": "Mikael Granlund",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 20.5,
-   "exp_sog": 2.04,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4316,
-    "p": 0.4316,
-    "fair": 132
-   },
-   "sog1.5": {
-    "p_model": 0.5921,
-    "p": 0.5921,
-    "fair": -145
+    "p_model": 0.6175,
+    "p": 0.6175,
+    "fair": -161
    }
   },
   {
    "id": 8475848,
    "name": "Brendan Gallagher",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "R",
-   "game_id": 2026020329,
-   "toi": 10.9,
-   "exp_sog": 1.23,
+   "game_id": 2026020332,
+   "toi": 10.8,
+   "exp_sog": 1.19,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1314,
-    "p": 0.1314,
-    "fair": 661
+    "p_model": 0.1472,
+    "p": 0.1472,
+    "fair": 579
    },
    "sog1.5": {
-    "p_model": 0.3464,
-    "p": 0.3464,
-    "fair": 189
+    "p_model": 0.3304,
+    "p": 0.3304,
+    "fair": 203
    }
   },
   {
-   "id": 8475913,
-   "name": "Mark Stone",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "R",
-   "game_id": 2026020329,
-   "toi": 19.0,
-   "exp_sog": 2.07,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5215,
-    "p": 0.5215,
-    "fair": -109
-   },
-   "sog1.5": {
-    "p_model": 0.5977,
-    "p": 0.5977,
-    "fair": -149
-   }
-  },
-  {
-   "id": 8476278,
-   "name": "Colin Blackwell",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 10.4,
-   "exp_sog": 0.93,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1157,
-    "p": 0.1157,
-    "fair": 764
-   },
-   "sog1.5": {
-    "p_model": 0.2391,
-    "p": 0.2391,
-    "fair": 318
-   }
-  },
-  {
-   "id": 8476372,
-   "name": "Nick Seeler",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 18.1,
-   "exp_sog": 0.94,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1113,
-    "p": 0.1113,
-    "fair": 798
-   },
-   "sog1.5": {
-    "p_model": 0.2416,
-    "p": 0.2416,
-    "fair": 314
-   }
-  },
-  {
-   "id": 8476448,
-   "name": "William Karlsson",
-   "team": "VGK",
+   "id": 8476389,
+   "name": "Vincent Trocheck",
+   "team": "UTA",
    "opp": "VAN",
    "pos": "C",
-   "game_id": 2026020329,
-   "toi": 17.1,
-   "exp_sog": 2.06,
+   "game_id": 2026020332,
+   "toi": 19.6,
+   "exp_sog": 1.91,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2529,
-    "p": 0.2529,
-    "fair": 295
+    "p_model": 0.4827,
+    "p": 0.4827,
+    "fair": 107
    },
    "sog1.5": {
-    "p_model": 0.5967,
-    "p": 0.5967,
-    "fair": -148
+    "p_model": 0.5582,
+    "p": 0.5582,
+    "fair": -126
    }
   },
   {
-   "id": 8476454,
-   "name": "Ryan Nugent-Hopkins",
-   "team": "EDM",
-   "opp": "PHI",
+   "id": 8476459,
+   "name": "Mika Zibanejad",
+   "team": "NYR",
+   "opp": "MTL",
    "pos": "C",
-   "game_id": 2026020326,
-   "toi": 18.3,
-   "exp_sog": 1.67,
+   "game_id": 2026020331,
+   "toi": 20.4,
+   "exp_sog": 2.34,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3988,
-    "p": 0.3988,
-    "fair": 151
+    "p_model": 0.4459,
+    "p": 0.4459,
+    "fair": 124
    },
    "sog1.5": {
-    "p_model": 0.4882,
-    "p": 0.4882,
-    "fair": 105
-   }
-  },
-  {
-   "id": 8476456,
-   "name": "Jonathan Huberdeau",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "L",
-   "game_id": 2026020328,
-   "toi": 18.1,
-   "exp_sog": 1.6,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3055,
-    "p": 0.3055,
-    "fair": 227
-   },
-   "sog1.5": {
-    "p_model": 0.4682,
-    "p": 0.4682,
-    "fair": 114
-   }
-  },
-  {
-   "id": 8476458,
-   "name": "Ryan Strome",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 14.0,
-   "exp_sog": 1.51,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2072,
-    "p": 0.2072,
-    "fair": 383
-   },
-   "sog1.5": {
-    "p_model": 0.4396,
-    "p": 0.4396,
-    "fair": 127
-   }
-  },
-  {
-   "id": 8476461,
-   "name": "Sean Couturier",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 15.9,
-   "exp_sog": 1.22,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2312,
-    "p": 0.2312,
-    "fair": 333
-   },
-   "sog1.5": {
-    "p_model": 0.3433,
-    "p": 0.3433,
-    "fair": 191
+    "p_model": 0.6614,
+    "p": 0.6614,
+    "fair": -195
    }
   },
   {
    "id": 8476467,
    "name": "Jamie Oleksiak",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "D",
-   "game_id": 2026020329,
-   "toi": 17.0,
-   "exp_sog": 0.86,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1365,
-    "p": 0.1365,
-    "fair": 633
-   },
-   "sog1.5": {
-    "p_model": 0.2152,
-    "p": 0.2152,
-    "fair": 365
-   }
-  },
-  {
-   "id": 8476473,
-   "name": "Connor Murphy",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 20.3,
-   "exp_sog": 1.05,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.148,
-    "p": 0.148,
-    "fair": 576
-   },
-   "sog1.5": {
-    "p_model": 0.2822,
-    "p": 0.2822,
-    "fair": 254
-   }
-  },
-  {
-   "id": 8476539,
-   "name": "Jonathan Marchessault",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 16.7,
-   "exp_sog": 2.3,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2691,
-    "p": 0.2691,
-    "fair": 272
-   },
-   "sog1.5": {
-    "p_model": 0.6517,
-    "p": 0.6517,
-    "fair": -187
-   }
-  },
-  {
-   "id": 8476624,
-   "name": "Barclay Goodrow",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 10.8,
-   "exp_sog": 0.73,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0722,
-    "p": 0.0722,
-    "fair": 1285
-   },
-   "sog1.5": {
-    "p_model": 0.1664,
-    "p": 0.1664,
-    "fair": 501
-   }
-  },
-  {
-   "id": 8476869,
-   "name": "Brady Skjei",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 20.6,
-   "exp_sog": 1.17,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2702,
-    "p": 0.2702,
-    "fair": 270
-   },
-   "sog1.5": {
-    "p_model": 0.3257,
-    "p": 0.3257,
-    "fair": 207
-   }
-  },
-  {
-   "id": 8476881,
-   "name": "Tomas Hertl",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 15.5,
-   "exp_sog": 2.48,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.363,
-    "p": 0.363,
-    "fair": 175
-   },
-   "sog1.5": {
-    "p_model": 0.6898,
-    "p": 0.6898,
-    "fair": -222
-   }
-  },
-  {
-   "id": 8476885,
-   "name": "Jacob Trouba",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 22.3,
-   "exp_sog": 1.88,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2442,
-    "p": 0.2442,
-    "fair": 310
-   },
-   "sog1.5": {
-    "p_model": 0.5489,
-    "p": 0.5489,
-    "fair": -122
-   }
-  },
-  {
-   "id": 8476887,
-   "name": "Filip Forsberg",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 20.1,
-   "exp_sog": 2.88,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4018,
-    "p": 0.4018,
-    "fair": 149
-   },
-   "sog1.5": {
-    "p_model": 0.7616,
-    "p": 0.7616,
-    "fair": -319
-   }
-  },
-  {
-   "id": 8476889,
-   "name": "Radek Faksa",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 11.7,
+   "game_id": 2026020332,
+   "toi": 16.8,
    "exp_sog": 0.8,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1683,
-    "p": 0.1683,
-    "fair": 494
-   },
-   "sog1.5": {
-    "p_model": 0.1927,
-    "p": 0.1927,
-    "fair": 419
-   }
-  },
-  {
-   "id": 8476902,
-   "name": "Esa Lindell",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 23.5,
-   "exp_sog": 1.11,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2351,
-    "p": 0.2351,
-    "fair": 325
-   },
-   "sog1.5": {
-    "p_model": 0.3052,
-    "p": 0.3052,
-    "fair": 228
-   }
-  },
-  {
-   "id": 8477021,
-   "name": "Alexander Kerfoot",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 15.2,
-   "exp_sog": 0.99,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1583,
-    "p": 0.1583,
-    "fair": 532
-   },
-   "sog1.5": {
-    "p_model": 0.2601,
-    "p": 0.2601,
-    "fair": 284
-   }
-  },
-  {
-   "id": 8477406,
-   "name": "Mattias Janmark",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 11.9,
-   "exp_sog": 0.67,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1335,
-    "p": 0.1335,
-    "fair": 649
-   },
-   "sog1.5": {
-    "p_model": 0.1483,
-    "p": 0.1483,
-    "fair": 574
-   }
-  },
-  {
-   "id": 8477409,
-   "name": "Carter Verhaeghe",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 18.2,
-   "exp_sog": 2.21,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3165,
-    "p": 0.3165,
-    "fair": 216
-   },
-   "sog1.5": {
-    "p_model": 0.6329,
-    "p": 0.6329,
-    "fair": -172
-   }
-  },
-  {
-   "id": 8477447,
-   "name": "Shea Theodore",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 22.6,
-   "exp_sog": 1.85,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3548,
-    "p": 0.3548,
-    "fair": 182
-   },
-   "sog1.5": {
-    "p_model": 0.5409,
-    "p": 0.5409,
-    "fair": -118
-   }
-  },
-  {
-   "id": 8477450,
-   "name": "Jason Dickinson",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 13.5,
-   "exp_sog": 0.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1934,
-    "p": 0.1934,
-    "fair": 417
-   },
-   "sog1.5": {
-    "p_model": 0.249,
-    "p": 0.249,
-    "fair": 302
-   }
-  },
-  {
-   "id": 8477495,
-   "name": "Seth Jones",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 24.3,
-   "exp_sog": 1.8,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3785,
-    "p": 0.3785,
-    "fair": 164
-   },
-   "sog1.5": {
-    "p_model": 0.5274,
-    "p": 0.5274,
-    "fair": -112
-   }
-  },
-  {
-   "id": 8477498,
-   "name": "Darnell Nurse",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 21.3,
-   "exp_sog": 1.71,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1638,
-    "p": 0.1638,
-    "fair": 511
-   },
-   "sog1.5": {
-    "p_model": 0.5008,
-    "p": 0.5008,
-    "fair": -100
-   }
-  },
-  {
-   "id": 8477499,
-   "name": "Rasmus Ristolainen",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 19.3,
-   "exp_sog": 1.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2229,
-    "p": 0.2229,
-    "fair": 349
-   },
-   "sog1.5": {
-    "p_model": 0.3318,
-    "p": 0.3318,
-    "fair": 201
-   }
-  },
-  {
-   "id": 8477505,
-   "name": "Alexander Wennberg",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 20.4,
-   "exp_sog": 1.33,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3462,
-    "p": 0.3462,
-    "fair": 189
-   },
-   "sog1.5": {
-    "p_model": 0.3809,
-    "p": 0.3809,
-    "fair": 163
-   }
-  },
-  {
-   "id": 8477810,
-   "name": "Joel Hanley",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 15.7,
-   "exp_sog": 0.68,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1164,
-    "p": 0.1164,
-    "fair": 759
-   },
-   "sog1.5": {
-    "p_model": 0.1513,
-    "p": 0.1513,
+    "p_model": 0.1514,
+    "p": 0.1514,
     "fair": 561
-   }
-  },
-  {
-   "id": 8477903,
-   "name": "Garnet Hathaway",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "R",
-   "game_id": 2026020327,
-   "toi": 10.4,
-   "exp_sog": 0.4,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0506,
-    "p": 0.0506,
-    "fair": 1876
    },
    "sog1.5": {
-    "p_model": 0.062,
-    "p": 0.062,
-    "fair": 1513
+    "p_model": 0.1917,
+    "p": 0.1917,
+    "fair": 422
    }
   },
   {
-   "id": 8477932,
-   "name": "Aaron Ekblad",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 21.5,
-   "exp_sog": 1.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2511,
-    "p": 0.2511,
-    "fair": 298
-   },
-   "sog1.5": {
-    "p_model": 0.3323,
-    "p": 0.3323,
-    "fair": 201
-   }
-  },
-  {
-   "id": 8477933,
-   "name": "Sam Reinhart",
-   "team": "FLA",
-   "opp": "DAL",
+   "id": 8476468,
+   "name": "J.T. Miller",
+   "team": "NYR",
+   "opp": "MTL",
    "pos": "C",
-   "game_id": 2026020327,
-   "toi": 20.2,
-   "exp_sog": 2.53,
+   "game_id": 2026020331,
+   "toi": 19.4,
+   "exp_sog": 2.15,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3639,
-    "p": 0.3639,
-    "fair": 175
+    "p_model": 0.4475,
+    "p": 0.4475,
+    "fair": 123
    },
    "sog1.5": {
-    "p_model": 0.7009,
-    "p": 0.7009,
-    "fair": -234
+    "p_model": 0.6184,
+    "p": 0.6184,
+    "fair": -162
    }
   },
   {
-   "id": 8477934,
-   "name": "Leon Draisaitl",
-   "team": "EDM",
-   "opp": "PHI",
+   "id": 8476479,
+   "name": "Phillip Danault",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "C",
-   "game_id": 2026020326,
-   "toi": 21.9,
-   "exp_sog": 3.22,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5637,
-    "p": 0.5637,
-    "fair": -129
-   },
-   "sog1.5": {
-    "p_model": 0.8097,
-    "p": 0.8097,
-    "fair": -425
-   }
-  },
-  {
-   "id": 8477935,
-   "name": "Sam Bennett",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 17.1,
-   "exp_sog": 2.1,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2793,
-    "p": 0.2793,
-    "fair": 258
-   },
-   "sog1.5": {
-    "p_model": 0.6055,
-    "p": 0.6055,
-    "fair": -153
-   }
-  },
-  {
-   "id": 8477948,
-   "name": "Travis Sanheim",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 24.5,
-   "exp_sog": 1.43,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2474,
-    "p": 0.2474,
-    "fair": 304
-   },
-   "sog1.5": {
-    "p_model": 0.412,
-    "p": 0.412,
-    "fair": 143
-   }
-  },
-  {
-   "id": 8477953,
-   "name": "Kasperi Kapanen",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 17.6,
-   "exp_sog": 1.58,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2037,
-    "p": 0.2037,
-    "fair": 391
-   },
-   "sog1.5": {
-    "p_model": 0.4603,
-    "p": 0.4603,
-    "fair": 117
-   }
-  },
-  {
-   "id": 8477964,
-   "name": "Ivan Barbashev",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 15.6,
-   "exp_sog": 1.53,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4042,
-    "p": 0.4042,
-    "fair": 147
-   },
-   "sog1.5": {
-    "p_model": 0.447,
-    "p": 0.447,
-    "fair": 124
-   }
-  },
-  {
-   "id": 8477989,
-   "name": "Christian Dvorak",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 18.1,
-   "exp_sog": 1.65,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3084,
-    "p": 0.3084,
-    "fair": 224
-   },
-   "sog1.5": {
-    "p_model": 0.4827,
-    "p": 0.4827,
-    "fair": 107
-   }
-  },
-  {
-   "id": 8478013,
-   "name": "Jake Walman",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 15.4,
+   "game_id": 2026020331,
+   "toi": 17.2,
    "exp_sog": 1.31,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1674,
-    "p": 0.1674,
-    "fair": 497
+    "p_model": 0.1714,
+    "p": 0.1714,
+    "fair": 483
    },
    "sog1.5": {
-    "p_model": 0.3717,
-    "p": 0.3717,
-    "fair": 169
+    "p_model": 0.3741,
+    "p": 0.3741,
+    "fair": 167
    }
   },
   {
-   "id": 8478047,
-   "name": "Michael Bunting",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "L",
-   "game_id": 2026020326,
-   "toi": 12.0,
-   "exp_sog": 1.39,
+   "id": 8476875,
+   "name": "Mike Matheson",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 23.7,
+   "exp_sog": 1.51,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1746,
-    "p": 0.1746,
-    "fair": 473
+    "p_model": 0.2899,
+    "p": 0.2899,
+    "fair": 245
    },
    "sog1.5": {
-    "p_model": 0.4013,
-    "p": 0.4013,
-    "fair": 149
+    "p_model": 0.4383,
+    "p": 0.4383,
+    "fair": 128
    }
   },
   {
-   "id": 8478055,
-   "name": "Gustav Forsling",
-   "team": "FLA",
-   "opp": "DAL",
+   "id": 8476981,
+   "name": "Josh Anderson",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 14.1,
+   "exp_sog": 1.44,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1333,
+    "p": 0.1333,
+    "fair": 650
+   },
+   "sog1.5": {
+    "p_model": 0.4161,
+    "p": 0.4161,
+    "fair": 140
+   }
+  },
+  {
+   "id": 8477220,
+   "name": "Nate Schmidt",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "D",
-   "game_id": 2026020327,
+   "game_id": 2026020332,
+   "toi": 18.7,
+   "exp_sog": 1.04,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2298,
+    "p": 0.2298,
+    "fair": 335
+   },
+   "sog1.5": {
+    "p_model": 0.2789,
+    "p": 0.2789,
+    "fair": 259
+   }
+  },
+  {
+   "id": 8477346,
+   "name": "MacKenzie Weegar",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 22.7,
+   "exp_sog": 1.9,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3176,
+    "p": 0.3176,
+    "fair": 215
+   },
+   "sog1.5": {
+    "p_model": 0.555,
+    "p": 0.555,
+    "fair": -125
+   }
+  },
+  {
+   "id": 8477416,
+   "name": "Oliver Bjorkstrand",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 12.6,
+   "exp_sog": 1.47,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1973,
+    "p": 0.1973,
+    "fair": 407
+   },
+   "sog1.5": {
+    "p_model": 0.4269,
+    "p": 0.4269,
+    "fair": 134
+   }
+  },
+  {
+   "id": 8477951,
+   "name": "Nick Schmaltz",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 17.2,
+   "exp_sog": 2.45,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.4467,
+    "p": 0.4467,
+    "fair": 124
+   },
+   "sog1.5": {
+    "p_model": 0.6846,
+    "p": 0.6846,
+    "fair": -217
+   }
+  },
+  {
+   "id": 8477969,
+   "name": "Marcus Pettersson",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
    "toi": 21.5,
-   "exp_sog": 1.25,
+   "exp_sog": 0.76,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2264,
-    "p": 0.2264,
-    "fair": 342
+    "p_model": 0.2218,
+    "p": 0.2218,
+    "fair": 351
    },
    "sog1.5": {
-    "p_model": 0.3522,
-    "p": 0.3522,
-    "fair": 184
+    "p_model": 0.1797,
+    "p": 0.1797,
+    "fair": 456
    }
   },
   {
-   "id": 8478109,
-   "name": "Victor Olofsson",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 13.9,
-   "exp_sog": 2.39,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2369,
-    "p": 0.2369,
-    "fair": 322
-   },
-   "sog1.5": {
-    "p_model": 0.6721,
-    "p": 0.6721,
-    "fair": -205
-   }
-  },
-  {
-   "id": 8478136,
-   "name": "Jake Middleton",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 18.5,
-   "exp_sog": 0.94,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1512,
-    "p": 0.1512,
-    "fair": 561
-   },
-   "sog1.5": {
-    "p_model": 0.243,
-    "p": 0.243,
-    "fair": 312
-   }
-  },
-  {
-   "id": 8478366,
-   "name": "Frank Vatrano",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 11.6,
-   "exp_sog": 1.35,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0994,
-    "p": 0.0994,
-    "fair": 906
-   },
-   "sog1.5": {
-    "p_model": 0.3884,
-    "p": 0.3884,
-    "fair": 157
-   }
-  },
-  {
-   "id": 8478396,
-   "name": "Noah Hanifin",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 20.9,
-   "exp_sog": 1.74,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3194,
-    "p": 0.3194,
-    "fair": 213
-   },
-   "sog1.5": {
-    "p_model": 0.511,
-    "p": 0.511,
-    "fair": -104
-   }
-  },
-  {
-   "id": 8478397,
-   "name": "Rasmus Andersson",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 20.5,
-   "exp_sog": 1.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3456,
-    "p": 0.3456,
-    "fair": 189
-   },
-   "sog1.5": {
-    "p_model": 0.5701,
-    "p": 0.5701,
-    "fair": -133
-   }
-  },
-  {
-   "id": 8478402,
-   "name": "Connor McDavid",
-   "team": "EDM",
-   "opp": "PHI",
+   "id": 8478133,
+   "name": "Jake Evans",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "C",
-   "game_id": 2026020326,
-   "toi": 23.6,
-   "exp_sog": 3.17,
+   "game_id": 2026020331,
+   "toi": 16.1,
+   "exp_sog": 0.97,
    "env": 1.0,
    "assist": {
-    "p_model": 0.6577,
-    "p": 0.6577,
-    "fair": -192
+    "p_model": 0.1864,
+    "p": 0.1864,
+    "fair": 436
    },
    "sog1.5": {
-    "p_model": 0.803,
-    "p": 0.803,
-    "fair": -408
-   }
-  },
-  {
-   "id": 8478403,
-   "name": "Jack Eichel",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 20.5,
-   "exp_sog": 3.22,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5995,
-    "p": 0.5995,
-    "fair": -150
-   },
-   "sog1.5": {
-    "p_model": 0.809,
-    "p": 0.809,
-    "fair": -424
-   }
-  },
-  {
-   "id": 8478420,
-   "name": "Mikko Rantanen",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "R",
-   "game_id": 2026020327,
-   "toi": 19.6,
-   "exp_sog": 1.84,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.492,
-    "p": 0.492,
-    "fair": 103
-   },
-   "sog1.5": {
-    "p_model": 0.5375,
-    "p": 0.5375,
-    "fair": -116
-   }
-  },
-  {
-   "id": 8478421,
-   "name": "A.J. Greer",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "L",
-   "game_id": 2026020328,
-   "toi": 12.4,
-   "exp_sog": 1.49,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1728,
-    "p": 0.1728,
-    "fair": 479
-   },
-   "sog1.5": {
-    "p_model": 0.4314,
-    "p": 0.4314,
-    "fair": 132
-   }
-  },
-  {
-   "id": 8478439,
-   "name": "Travis Konecny",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 17.7,
-   "exp_sog": 1.92,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3636,
-    "p": 0.3636,
-    "fair": 175
-   },
-   "sog1.5": {
-    "p_model": 0.5587,
-    "p": 0.5587,
-    "fair": -127
+    "p_model": 0.2546,
+    "p": 0.2546,
+    "fair": 293
    }
   },
   {
    "id": 8478444,
    "name": "Brock Boeser",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "R",
-   "game_id": 2026020329,
-   "toi": 19.3,
-   "exp_sog": 1.93,
+   "game_id": 2026020332,
+   "toi": 19.7,
+   "exp_sog": 1.83,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3518,
-    "p": 0.3518,
-    "fair": 184
+    "p_model": 0.3868,
+    "p": 0.3868,
+    "fair": 159
    },
    "sog1.5": {
-    "p_model": 0.5634,
-    "p": 0.5634,
-    "fair": -129
-   }
-  },
-  {
-   "id": 8478449,
-   "name": "Roope Hintz",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 16.5,
-   "exp_sog": 2.03,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3567,
-    "p": 0.3567,
-    "fair": 180
-   },
-   "sog1.5": {
-    "p_model": 0.5894,
-    "p": 0.5894,
-    "fair": -144
-   }
-  },
-  {
-   "id": 8478450,
-   "name": "Parker Wotherspoon",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 18.9,
-   "exp_sog": 0.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2951,
-    "p": 0.2951,
-    "fair": 239
-   },
-   "sog1.5": {
-    "p_model": 0.2514,
-    "p": 0.2514,
-    "fair": 298
+    "p_model": 0.5341,
+    "p": 0.5341,
+    "fair": -115
    }
   },
   {
    "id": 8478465,
    "name": "Guillaume Brisebois",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "D",
-   "game_id": 2026020329,
+   "game_id": 2026020332,
    "toi": 16.9,
-   "exp_sog": 1.09,
+   "exp_sog": 1.03,
    "env": 1.0,
    "assist": {
-    "p_model": 0.132,
-    "p": 0.132,
-    "fair": 658
+    "p_model": 0.144,
+    "p": 0.144,
+    "fair": 594
    },
    "sog1.5": {
-    "p_model": 0.2951,
-    "p": 0.2951,
-    "fair": 239
+    "p_model": 0.2746,
+    "p": 0.2746,
+    "fair": 264
    }
   },
   {
-   "id": 8478468,
-   "name": "Jeremy Lauzon",
-   "team": "VGK",
+   "id": 8478474,
+   "name": "Lawson Crouse",
+   "team": "UTA",
    "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 17.4,
-   "exp_sog": 1.18,
+   "pos": "L",
+   "game_id": 2026020332,
+   "toi": 15.6,
+   "exp_sog": 1.71,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1689,
-    "p": 0.1689,
-    "fair": 492
+    "p_model": 0.2586,
+    "p": 0.2586,
+    "fair": 287
    },
    "sog1.5": {
-    "p_model": 0.3279,
-    "p": 0.3279,
-    "fair": 205
-   }
-  },
-  {
-   "id": 8478472,
-   "name": "Mathieu Joseph",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 12.2,
-   "exp_sog": 0.77,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1663,
-    "p": 0.1663,
-    "fair": 501
-   },
-   "sog1.5": {
-    "p_model": 0.1821,
-    "p": 0.1821,
-    "fair": 449
-   }
-  },
-  {
-   "id": 8478476,
-   "name": "Kyle Capobianco",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 11.4,
-   "exp_sog": 0.56,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.072,
-    "p": 0.072,
-    "fair": 1289
-   },
-   "sog1.5": {
-    "p_model": 0.1094,
-    "p": 0.1094,
-    "fair": 814
-   }
-  },
-  {
-   "id": 8478483,
-   "name": "Mitch Marner",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "R",
-   "game_id": 2026020329,
-   "toi": 20.1,
-   "exp_sog": 2.32,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5716,
-    "p": 0.5716,
-    "fair": -133
-   },
-   "sog1.5": {
-    "p_model": 0.6573,
-    "p": 0.6573,
-    "fair": -192
+    "p_model": 0.5014,
+    "p": 0.5014,
+    "fair": -101
    }
   },
   {
    "id": 8478498,
    "name": "Jake DeBrusk",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "L",
-   "game_id": 2026020329,
-   "toi": 17.4,
-   "exp_sog": 2.45,
+   "game_id": 2026020332,
+   "toi": 17.1,
+   "exp_sog": 2.29,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2311,
-    "p": 0.2311,
-    "fair": 333
+    "p_model": 0.2446,
+    "p": 0.2446,
+    "fair": 309
    },
    "sog1.5": {
-    "p_model": 0.6843,
-    "p": 0.6843,
-    "fair": -217
+    "p_model": 0.6499,
+    "p": 0.6499,
+    "fair": -186
    }
   },
   {
-   "id": 8478569,
-   "name": "Noel Acciari",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 13.1,
-   "exp_sog": 1.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1207,
-    "p": 0.1207,
-    "fair": 729
-   },
-   "sog1.5": {
-    "p_model": 0.3316,
-    "p": 0.3316,
-    "fair": 202
-   }
-  },
-  {
-   "id": 8478854,
-   "name": "Ryan Shea",
-   "team": "EDM",
-   "opp": "PHI",
+   "id": 8478507,
+   "name": "John Marino",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "D",
-   "game_id": 2026020326,
-   "toi": 22.1,
-   "exp_sog": 0.82,
+   "game_id": 2026020332,
+   "toi": 20.3,
+   "exp_sog": 0.87,
    "env": 1.0,
    "assist": {
+    "p_model": 0.3619,
+    "p": 0.3619,
+    "fair": 176
+   },
+   "sog1.5": {
+    "p_model": 0.2173,
+    "p": 0.2173,
+    "fair": 360
+   }
+  },
+  {
+   "id": 8478831,
+   "name": "Kevin Stenlund",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 13.6,
+   "exp_sog": 0.95,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1927,
+    "p": 0.1927,
+    "fair": 419
+   },
+   "sog1.5": {
     "p_model": 0.246,
     "p": 0.246,
     "fair": 307
-   },
-   "sog1.5": {
-    "p_model": 0.1986,
-    "p": 0.1986,
-    "fair": 404
    }
   },
   {
-   "id": 8478859,
-   "name": "Niko Mikkola",
-   "team": "FLA",
-   "opp": "DAL",
+   "id": 8478851,
+   "name": "Alexandre Carrier",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "D",
-   "game_id": 2026020327,
-   "toi": 19.6,
-   "exp_sog": 1.02,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1456,
-    "p": 0.1456,
-    "fair": 587
-   },
-   "sog1.5": {
-    "p_model": 0.2696,
-    "p": 0.2696,
-    "fair": 271
-   }
-  },
-  {
-   "id": 8478873,
-   "name": "Troy Terry",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 17.5,
-   "exp_sog": 2.44,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4355,
-    "p": 0.4355,
-    "fair": 130
-   },
-   "sog1.5": {
-    "p_model": 0.6827,
-    "p": 0.6827,
-    "fair": -215
-   }
-  },
-  {
-   "id": 8478874,
-   "name": "Adam Gaudette",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "R",
-   "game_id": 2026020330,
-   "toi": 10.2,
-   "exp_sog": 1.21,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0941,
-    "p": 0.0941,
-    "fair": 963
-   },
-   "sog1.5": {
-    "p_model": 0.339,
-    "p": 0.339,
-    "fair": 195
-   }
-  },
-  {
-   "id": 8478975,
-   "name": "Mason Marchment",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 17.1,
-   "exp_sog": 1.89,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2865,
-    "p": 0.2865,
-    "fair": 249
-   },
-   "sog1.5": {
-    "p_model": 0.5515,
-    "p": 0.5515,
-    "fair": -123
-   }
-  },
-  {
-   "id": 8479314,
-   "name": "Matthew Tkachuk",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 18.2,
-   "exp_sog": 2.16,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4759,
-    "p": 0.4759,
-    "fair": 110
-   },
-   "sog1.5": {
-    "p_model": 0.6214,
-    "p": 0.6214,
-    "fair": -164
-   }
-  },
-  {
-   "id": 8479351,
-   "name": "Sam Steel",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 16.0,
-   "exp_sog": 0.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.212,
-    "p": 0.212,
-    "fair": 372
-   },
-   "sog1.5": {
-    "p_model": 0.2501,
-    "p": 0.2501,
-    "fair": 300
-   }
-  },
-  {
-   "id": 8479353,
-   "name": "Brett Howden",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 15.2,
-   "exp_sog": 1.53,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1945,
-    "p": 0.1945,
-    "fair": 414
-   },
-   "sog1.5": {
-    "p_model": 0.446,
-    "p": 0.446,
-    "fair": 124
-   }
-  },
-  {
-   "id": 8479425,
-   "name": "Filip Hronek",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 26.4,
-   "exp_sog": 1.41,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3921,
-    "p": 0.3921,
-    "fair": 155
-   },
-   "sog1.5": {
-    "p_model": 0.4082,
-    "p": 0.4082,
-    "fair": 145
-   }
-  },
-  {
-   "id": 8479525,
-   "name": "Ross Colton",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 13.3,
-   "exp_sog": 1.99,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.153,
-    "p": 0.153,
-    "fair": 554
-   },
-   "sog1.5": {
-    "p_model": 0.5779,
-    "p": 0.5779,
-    "fair": -137
-   }
-  },
-  {
-   "id": 8479639,
-   "name": "Dylan Coghlan",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 14.7,
-   "exp_sog": 1.17,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1331,
-    "p": 0.1331,
-    "fair": 651
-   },
-   "sog1.5": {
-    "p_model": 0.3263,
-    "p": 0.3263,
-    "fair": 206
-   }
-  },
-  {
-   "id": 8479980,
-   "name": "Nicolas Hague",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 17.1,
-   "exp_sog": 0.86,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1979,
-    "p": 0.1979,
-    "fair": 405
-   },
-   "sog1.5": {
-    "p_model": 0.2133,
-    "p": 0.2133,
-    "fair": 369
-   }
-  },
-  {
-   "id": 8480012,
-   "name": "Elias Pettersson",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 20.8,
-   "exp_sog": 1.52,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4191,
-    "p": 0.4191,
-    "fair": 139
-   },
-   "sog1.5": {
-    "p_model": 0.4416,
-    "p": 0.4416,
-    "fair": 126
-   }
-  },
-  {
-   "id": 8480015,
-   "name": "Owen Tippett",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 15.3,
-   "exp_sog": 2.19,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2072,
-    "p": 0.2072,
-    "fair": 383
-   },
-   "sog1.5": {
-    "p_model": 0.6269,
-    "p": 0.6269,
-    "fair": -168
-   }
-  },
-  {
-   "id": 8480027,
-   "name": "Jason Robertson",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 19.4,
-   "exp_sog": 3.17,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4118,
-    "p": 0.4118,
-    "fair": 143
-   },
-   "sog1.5": {
-    "p_model": 0.8029,
-    "p": 0.8029,
-    "fair": -407
-   }
-  },
-  {
-   "id": 8480028,
-   "name": "Morgan Frost",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 15.4,
-   "exp_sog": 1.47,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2753,
-    "p": 0.2753,
-    "fair": 263
-   },
-   "sog1.5": {
-    "p_model": 0.4274,
-    "p": 0.4274,
-    "fair": 134
-   }
-  },
-  {
-   "id": 8480029,
-   "name": "Alex Formenton",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "L",
-   "game_id": 2026020326,
-   "toi": 12.7,
-   "exp_sog": 1.17,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1123,
-    "p": 0.1123,
-    "fair": 790
-   },
-   "sog1.5": {
-    "p_model": 0.3236,
-    "p": 0.3236,
-    "fair": 209
-   }
-  },
-  {
-   "id": 8480036,
-   "name": "Miro Heiskanen",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 25.1,
-   "exp_sog": 1.73,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4082,
-    "p": 0.4082,
-    "fair": 145
-   },
-   "sog1.5": {
-    "p_model": 0.5081,
-    "p": 0.5081,
-    "fair": -103
-   }
-  },
-  {
-   "id": 8480068,
-   "name": "Ryan Poehling",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 14.6,
-   "exp_sog": 1.26,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.281,
-    "p": 0.281,
-    "fair": 256
-   },
-   "sog1.5": {
-    "p_model": 0.3559,
-    "p": 0.3559,
-    "fair": 181
-   }
-  },
-  {
-   "id": 8480075,
-   "name": "Cameron Crotty",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 12.9,
-   "exp_sog": 0.69,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0967,
-    "p": 0.0967,
-    "fair": 934
-   },
-   "sog1.5": {
-    "p_model": 0.1527,
-    "p": 0.1527,
-    "fair": 555
-   }
-  },
-  {
-   "id": 8480078,
-   "name": "Filip Chytil",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 18.0,
-   "exp_sog": 1.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1932,
-    "p": 0.1932,
-    "fair": 418
-   },
-   "sog1.5": {
-    "p_model": 0.571,
-    "p": 0.571,
-    "fair": -133
-   }
-  },
-  {
-   "id": 8480185,
-   "name": "Eetu Luostarinen",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 16.1,
-   "exp_sog": 1.07,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2163,
-    "p": 0.2163,
-    "fair": 362
-   },
-   "sog1.5": {
-    "p_model": 0.2897,
-    "p": 0.2897,
-    "fair": 245
-   }
-  },
-  {
-   "id": 8480220,
-   "name": "Noah Cates",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "L",
-   "game_id": 2026020326,
-   "toi": 14.0,
-   "exp_sog": 1.16,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2342,
-    "p": 0.2342,
-    "fair": 327
-   },
-   "sog1.5": {
-    "p_model": 0.3208,
-    "p": 0.3208,
-    "fair": 212
-   }
-  },
-  {
-   "id": 8480246,
-   "name": "Nick Perbix",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 18.8,
-   "exp_sog": 1.03,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1655,
-    "p": 0.1655,
-    "fair": 504
-   },
-   "sog1.5": {
-    "p_model": 0.276,
-    "p": 0.276,
-    "fair": 262
-   }
-  },
-  {
-   "id": 8480727,
-   "name": "Zach Whitecloud",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 20.7,
-   "exp_sog": 0.83,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1907,
-    "p": 0.1907,
-    "fair": 424
-   },
-   "sog1.5": {
-    "p_model": 0.2034,
-    "p": 0.2034,
-    "fair": 392
-   }
-  },
-  {
-   "id": 8480748,
-   "name": "Kiefer Sherwood",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 16.4,
-   "exp_sog": 2.03,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2124,
-    "p": 0.2124,
-    "fair": 371
-   },
-   "sog1.5": {
-    "p_model": 0.5883,
-    "p": 0.5883,
-    "fair": -143
-   }
-  },
-  {
-   "id": 8480797,
-   "name": "Joel Farabee",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "L",
-   "game_id": 2026020328,
-   "toi": 19.0,
-   "exp_sog": 2.22,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.277,
-    "p": 0.277,
-    "fair": 261
-   },
-   "sog1.5": {
-    "p_model": 0.6345,
-    "p": 0.6345,
-    "fair": -174
-   }
-  },
-  {
-   "id": 8480801,
-   "name": "Brady Tkachuk",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 16.5,
-   "exp_sog": 3.15,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3555,
-    "p": 0.3555,
-    "fair": 181
-   },
-   "sog1.5": {
-    "p_model": 0.8003,
-    "p": 0.8003,
-    "fair": -401
-   }
-  },
-  {
-   "id": 8480803,
-   "name": "Evan Bouchard",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 25.2,
-   "exp_sog": 2.45,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5394,
-    "p": 0.5394,
-    "fair": -117
-   },
-   "sog1.5": {
-    "p_model": 0.684,
-    "p": 0.684,
-    "fair": -216
-   }
-  },
-  {
-   "id": 8480831,
-   "name": "Alec Regula",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 14.5,
-   "exp_sog": 0.67,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1113,
-    "p": 0.1113,
-    "fair": 798
-   },
-   "sog1.5": {
-    "p_model": 0.1464,
-    "p": 0.1464,
-    "fair": 583
-   }
-  },
-  {
-   "id": 8480834,
-   "name": "Ty Emberson",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 13.2,
-   "exp_sog": 0.63,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1216,
-    "p": 0.1216,
-    "fair": 722
-   },
-   "sog1.5": {
-    "p_model": 0.1329,
-    "p": 0.1329,
-    "fair": 652
-   }
-  },
-  {
-   "id": 8480835,
-   "name": "Jack Drury",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 16.9,
-   "exp_sog": 1.27,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.175,
-    "p": 0.175,
-    "fair": 471
-   },
-   "sog1.5": {
-    "p_model": 0.3594,
-    "p": 0.3594,
-    "fair": 178
-   }
-  },
-  {
-   "id": 8480840,
-   "name": "Oskar B\u00e4ck",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 11.7,
-   "exp_sog": 0.6,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0884,
-    "p": 0.0884,
-    "fair": 1031
-   },
-   "sog1.5": {
-    "p_model": 0.1245,
-    "p": 0.1245,
-    "fair": 703
-   }
-  },
-  {
-   "id": 8480842,
-   "name": "Filip Hallander",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 11.1,
-   "exp_sog": 1.1,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1776,
-    "p": 0.1776,
-    "fair": 463
-   },
-   "sog1.5": {
-    "p_model": 0.2988,
-    "p": 0.2988,
-    "fair": 235
-   }
-  },
-  {
-   "id": 8480848,
-   "name": "Ty Dellandrea",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 12.8,
-   "exp_sog": 0.98,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1503,
-    "p": 0.1503,
-    "fair": 565
-   },
-   "sog1.5": {
-    "p_model": 0.2575,
-    "p": 0.2575,
-    "fair": 288
-   }
-  },
-  {
-   "id": 8480860,
-   "name": "Kevin Bahl",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 22.0,
-   "exp_sog": 0.71,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2006,
-    "p": 0.2006,
-    "fair": 399
-   },
-   "sog1.5": {
-    "p_model": 0.1593,
-    "p": 0.1593,
-    "fair": 528
-   }
-  },
-  {
-   "id": 8480878,
-   "name": "Nils Lundkvist",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 18.2,
-   "exp_sog": 0.8,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1595,
-    "p": 0.1595,
-    "fair": 527
-   },
-   "sog1.5": {
-    "p_model": 0.192,
-    "p": 0.192,
-    "fair": 421
-   }
-  },
-  {
-   "id": 8480891,
-   "name": "Michael Kesselring",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 17.8,
-   "exp_sog": 1.53,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0948,
-    "p": 0.0948,
-    "fair": 955
-   },
-   "sog1.5": {
-    "p_model": 0.4449,
-    "p": 0.4449,
-    "fair": 125
-   }
-  },
-  {
-   "id": 8480950,
-   "name": "Ilya Lyubushkin",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 15.8,
-   "exp_sog": 0.68,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.14,
-    "p": 0.14,
-    "fair": 614
-   },
-   "sog1.5": {
-    "p_model": 0.1504,
-    "p": 0.1504,
-    "fair": 565
-   }
-  },
-  {
-   "id": 8481024,
-   "name": "Linus Karlsson",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 14.3,
-   "exp_sog": 1.57,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2156,
-    "p": 0.2156,
-    "fair": 364
-   },
-   "sog1.5": {
-    "p_model": 0.4589,
-    "p": 0.4589,
-    "fair": 118
-   }
-  },
-  {
-   "id": 8481028,
-   "name": "Martin Pospisil",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 12.8,
-   "exp_sog": 1.17,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1585,
-    "p": 0.1585,
-    "fair": 531
-   },
-   "sog1.5": {
-    "p_model": 0.3253,
-    "p": 0.3253,
-    "fair": 207
-   }
-  },
-  {
-   "id": 8481032,
-   "name": "Paul Cotter",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 13.0,
-   "exp_sog": 0.75,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0987,
-    "p": 0.0987,
-    "fair": 913
-   },
-   "sog1.5": {
-    "p_model": 0.1752,
-    "p": 0.1752,
-    "fair": 471
-   }
-  },
-  {
-   "id": 8481068,
-   "name": "Yegor Sharangovich",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 16.1,
-   "exp_sog": 1.43,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.219,
-    "p": 0.219,
-    "fair": 357
-   },
-   "sog1.5": {
-    "p_model": 0.4139,
-    "p": 0.4139,
-    "fair": 142
-   }
-  },
-  {
-   "id": 8481122,
-   "name": "Simon Benoit",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 15.3,
-   "exp_sog": 0.78,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0838,
-    "p": 0.0838,
-    "fair": 1093
-   },
-   "sog1.5": {
-    "p_model": 0.186,
-    "p": 0.186,
-    "fair": 438
-   }
-  },
-  {
-   "id": 8481133,
-   "name": "Cole Reinhardt",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 10.7,
-   "exp_sog": 0.81,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0886,
-    "p": 0.0886,
-    "fair": 1029
-   },
-   "sog1.5": {
-    "p_model": 0.1961,
-    "p": 0.1961,
-    "fair": 410
-   }
-  },
-  {
-   "id": 8481167,
-   "name": "Brayden Pachal",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 13.9,
+   "game_id": 2026020331,
+   "toi": 20.4,
    "exp_sog": 0.7,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1427,
-    "p": 0.1427,
-    "fair": 601
+    "p_model": 0.2028,
+    "p": 0.2028,
+    "fair": 393
    },
    "sog1.5": {
-    "p_model": 0.158,
-    "p": 0.158,
-    "fair": 533
+    "p_model": 0.1567,
+    "p": 0.1567,
+    "fair": 538
    }
   },
   {
-   "id": 8481533,
-   "name": "Trevor Zegras",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 18.5,
-   "exp_sog": 2.03,
+   "id": 8478882,
+   "name": "Vladislav Gavrikov",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 22.1,
+   "exp_sog": 1.45,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3529,
-    "p": 0.3529,
-    "fair": 183
+    "p_model": 0.2558,
+    "p": 0.2558,
+    "fair": 291
    },
    "sog1.5": {
-    "p_model": 0.5888,
-    "p": 0.5888,
-    "fair": -143
+    "p_model": 0.4192,
+    "p": 0.4192,
+    "fair": 139
    }
   },
   {
-   "id": 8481534,
-   "name": "Raphael Lavoie",
-   "team": "VGK",
+   "id": 8479323,
+   "name": "Adam Fox",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 23.7,
+   "exp_sog": 1.75,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.5309,
+    "p": 0.5309,
+    "fair": -113
+   },
+   "sog1.5": {
+    "p_model": 0.5121,
+    "p": 0.5121,
+    "fair": -105
+   }
+  },
+  {
+   "id": 8479343,
+   "name": "Clayton Keller",
+   "team": "UTA",
    "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 10.1,
+   "pos": "R",
+   "game_id": 2026020332,
+   "toi": 19.6,
+   "exp_sog": 3.0,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.6005,
+    "p": 0.6005,
+    "fair": -150
+   },
+   "sog1.5": {
+    "p_model": 0.7799,
+    "p": 0.7799,
+    "fair": -354
+   }
+  },
+  {
+   "id": 8479369,
+   "name": "Andrew Peeke",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 19.1,
    "exp_sog": 1.04,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1641,
-    "p": 0.1641,
-    "fair": 509
+    "p_model": 0.2086,
+    "p": 0.2086,
+    "fair": 379
    },
    "sog1.5": {
     "p_model": 0.2775,
@@ -2786,1064 +605,308 @@
    }
   },
   {
-   "id": 8481535,
-   "name": "Nils Hoglander",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 11.2,
-   "exp_sog": 1.18,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1447,
-    "p": 0.1447,
-    "fair": 591
-   },
-   "sog1.5": {
-    "p_model": 0.3298,
-    "p": 0.3298,
-    "fair": 203
-   }
-  },
-  {
-   "id": 8481538,
-   "name": "Judd Caulfield",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 14.4,
-   "exp_sog": 1.51,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2155,
-    "p": 0.2155,
-    "fair": 364
-   },
-   "sog1.5": {
-    "p_model": 0.4402,
-    "p": 0.4402,
-    "fair": 127
-   }
-  },
-  {
-   "id": 8481546,
-   "name": "Cam York",
-   "team": "PHI",
-   "opp": "EDM",
+   "id": 8479410,
+   "name": "Mikhail Sergachev",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "D",
-   "game_id": 2026020326,
-   "toi": 20.0,
-   "exp_sog": 1.04,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2098,
-    "p": 0.2098,
-    "fair": 377
-   },
-   "sog1.5": {
-    "p_model": 0.28,
-    "p": 0.28,
-    "fair": 257
-   }
-  },
-  {
-   "id": 8481563,
-   "name": "Drew Helleson",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 19.3,
-   "exp_sog": 0.93,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1948,
-    "p": 0.1948,
-    "fair": 413
-   },
-   "sog1.5": {
-    "p_model": 0.2403,
-    "p": 0.2403,
-    "fair": 316
-   }
-  },
-  {
-   "id": 8481581,
-   "name": "Thomas Harley",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
+   "game_id": 2026020332,
    "toi": 25.1,
-   "exp_sog": 1.72,
+   "exp_sog": 2.41,
    "env": 1.0,
    "assist": {
-    "p_model": 0.3343,
-    "p": 0.3343,
-    "fair": 199
+    "p_model": 0.505,
+    "p": 0.505,
+    "fair": -102
    },
    "sog1.5": {
-    "p_model": 0.5028,
-    "p": 0.5028,
-    "fair": -101
+    "p_model": 0.6768,
+    "p": 0.6768,
+    "fair": -209
    }
   },
   {
-   "id": 8481593,
-   "name": "Jayden Struble",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 14.5,
-   "exp_sog": 0.5,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1275,
-    "p": 0.1275,
-    "fair": 684
-   },
-   "sog1.5": {
-    "p_model": 0.0921,
-    "p": 0.0921,
-    "fair": 986
-   }
-  },
-  {
-   "id": 8481605,
-   "name": "Jackson LaCombe",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 26.8,
-   "exp_sog": 1.49,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.4787,
-    "p": 0.4787,
-    "fair": 109
-   },
-   "sog1.5": {
-    "p_model": 0.4339,
-    "p": 0.4339,
-    "fair": 130
-   }
-  },
-  {
-   "id": 8481617,
-   "name": "Vasily Podkolzin",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 16.6,
-   "exp_sog": 1.75,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2045,
-    "p": 0.2045,
-    "fair": 389
-   },
-   "sog1.5": {
-    "p_model": 0.5137,
-    "p": 0.5137,
-    "fair": -106
-   }
-  },
-  {
-   "id": 8481641,
-   "name": "Joel Kiviranta",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "L",
-   "game_id": 2026020327,
-   "toi": 11.5,
-   "exp_sog": 1.02,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0959,
-    "p": 0.0959,
-    "fair": 943
-   },
-   "sog1.5": {
-    "p_model": 0.27,
-    "p": 0.27,
-    "fair": 270
-   }
-  },
-  {
-   "id": 8481726,
-   "name": "Adam Edstrom",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 14.0,
-   "exp_sog": 1.42,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0848,
-    "p": 0.0848,
-    "fair": 1079
-   },
-   "sog1.5": {
-    "p_model": 0.4089,
-    "p": 0.4089,
-    "fair": 145
-   }
-  },
-  {
-   "id": 8481754,
-   "name": "Nikita Nesterenko",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 10.9,
-   "exp_sog": 1.06,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1599,
-    "p": 0.1599,
-    "fair": 525
-   },
-   "sog1.5": {
-    "p_model": 0.2847,
-    "p": 0.2847,
-    "fair": 251
-   }
-  },
-  {
-   "id": 8482055,
-   "name": "Drew O'Connor",
+   "id": 8479425,
+   "name": "Filip Hronek",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 26.6,
+   "exp_sog": 1.35,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.4208,
+    "p": 0.4208,
+    "fair": 138
+   },
+   "sog1.5": {
+    "p_model": 0.3859,
+    "p": 0.3859,
+    "fair": 159
+   }
+  },
+  {
+   "id": 8479619,
+   "name": "Michael Carcone",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "L",
-   "game_id": 2026020329,
-   "toi": 15.0,
-   "exp_sog": 1.47,
+   "game_id": 2026020332,
+   "toi": 12.2,
+   "exp_sog": 2.11,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1467,
-    "p": 0.1467,
-    "fair": 582
+    "p_model": 0.1822,
+    "p": 0.1822,
+    "fair": 449
    },
    "sog1.5": {
-    "p_model": 0.428,
-    "p": 0.428,
-    "fair": 134
+    "p_model": 0.6088,
+    "p": 0.6088,
+    "fair": -156
    }
   },
   {
-   "id": 8482079,
-   "name": "Marco Rossi",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 15.4,
-   "exp_sog": 1.46,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3065,
-    "p": 0.3065,
-    "fair": 226
-   },
-   "sog1.5": {
-    "p_model": 0.4231,
-    "p": 0.4231,
-    "fair": 136
-   }
-  },
-  {
-   "id": 8482094,
-   "name": "Daemon Hunt",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 13.1,
-   "exp_sog": 0.8,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1081,
-    "p": 0.1081,
-    "fair": 825
-   },
-   "sog1.5": {
-    "p_model": 0.1933,
-    "p": 0.1933,
-    "fair": 417
-   }
-  },
-  {
-   "id": 8482113,
-   "name": "Anton Lundell",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 17.5,
-   "exp_sog": 2.03,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2989,
-    "p": 0.2989,
-    "fair": 235
-   },
-   "sog1.5": {
-    "p_model": 0.5894,
-    "p": 0.5894,
-    "fair": -144
-   }
-  },
-  {
-   "id": 8482118,
-   "name": "Sam Colangelo",
-   "team": "ANA",
-   "opp": "CGY",
+   "id": 8479977,
+   "name": "Kailer Yamamoto",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "R",
-   "game_id": 2026020328,
-   "toi": 10.2,
-   "exp_sog": 1.08,
+   "game_id": 2026020332,
+   "toi": 14.6,
+   "exp_sog": 1.69,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1376,
-    "p": 0.1376,
-    "fair": 627
+    "p_model": 0.2358,
+    "p": 0.2358,
+    "fair": 324
    },
    "sog1.5": {
-    "p_model": 0.2928,
-    "p": 0.2928,
-    "fair": 242
+    "p_model": 0.4945,
+    "p": 0.4945,
+    "fair": 102
    }
   },
   {
-   "id": 8482142,
-   "name": "Jamie Drysdale",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 23.2,
-   "exp_sog": 1.29,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2637,
-    "p": 0.2637,
-    "fair": 279
-   },
-   "sog1.5": {
-    "p_model": 0.3664,
-    "p": 0.3664,
-    "fair": 173
-   }
-  },
-  {
-   "id": 8482145,
-   "name": "Mavrik Bourque",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 16.1,
-   "exp_sog": 1.97,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.241,
-    "p": 0.241,
-    "fair": 315
-   },
-   "sog1.5": {
-    "p_model": 0.574,
-    "p": 0.574,
-    "fair": -135
-   }
-  },
-  {
-   "id": 8482159,
-   "name": "Tyson Foerster",
-   "team": "PHI",
-   "opp": "EDM",
+   "id": 8480009,
+   "name": "Eeli Tolvanen",
+   "team": "NYR",
+   "opp": "MTL",
    "pos": "R",
-   "game_id": 2026020326,
-   "toi": 17.0,
-   "exp_sog": 1.92,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1888,
-    "p": 0.1888,
-    "fair": 430
-   },
-   "sog1.5": {
-    "p_model": 0.561,
-    "p": 0.561,
-    "fair": -128
-   }
-  },
-  {
-   "id": 8482165,
-   "name": "Yan Kuznetsov",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 17.7,
-   "exp_sog": 0.96,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1969,
-    "p": 0.1969,
-    "fair": 408
-   },
-   "sog1.5": {
-    "p_model": 0.25,
-    "p": 0.25,
-    "fair": 300
-   }
-  },
-  {
-   "id": 8482166,
-   "name": "Shakir Mukhamadullin",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 15.7,
-   "exp_sog": 0.82,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1287,
-    "p": 0.1287,
-    "fair": 677
-   },
-   "sog1.5": {
-    "p_model": 0.1979,
-    "p": 0.1979,
-    "fair": 405
-   }
-  },
-  {
-   "id": 8482178,
-   "name": "Ian Moore",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 13.7,
-   "exp_sog": 0.98,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1267,
-    "p": 0.1267,
-    "fair": 689
-   },
-   "sog1.5": {
-    "p_model": 0.2574,
-    "p": 0.2574,
-    "fair": 289
-   }
-  },
-  {
-   "id": 8482482,
-   "name": "Adam Wilsby",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 20.0,
+   "game_id": 2026020331,
+   "toi": 12.4,
    "exp_sog": 1.3,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2518,
-    "p": 0.2518,
-    "fair": 297
+    "p_model": 0.2371,
+    "p": 0.2371,
+    "fair": 322
    },
    "sog1.5": {
-    "p_model": 0.3694,
-    "p": 0.3694,
-    "fair": 171
+    "p_model": 0.371,
+    "p": 0.371,
+    "fair": 170
    }
   },
   {
-   "id": 8482679,
-   "name": "Matt Coronato",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 17.4,
-   "exp_sog": 2.1,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3364,
-    "p": 0.3364,
-    "fair": 197
-   },
-   "sog1.5": {
-    "p_model": 0.6069,
-    "p": 0.6069,
-    "fair": -154
-   }
-  },
-  {
-   "id": 8482700,
-   "name": "Nolan Allan",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 16.5,
-   "exp_sog": 1.08,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.108,
-    "p": 0.108,
-    "fair": 826
-   },
-   "sog1.5": {
-    "p_model": 0.2931,
-    "p": 0.2931,
-    "fair": 241
-   }
-  },
-  {
-   "id": 8482703,
-   "name": "Colton Dach",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 13.6,
-   "exp_sog": 1.38,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.135,
-    "p": 0.135,
-    "fair": 641
-   },
-   "sog1.5": {
-    "p_model": 0.3968,
-    "p": 0.3968,
-    "fair": 152
-   }
-  },
-  {
-   "id": 8482731,
-   "name": "Tyson Hinds",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 16.7,
-   "exp_sog": 1.27,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0977,
-    "p": 0.0977,
-    "fair": 924
-   },
-   "sog1.5": {
-    "p_model": 0.3606,
-    "p": 0.3606,
-    "fair": 177
-   }
-  },
-  {
-   "id": 8482740,
-   "name": "Wyatt Johnston",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 19.5,
-   "exp_sog": 2.44,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.382,
-    "p": 0.382,
-    "fair": 162
-   },
-   "sog1.5": {
-    "p_model": 0.6834,
-    "p": 0.6834,
-    "fair": -216
-   }
-  },
-  {
-   "id": 8482859,
-   "name": "Zack Ostapchuk",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 10.3,
-   "exp_sog": 0.94,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0533,
-    "p": 0.0533,
-    "fair": 1776
-   },
-   "sog1.5": {
-    "p_model": 0.2432,
-    "p": 0.2432,
-    "fair": 311
-   }
-  },
-  {
-   "id": 8483395,
-   "name": "Arshdeep Bains",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 10.3,
-   "exp_sog": 0.66,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1242,
-    "p": 0.1242,
-    "fair": 705
-   },
-   "sog1.5": {
-    "p_model": 0.1426,
-    "p": 0.1426,
-    "fair": 601
-   }
-  },
-  {
-   "id": 8483425,
-   "name": "Lian Bichsel",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 15.5,
-   "exp_sog": 0.58,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0834,
-    "p": 0.0834,
-    "fair": 1099
-   },
-   "sog1.5": {
-    "p_model": 0.1178,
-    "p": 0.1178,
-    "fair": 749
-   }
-  },
-  {
-   "id": 8483445,
-   "name": "Cutter Gauthier",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "L",
-   "game_id": 2026020328,
-   "toi": 18.4,
-   "exp_sog": 4.31,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3325,
-    "p": 0.3325,
-    "fair": 201
-   },
-   "sog1.5": {
-    "p_model": 0.9082,
-    "p": 0.9082,
-    "fair": -989
-   }
-  },
-  {
-   "id": 8483460,
-   "name": "David Jiricek",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "D",
-   "game_id": 2026020326,
-   "toi": 13.9,
-   "exp_sog": 0.77,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0478,
-    "p": 0.0478,
-    "fair": 1992
-   },
-   "sog1.5": {
-    "p_model": 0.1812,
-    "p": 0.1812,
-    "fair": 452
-   }
-  },
-  {
-   "id": 8483476,
-   "name": "Jonathan Lekkerim\u00e4ki",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "R",
-   "game_id": 2026020329,
-   "toi": 15.2,
-   "exp_sog": 1.54,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1964,
-    "p": 0.1964,
-    "fair": 409
-   },
-   "sog1.5": {
-    "p_model": 0.4498,
-    "p": 0.4498,
-    "fair": 122
-   }
-  },
-  {
-   "id": 8483482,
-   "name": "Tristan Luneau",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 18.1,
-   "exp_sog": 1.36,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.244,
-    "p": 0.244,
-    "fair": 310
-   },
-   "sog1.5": {
-    "p_model": 0.3885,
-    "p": 0.3885,
-    "fair": 157
-   }
-  },
-  {
-   "id": 8483490,
-   "name": "Pavel Mintyukov",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 19.2,
-   "exp_sog": 1.06,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1945,
-    "p": 0.1945,
-    "fair": 414
-   },
-   "sog1.5": {
-    "p_model": 0.2855,
-    "p": 0.2855,
-    "fair": 250
-   }
-  },
-  {
-   "id": 8483495,
-   "name": "Simon Nemec",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 21.0,
-   "exp_sog": 1.46,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2452,
-    "p": 0.2452,
-    "fair": 308
-   },
-   "sog1.5": {
-    "p_model": 0.4242,
-    "p": 0.4242,
-    "fair": 136
-   }
-  },
-  {
-   "id": 8483499,
-   "name": "Liam Ohgren",
-   "team": "VAN",
-   "opp": "VGK",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 13.5,
-   "exp_sog": 1.31,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1461,
-    "p": 0.1461,
-    "fair": 584
-   },
-   "sog1.5": {
-    "p_model": 0.3737,
-    "p": 0.3737,
-    "fair": 168
-   }
-  },
-  {
-   "id": 8483512,
-   "name": "Matt Savoie",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "C",
-   "game_id": 2026020326,
-   "toi": 14.8,
-   "exp_sog": 1.6,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1997,
-    "p": 0.1997,
-    "fair": 401
-   },
-   "sog1.5": {
-    "p_model": 0.4673,
-    "p": 0.4673,
-    "fair": 114
-   }
-  },
-  {
-   "id": 8483513,
-   "name": "Reid Schaefer",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 10.3,
-   "exp_sog": 0.92,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0735,
-    "p": 0.0735,
-    "fair": 1261
-   },
-   "sog1.5": {
-    "p_model": 0.2359,
-    "p": 0.2359,
-    "fair": 324
-   }
-  },
-  {
-   "id": 8483521,
-   "name": "Noah Warren",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 16.5,
-   "exp_sog": 0.93,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1933,
-    "p": 0.1933,
-    "fair": 417
-   },
-   "sog1.5": {
-    "p_model": 0.2405,
-    "p": 0.2405,
-    "fair": 316
-   }
-  },
-  {
-   "id": 8483524,
-   "name": "Shane Wright",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 14.3,
-   "exp_sog": 1.49,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1937,
-    "p": 0.1937,
-    "fair": 416
-   },
-   "sog1.5": {
-    "p_model": 0.4316,
-    "p": 0.4316,
-    "fair": 132
-   }
-  },
-  {
-   "id": 8483553,
-   "name": "Marc Gatcomb",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 10.2,
-   "exp_sog": 1.23,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1002,
-    "p": 0.1002,
-    "fair": 898
-   },
-   "sog1.5": {
-    "p_model": 0.3453,
-    "p": 0.3453,
-    "fair": 190
-   }
-  },
-  {
-   "id": 8483609,
-   "name": "Adam Klapka",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 12.1,
-   "exp_sog": 1.28,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1586,
-    "p": 0.1586,
-    "fair": 531
-   },
-   "sog1.5": {
-    "p_model": 0.3625,
-    "p": 0.3625,
-    "fair": 176
-   }
-  },
-  {
-   "id": 8483678,
+   "id": 8480012,
    "name": "Elias Pettersson",
    "team": "VAN",
-   "opp": "VGK",
-   "pos": "D",
-   "game_id": 2026020329,
-   "toi": 17.9,
-   "exp_sog": 0.84,
+   "opp": "UTA",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 20.7,
+   "exp_sog": 1.42,
    "env": 1.0,
    "assist": {
-    "p_model": 0.0947,
-    "p": 0.0947,
-    "fair": 956
+    "p_model": 0.4466,
+    "p": 0.4466,
+    "fair": 124
    },
    "sog1.5": {
-    "p_model": 0.208,
-    "p": 0.208,
-    "fair": 381
+    "p_model": 0.4104,
+    "p": 0.4104,
+    "fair": 144
    }
   },
   {
-   "id": 8483733,
-   "name": "Nikita Grebenkin",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 11.3,
-   "exp_sog": 0.67,
+   "id": 8480018,
+   "name": "Nick Suzuki",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 20.9,
+   "exp_sog": 2.31,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1392,
-    "p": 0.1392,
-    "fair": 618
+    "p_model": 0.5076,
+    "p": 0.5076,
+    "fair": -103
    },
    "sog1.5": {
-    "p_model": 0.1468,
-    "p": 0.1468,
-    "fair": 581
+    "p_model": 0.6556,
+    "p": 0.6556,
+    "fair": -190
    }
   },
   {
-   "id": 8483771,
-   "name": "Sandis Vilmanis",
-   "team": "FLA",
-   "opp": "DAL",
+   "id": 8480074,
+   "name": "Alexandre Texier",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "L",
-   "game_id": 2026020327,
-   "toi": 12.2,
-   "exp_sog": 1.0,
+   "game_id": 2026020331,
+   "toi": 13.7,
+   "exp_sog": 1.59,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1369,
-    "p": 0.1369,
-    "fair": 630
+    "p_model": 0.1894,
+    "p": 0.1894,
+    "fair": 428
    },
    "sog1.5": {
-    "p_model": 0.2627,
-    "p": 0.2627,
-    "fair": 281
+    "p_model": 0.4652,
+    "p": 0.4652,
+    "fair": 115
    }
   },
   {
-   "id": 8483787,
-   "name": "Cole Knuble",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 13.1,
-   "exp_sog": 1.49,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1182,
-    "p": 0.1182,
-    "fair": 746
-   },
-   "sog1.5": {
-    "p_model": 0.4326,
-    "p": 0.4326,
-    "fair": 131
-   }
-  },
-  {
-   "id": 8483890,
-   "name": "Braeden Bowman",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "R",
-   "game_id": 2026020329,
-   "toi": 12.9,
-   "exp_sog": 1.33,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2599,
-    "p": 0.2599,
-    "fair": 285
-   },
-   "sog1.5": {
-    "p_model": 0.3803,
-    "p": 0.3803,
-    "fair": 163
-   }
-  },
-  {
-   "id": 8484136,
-   "name": "Max Sasson",
+   "id": 8480075,
+   "name": "Cameron Crotty",
    "team": "VAN",
-   "opp": "VGK",
-   "pos": "C",
-   "game_id": 2026020329,
-   "toi": 12.1,
-   "exp_sog": 1.01,
+   "opp": "UTA",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 12.6,
+   "exp_sog": 0.59,
    "env": 1.0,
    "assist": {
-    "p_model": 0.0927,
-    "p": 0.0927,
-    "fair": 979
+    "p_model": 0.1001,
+    "p": 0.1001,
+    "fair": 899
    },
    "sog1.5": {
-    "p_model": 0.2661,
-    "p": 0.2661,
-    "fair": 276
+    "p_model": 0.1218,
+    "p": 0.1218,
+    "fair": 721
    }
   },
   {
-   "id": 8484142,
-   "name": "Denver Barkey",
-   "team": "PHI",
-   "opp": "EDM",
+   "id": 8480078,
+   "name": "Filip Chytil",
+   "team": "VAN",
+   "opp": "UTA",
    "pos": "C",
-   "game_id": 2026020326,
-   "toi": 14.5,
-   "exp_sog": 1.13,
+   "game_id": 2026020332,
+   "toi": 18.0,
+   "exp_sog": 1.95,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2006,
+    "p": 0.2006,
+    "fair": 399
+   },
+   "sog1.5": {
+    "p_model": 0.5687,
+    "p": 0.5687,
+    "fair": -132
+   }
+  },
+  {
+   "id": 8480084,
+   "name": "Nick DeSimone",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 14.0,
+   "exp_sog": 0.85,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.142,
+    "p": 0.142,
+    "fair": 604
+   },
+   "sog1.5": {
+    "p_model": 0.2115,
+    "p": 0.2115,
+    "fair": 373
+   }
+  },
+  {
+   "id": 8480434,
+   "name": "Sean Durzi",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 19.4,
+   "exp_sog": 1.22,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2784,
+    "p": 0.2784,
+    "fair": 259
+   },
+   "sog1.5": {
+    "p_model": 0.3417,
+    "p": 0.3417,
+    "fair": 193
+   }
+  },
+  {
+   "id": 8480813,
+   "name": "Joseph Veleno",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 11.8,
+   "exp_sog": 0.88,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.0651,
+    "p": 0.0651,
+    "fair": 1436
+   },
+   "sog1.5": {
+    "p_model": 0.2216,
+    "p": 0.2216,
+    "fair": 351
+   }
+  },
+  {
+   "id": 8480849,
+   "name": "Barrett Hayton",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 15.2,
+   "exp_sog": 1.94,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2848,
+    "p": 0.2848,
+    "fair": 251
+   },
+   "sog1.5": {
+    "p_model": 0.5651,
+    "p": 0.5651,
+    "fair": -130
+   }
+  },
+  {
+   "id": 8480855,
+   "name": "Jack McBain",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 13.1,
+   "exp_sog": 1.36,
    "env": 1.0,
    "assist": {
     "p_model": 0.2185,
@@ -3851,675 +914,900 @@
     "fair": 358
    },
    "sog1.5": {
-    "p_model": 0.3097,
-    "p": 0.3097,
-    "fair": 223
+    "p_model": 0.3916,
+    "p": 0.3916,
+    "fair": 155
    }
   },
   {
-   "id": 8484148,
-   "name": "Oliver Bonk",
-   "team": "PHI",
-   "opp": "EDM",
+   "id": 8480865,
+   "name": "Noah Dobson",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "D",
-   "game_id": 2026020326,
-   "toi": 17.4,
-   "exp_sog": 1.08,
+   "game_id": 2026020331,
+   "toi": 21.2,
+   "exp_sog": 1.85,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2019,
-    "p": 0.2019,
-    "fair": 395
+    "p_model": 0.3064,
+    "p": 0.3064,
+    "fair": 226
    },
    "sog1.5": {
-    "p_model": 0.2936,
-    "p": 0.2936,
-    "fair": 241
+    "p_model": 0.5412,
+    "p": 0.5412,
+    "fair": -118
    }
   },
   {
-   "id": 8484153,
-   "name": "Leo Carlsson",
-   "team": "ANA",
-   "opp": "CGY",
+   "id": 8481024,
+   "name": "Linus Karlsson",
+   "team": "VAN",
+   "opp": "UTA",
    "pos": "C",
-   "game_id": 2026020328,
-   "toi": 20.1,
-   "exp_sog": 2.43,
+   "game_id": 2026020332,
+   "toi": 14.2,
+   "exp_sog": 1.65,
    "env": 1.0,
    "assist": {
-    "p_model": 0.4884,
-    "p": 0.4884,
-    "fair": 105
+    "p_model": 0.2286,
+    "p": 0.2286,
+    "fair": 337
    },
    "sog1.5": {
-    "p_model": 0.6808,
-    "p": 0.6808,
-    "fair": -213
+    "p_model": 0.4843,
+    "p": 0.4843,
+    "fair": 106
    }
   },
   {
-   "id": 8484154,
-   "name": "Jonathan Castagna",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 12.8,
-   "exp_sog": 1.01,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1289,
-    "p": 0.1289,
-    "fair": 676
-   },
-   "sog1.5": {
-    "p_model": 0.2693,
-    "p": 0.2693,
-    "fair": 271
-   }
-  },
-  {
-   "id": 8484227,
-   "name": "Will Smith",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 19.8,
-   "exp_sog": 2.52,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.354,
-    "p": 0.354,
-    "fair": 182
-   },
-   "sog1.5": {
-    "p_model": 0.6984,
-    "p": 0.6984,
-    "fair": -232
-   }
-  },
-  {
-   "id": 8484234,
-   "name": "Aydar Suniev",
-   "team": "CGY",
-   "opp": "ANA",
+   "id": 8481032,
+   "name": "Paul Cotter",
+   "team": "VAN",
+   "opp": "UTA",
    "pos": "L",
-   "game_id": 2026020328,
-   "toi": 12.6,
+   "game_id": 2026020332,
+   "toi": 12.9,
+   "exp_sog": 0.69,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1055,
+    "p": 0.1055,
+    "fair": 848
+   },
+   "sog1.5": {
+    "p_model": 0.1558,
+    "p": 0.1558,
+    "fair": 542
+   }
+  },
+  {
+   "id": 8481523,
+   "name": "Kirby Dach",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 12.3,
+   "exp_sog": 1.12,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1799,
+    "p": 0.1799,
+    "fair": 456
+   },
+   "sog1.5": {
+    "p_model": 0.3088,
+    "p": 0.3088,
+    "fair": 224
+   }
+  },
+  {
+   "id": 8481525,
+   "name": "Matthew Robertson",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 14.7,
+   "exp_sog": 0.93,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1539,
+    "p": 0.1539,
+    "fair": 550
+   },
+   "sog1.5": {
+    "p_model": 0.238,
+    "p": 0.238,
+    "fair": 320
+   }
+  },
+  {
+   "id": 8481540,
+   "name": "Cole Caufield",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 18.0,
+   "exp_sog": 3.05,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.316,
+    "p": 0.316,
+    "fair": 216
+   },
+   "sog1.5": {
+    "p_model": 0.7867,
+    "p": 0.7867,
+    "fair": -369
+   }
+  },
+  {
+   "id": 8481604,
+   "name": "Pavel Dorofeyev",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 16.6,
+   "exp_sog": 2.83,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2762,
+    "p": 0.2762,
+    "fair": 262
+   },
+   "sog1.5": {
+    "p_model": 0.7541,
+    "p": 0.7541,
+    "fair": -307
+   }
+  },
+  {
+   "id": 8481618,
+   "name": "Alex Newhook",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 15.9,
+   "exp_sog": 1.4,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2153,
+    "p": 0.2153,
+    "fair": 364
+   },
+   "sog1.5": {
+    "p_model": 0.402,
+    "p": 0.402,
+    "fair": 149
+   }
+  },
+  {
+   "id": 8481789,
+   "name": "Tye Kartye",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 16.6,
+   "exp_sog": 1.68,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2228,
+    "p": 0.2228,
+    "fair": 349
+   },
+   "sog1.5": {
+    "p_model": 0.4906,
+    "p": 0.4906,
+    "fair": 104
+   }
+  },
+  {
+   "id": 8482055,
+   "name": "Drew O'Connor",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "L",
+   "game_id": 2026020332,
+   "toi": 14.8,
+   "exp_sog": 1.43,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.156,
+    "p": 0.156,
+    "fair": 541
+   },
+   "sog1.5": {
+    "p_model": 0.4147,
+    "p": 0.4147,
+    "fair": 141
+   }
+  },
+  {
+   "id": 8482073,
+   "name": "Braden Schneider",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 19.3,
+   "exp_sog": 1.35,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2007,
+    "p": 0.2007,
+    "fair": 398
+   },
+   "sog1.5": {
+    "p_model": 0.3871,
+    "p": 0.3871,
+    "fair": 158
+   }
+  },
+  {
+   "id": 8482079,
+   "name": "Marco Rossi",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 15.5,
+   "exp_sog": 1.37,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3275,
+    "p": 0.3275,
+    "fair": 205
+   },
+   "sog1.5": {
+    "p_model": 0.3922,
+    "p": 0.3922,
+    "fair": 155
+   }
+  },
+  {
+   "id": 8482087,
+   "name": "Kaiden Guhle",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 22.2,
+   "exp_sog": 1.12,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.221,
+    "p": 0.221,
+    "fair": 352
+   },
+   "sog1.5": {
+    "p_model": 0.3056,
+    "p": 0.3056,
+    "fair": 227
+   }
+  },
+  {
+   "id": 8482109,
+   "name": "Alexis Lafreni\u00e8re",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 18.2,
+   "exp_sog": 2.18,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3647,
+    "p": 0.3647,
+    "fair": 174
+   },
+   "sog1.5": {
+    "p_model": 0.6252,
+    "p": 0.6252,
+    "fair": -167
+   }
+  },
+  {
+   "id": 8482132,
+   "name": "Brett Berard",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 10.5,
+   "exp_sog": 0.89,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.0812,
+    "p": 0.0812,
+    "fair": 1132
+   },
+   "sog1.5": {
+    "p_model": 0.2252,
+    "p": 0.2252,
+    "fair": 344
+   }
+  },
+  {
+   "id": 8482157,
+   "name": "Will Cuylle",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 16.8,
+   "exp_sog": 1.91,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2278,
+    "p": 0.2278,
+    "fair": 339
+   },
+   "sog1.5": {
+    "p_model": 0.5583,
+    "p": 0.5583,
+    "fair": -126
+   }
+  },
+  {
+   "id": 8482666,
+   "name": "Scott Morrow",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 14.2,
+   "exp_sog": 1.11,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1703,
+    "p": 0.1703,
+    "fair": 487
+   },
+   "sog1.5": {
+    "p_model": 0.3043,
+    "p": 0.3043,
+    "fair": 229
+   }
+  },
+  {
+   "id": 8482699,
+   "name": "Dylan Guenther",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "R",
+   "game_id": 2026020332,
+   "toi": 17.5,
+   "exp_sog": 2.92,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3792,
+    "p": 0.3792,
+    "fair": 164
+   },
+   "sog1.5": {
+    "p_model": 0.7682,
+    "p": 0.7682,
+    "fair": -331
+   }
+  },
+  {
+   "id": 8482737,
+   "name": "Zachary Bolduc",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 14.4,
+   "exp_sog": 1.45,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1791,
+    "p": 0.1791,
+    "fair": 458
+   },
+   "sog1.5": {
+    "p_model": 0.419,
+    "p": 0.419,
+    "fair": 139
+   }
+  },
+  {
+   "id": 8482775,
+   "name": "Oliver Kapanen",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 12.5,
    "exp_sog": 1.33,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1256,
-    "p": 0.1256,
-    "fair": 696
+    "p_model": 0.1438,
+    "p": 0.1438,
+    "fair": 595
    },
    "sog1.5": {
-    "p_model": 0.3811,
-    "p": 0.3811,
-    "fair": 162
+    "p_model": 0.3793,
+    "p": 0.3793,
+    "fair": 164
+   }
+  },
+  {
+   "id": 8482964,
+   "name": "Arber Xhekaj",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 12.0,
+   "exp_sog": 0.71,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.0678,
+    "p": 0.0678,
+    "fair": 1375
+   },
+   "sog1.5": {
+    "p_model": 0.1608,
+    "p": 0.1608,
+    "fair": 522
+   }
+  },
+  {
+   "id": 8483395,
+   "name": "Arshdeep Bains",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "L",
+   "game_id": 2026020332,
+   "toi": 10.3,
+   "exp_sog": 0.62,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1354,
+    "p": 0.1354,
+    "fair": 639
+   },
+   "sog1.5": {
+    "p_model": 0.1309,
+    "p": 0.1309,
+    "fair": 664
+   }
+  },
+  {
+   "id": 8483431,
+   "name": "Logan Cooley",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 18.3,
+   "exp_sog": 2.13,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3826,
+    "p": 0.3826,
+    "fair": 161
+   },
+   "sog1.5": {
+    "p_model": 0.6128,
+    "p": 0.6128,
+    "fair": -158
+   }
+  },
+  {
+   "id": 8483436,
+   "name": "Artem Duda",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 16.5,
+   "exp_sog": 1.2,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.141,
+    "p": 0.141,
+    "fair": 609
+   },
+   "sog1.5": {
+    "p_model": 0.3354,
+    "p": 0.3354,
+    "fair": 198
+   }
+  },
+  {
+   "id": 8483457,
+   "name": "Lane Hutson",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 24.3,
+   "exp_sog": 1.74,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.4625,
+    "p": 0.4625,
+    "fair": 116
+   },
+   "sog1.5": {
+    "p_model": 0.5095,
+    "p": 0.5095,
+    "fair": -104
+   }
+  },
+  {
+   "id": 8483472,
+   "name": "Maveric Lamoureux",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 14.7,
+   "exp_sog": 0.95,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.164,
+    "p": 0.164,
+    "fair": 510
+   },
+   "sog1.5": {
+    "p_model": 0.245,
+    "p": 0.245,
+    "fair": 308
+   }
+  },
+  {
+   "id": 8483476,
+   "name": "Jonathan Lekkerim\u00e4ki",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "R",
+   "game_id": 2026020332,
+   "toi": 15.0,
+   "exp_sog": 1.43,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.219,
+    "p": 0.219,
+    "fair": 357
+   },
+   "sog1.5": {
+    "p_model": 0.4131,
+    "p": 0.4131,
+    "fair": 142
+   }
+  },
+  {
+   "id": 8483499,
+   "name": "Liam Ohgren",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "L",
+   "game_id": 2026020332,
+   "toi": 13.6,
+   "exp_sog": 1.26,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1653,
+    "p": 0.1653,
+    "fair": 505
+   },
+   "sog1.5": {
+    "p_model": 0.3549,
+    "p": 0.3549,
+    "fair": 182
+   }
+  },
+  {
+   "id": 8483515,
+   "name": "Juraj Slafkovsk\u00fd",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 18.2,
+   "exp_sog": 2.12,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.3617,
+    "p": 0.3617,
+    "fair": 176
+   },
+   "sog1.5": {
+    "p_model": 0.6112,
+    "p": 0.6112,
+    "fair": -157
+   }
+  },
+  {
+   "id": 8483669,
+   "name": "Adam Sykora",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "L",
+   "game_id": 2026020331,
+   "toi": 11.2,
+   "exp_sog": 1.28,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1072,
+    "p": 0.1072,
+    "fair": 833
+   },
+   "sog1.5": {
+    "p_model": 0.3626,
+    "p": 0.3626,
+    "fair": 176
+   }
+  },
+  {
+   "id": 8483678,
+   "name": "Elias Pettersson",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "D",
+   "game_id": 2026020332,
+   "toi": 18.2,
+   "exp_sog": 0.79,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1021,
+    "p": 0.1021,
+    "fair": 879
+   },
+   "sog1.5": {
+    "p_model": 0.1894,
+    "p": 0.1894,
+    "fair": 428
+   }
+  },
+  {
+   "id": 8483686,
+   "name": "Adam Engstrom",
+   "team": "MTL",
+   "opp": "NYR",
+   "pos": "D",
+   "game_id": 2026020331,
+   "toi": 12.0,
+   "exp_sog": 0.8,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.0913,
+    "p": 0.0913,
+    "fair": 995
+   },
+   "sog1.5": {
+    "p_model": 0.191,
+    "p": 0.191,
+    "fair": 424
+   }
+  },
+  {
+   "id": 8483690,
+   "name": "Noah Laba",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "C",
+   "game_id": 2026020331,
+   "toi": 14.3,
+   "exp_sog": 1.0,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.2012,
+    "p": 0.2012,
+    "fair": 397
+   },
+   "sog1.5": {
+    "p_model": 0.265,
+    "p": 0.265,
+    "fair": 277
+   }
+  },
+  {
+   "id": 8484136,
+   "name": "Max Sasson",
+   "team": "VAN",
+   "opp": "UTA",
+   "pos": "C",
+   "game_id": 2026020332,
+   "toi": 11.9,
+   "exp_sog": 0.92,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.1069,
+    "p": 0.1069,
+    "fair": 835
+   },
+   "sog1.5": {
+    "p_model": 0.2343,
+    "p": 0.2343,
+    "fair": 327
+   }
+  },
+  {
+   "id": 8484210,
+   "name": "Gabe Perreault",
+   "team": "NYR",
+   "opp": "MTL",
+   "pos": "R",
+   "game_id": 2026020331,
+   "toi": 16.5,
+   "exp_sog": 1.79,
+   "env": 1.0,
+   "assist": {
+    "p_model": 0.244,
+    "p": 0.244,
+    "fair": 310
+   },
+   "sog1.5": {
+    "p_model": 0.5254,
+    "p": 0.5254,
+    "fair": -111
    }
   },
   {
    "id": 8484240,
    "name": "Tom Willander",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "D",
-   "game_id": 2026020329,
+   "game_id": 2026020332,
    "toi": 19.3,
-   "exp_sog": 0.9,
+   "exp_sog": 0.84,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1851,
-    "p": 0.1851,
-    "fair": 440
+    "p_model": 0.2033,
+    "p": 0.2033,
+    "fair": 392
    },
    "sog1.5": {
-    "p_model": 0.2299,
-    "p": 0.2299,
-    "fair": 335
+    "p_model": 0.2071,
+    "p": 0.2071,
+    "fair": 383
    }
   },
   {
-   "id": 8484262,
-   "name": "Travis Mitchell",
-   "team": "ANA",
-   "opp": "CGY",
+   "id": 8484386,
+   "name": "Dmitri Simashev",
+   "team": "UTA",
+   "opp": "VAN",
    "pos": "D",
-   "game_id": 2026020328,
-   "toi": 12.9,
-   "exp_sog": 0.6,
+   "game_id": 2026020332,
+   "toi": 16.3,
+   "exp_sog": 1.04,
    "env": 1.0,
    "assist": {
-    "p_model": 0.0669,
-    "p": 0.0669,
-    "fair": 1395
+    "p_model": 0.1139,
+    "p": 0.1139,
+    "fair": 778
    },
    "sog1.5": {
-    "p_model": 0.125,
-    "p": 0.125,
-    "fair": 700
+    "p_model": 0.2793,
+    "p": 0.2793,
+    "fair": 258
    }
   },
   {
-   "id": 8484304,
-   "name": "Uvis Balinskis",
-   "team": "FLA",
-   "opp": "DAL",
-   "pos": "D",
-   "game_id": 2026020327,
-   "toi": 15.0,
-   "exp_sog": 0.93,
+   "id": 8484388,
+   "name": "Daniil But",
+   "team": "UTA",
+   "opp": "VAN",
+   "pos": "L",
+   "game_id": 2026020332,
+   "toi": 10.8,
+   "exp_sog": 1.27,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1388,
-    "p": 0.1388,
-    "fair": 620
+    "p_model": 0.133,
+    "p": 0.133,
+    "fair": 652
    },
    "sog1.5": {
-    "p_model": 0.2404,
-    "p": 0.2404,
-    "fair": 316
-   }
-  },
-  {
-   "id": 8484387,
-   "name": "Matvei Michkov",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 16.4,
-   "exp_sog": 1.77,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2633,
-    "p": 0.2633,
-    "fair": 280
-   },
-   "sog1.5": {
-    "p_model": 0.5194,
-    "p": 0.5194,
-    "fair": -108
-   }
-  },
-  {
-   "id": 8484421,
-   "name": "Eric Pohlkamp",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 17.0,
-   "exp_sog": 1.24,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1525,
-    "p": 0.1525,
-    "fair": 556
-   },
-   "sog1.5": {
-    "p_model": 0.3483,
-    "p": 0.3483,
-    "fair": 187
-   }
-  },
-  {
-   "id": 8484762,
-   "name": "Beckett Sennecke",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 19.6,
-   "exp_sog": 2.57,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3949,
-    "p": 0.3949,
-    "fair": 153
-   },
-   "sog1.5": {
-    "p_model": 0.7085,
-    "p": 0.7085,
-    "fair": -243
-   }
-  },
-  {
-   "id": 8484768,
-   "name": "Zayne Parekh",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "D",
-   "game_id": 2026020328,
-   "toi": 18.4,
-   "exp_sog": 1.48,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2023,
-    "p": 0.2023,
-    "fair": 394
-   },
-   "sog1.5": {
-    "p_model": 0.4294,
-    "p": 0.4294,
-    "fair": 133
+    "p_model": 0.3578,
+    "p": 0.3578,
+    "fair": 179
    }
   },
   {
    "id": 8484798,
    "name": "Zeev Buium",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "D",
-   "game_id": 2026020329,
-   "toi": 21.5,
-   "exp_sog": 0.94,
+   "game_id": 2026020332,
+   "toi": 21.3,
+   "exp_sog": 0.85,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2464,
-    "p": 0.2464,
-    "fair": 306
+    "p_model": 0.2619,
+    "p": 0.2619,
+    "fair": 282
    },
    "sog1.5": {
-    "p_model": 0.243,
-    "p": 0.243,
-    "fair": 312
-   }
-  },
-  {
-   "id": 8484801,
-   "name": "Macklin Celebrini",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 23.2,
-   "exp_sog": 4.02,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.5143,
-    "p": 0.5143,
-    "fair": -106
-   },
-   "sog1.5": {
-    "p_model": 0.8888,
-    "p": 0.8888,
-    "fair": -799
-   }
-  },
-  {
-   "id": 8484803,
-   "name": "Trevor Connelly",
-   "team": "VGK",
-   "opp": "VAN",
-   "pos": "L",
-   "game_id": 2026020329,
-   "toi": 14.7,
-   "exp_sog": 1.89,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.232,
-    "p": 0.232,
-    "fair": 331
-   },
-   "sog1.5": {
-    "p_model": 0.5518,
-    "p": 0.5518,
-    "fair": -123
-   }
-  },
-  {
-   "id": 8484806,
-   "name": "Sam Dickinson",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "D",
-   "game_id": 2026020330,
-   "toi": 18.6,
-   "exp_sog": 1.0,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1462,
-    "p": 0.1462,
-    "fair": 584
-   },
-   "sog1.5": {
-    "p_model": 0.2644,
-    "p": 0.2644,
-    "fair": 278
-   }
-  },
-  {
-   "id": 8484829,
-   "name": "Justin Hryckowian",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "C",
-   "game_id": 2026020327,
-   "toi": 14.6,
-   "exp_sog": 1.11,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1502,
-    "p": 0.1502,
-    "fair": 566
-   },
-   "sog1.5": {
-    "p_model": 0.3027,
-    "p": 0.3027,
-    "fair": 230
-   }
-  },
-  {
-   "id": 8484860,
-   "name": "Matvei Gridin",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 16.3,
-   "exp_sog": 1.99,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3242,
-    "p": 0.3242,
-    "fair": 208
-   },
-   "sog1.5": {
-    "p_model": 0.5777,
-    "p": 0.5777,
-    "fair": -137
+    "p_model": 0.2089,
+    "p": 0.2089,
+    "fair": 379
    }
   },
   {
    "id": 8484901,
    "name": "Jacob Quillan",
    "team": "VAN",
-   "opp": "VGK",
+   "opp": "UTA",
    "pos": "C",
-   "game_id": 2026020329,
+   "game_id": 2026020332,
    "toi": 11.0,
-   "exp_sog": 0.78,
+   "exp_sog": 0.74,
    "env": 1.0,
    "assist": {
-    "p_model": 0.1143,
-    "p": 0.1143,
-    "fair": 775
+    "p_model": 0.1247,
+    "p": 0.1247,
+    "fair": 702
    },
    "sog1.5": {
-    "p_model": 0.1843,
-    "p": 0.1843,
-    "fair": 443
+    "p_model": 0.1699,
+    "p": 0.1699,
+    "fair": 489
    }
   },
   {
-   "id": 8484911,
-   "name": "Collin Graf",
-   "team": "SJS",
-   "opp": "NSH",
+   "id": 8484984,
+   "name": "Ivan Demidov",
+   "team": "MTL",
+   "opp": "NYR",
    "pos": "R",
-   "game_id": 2026020330,
-   "toi": 15.8,
-   "exp_sog": 1.2,
+   "game_id": 2026020331,
+   "toi": 15.5,
+   "exp_sog": 1.54,
    "env": 1.0,
    "assist": {
-    "p_model": 0.2138,
-    "p": 0.2138,
-    "fair": 368
+    "p_model": 0.3424,
+    "p": 0.3424,
+    "fair": 192
    },
    "sog1.5": {
-    "p_model": 0.3346,
-    "p": 0.3346,
-    "fair": 199
+    "p_model": 0.4497,
+    "p": 0.4497,
+    "fair": 122
    }
   },
   {
-   "id": 8484938,
-   "name": "Arttu Hyry",
-   "team": "DAL",
-   "opp": "FLA",
-   "pos": "R",
-   "game_id": 2026020327,
-   "toi": 14.3,
-   "exp_sog": 1.63,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1017,
-    "p": 0.1017,
-    "fair": 883
-   },
-   "sog1.5": {
-    "p_model": 0.4777,
-    "p": 0.4777,
-    "fair": 109
-   }
-  },
-  {
-   "id": 8484958,
-   "name": "Maxim Tsyplakov",
-   "team": "CGY",
-   "opp": "ANA",
-   "pos": "R",
-   "game_id": 2026020328,
-   "toi": 10.5,
-   "exp_sog": 0.82,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0771,
-    "p": 0.0771,
-    "fair": 1197
-   },
-   "sog1.5": {
-    "p_model": 0.2013,
-    "p": 0.2013,
-    "fair": 397
-   }
-  },
-  {
-   "id": 8484994,
-   "name": "Igor Chernyshov",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 14.1,
-   "exp_sog": 1.43,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2194,
-    "p": 0.2194,
-    "fair": 356
-   },
-   "sog1.5": {
-    "p_model": 0.4123,
-    "p": 0.4123,
-    "fair": 143
-   }
-  },
-  {
-   "id": 8485400,
-   "name": "Roger McQueen",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 12.3,
-   "exp_sog": 1.34,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0963,
-    "p": 0.0963,
-    "fair": 938
-   },
-   "sog1.5": {
-    "p_model": 0.3838,
-    "p": 0.3838,
-    "fair": 161
-   }
-  },
-  {
-   "id": 8485402,
-   "name": "Michael Misa",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 15.2,
-   "exp_sog": 1.55,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.21,
-    "p": 0.21,
-    "fair": 376
-   },
-   "sog1.5": {
-    "p_model": 0.4521,
-    "p": 0.4521,
-    "fair": 121
-   }
-  },
-  {
-   "id": 8485406,
-   "name": "Porter Martone",
-   "team": "PHI",
-   "opp": "EDM",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 15.0,
-   "exp_sog": 2.01,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.3043,
-    "p": 0.3043,
-    "fair": 229
-   },
-   "sog1.5": {
-    "p_model": 0.5839,
-    "p": 0.5839,
-    "fair": -140
-   }
-  },
-  {
-   "id": 8485468,
-   "name": "Trey Taylor",
-   "team": "DAL",
-   "opp": "FLA",
+   "id": 8485957,
+   "name": "Alberts Smits",
+   "team": "NYR",
+   "opp": "MTL",
    "pos": "D",
-   "game_id": 2026020327,
-   "toi": 14.7,
-   "exp_sog": 0.84,
+   "game_id": 2026020331,
+   "toi": 15.4,
+   "exp_sog": 0.86,
    "env": 1.0,
    "assist": {
-    "p_model": 0.0906,
-    "p": 0.0906,
-    "fair": 1004
+    "p_model": 0.0897,
+    "p": 0.0897,
+    "fair": 1015
    },
    "sog1.5": {
-    "p_model": 0.2066,
-    "p": 0.2066,
-    "fair": 384
-   }
-  },
-  {
-   "id": 8485512,
-   "name": "Tim Washe",
-   "team": "ANA",
-   "opp": "CGY",
-   "pos": "C",
-   "game_id": 2026020328,
-   "toi": 14.4,
-   "exp_sog": 1.06,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1103,
-    "p": 0.1103,
-    "fair": 807
-   },
-   "sog1.5": {
-    "p_model": 0.2839,
-    "p": 0.2839,
-    "fair": 252
-   }
-  },
-  {
-   "id": 8486103,
-   "name": "Ivar Stenberg",
-   "team": "SJS",
-   "opp": "NSH",
-   "pos": "L",
-   "game_id": 2026020330,
-   "toi": 16.7,
-   "exp_sog": 1.93,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.2489,
-    "p": 0.2489,
-    "fair": 302
-   },
-   "sog1.5": {
-    "p_model": 0.5616,
-    "p": 0.5616,
-    "fair": -128
-   }
-  },
-  {
-   "id": 8486161,
-   "name": "Owen Michaels",
-   "team": "EDM",
-   "opp": "PHI",
-   "pos": "R",
-   "game_id": 2026020326,
-   "toi": 12.1,
-   "exp_sog": 0.99,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.0953,
-    "p": 0.0953,
-    "fair": 949
-   },
-   "sog1.5": {
-    "p_model": 0.2613,
-    "p": 0.2613,
-    "fair": 283
-   }
-  },
-  {
-   "id": 8486189,
-   "name": "Vitali Pinchuk",
-   "team": "NSH",
-   "opp": "SJS",
-   "pos": "C",
-   "game_id": 2026020330,
-   "toi": 10.6,
-   "exp_sog": 1.27,
-   "env": 1.0,
-   "assist": {
-    "p_model": 0.1041,
-    "p": 0.1041,
-    "fair": 861
-   },
-   "sog1.5": {
-    "p_model": 0.3607,
-    "p": 0.3607,
-    "fair": 177
+    "p_model": 0.2131,
+    "p": 0.2131,
+    "fair": 369
    }
   }
  ],
  "odds_status": "No odds key set. Showing fair odds only. Game lines for 0 games.",
  "goalies": {
-  "EDM": "Tristan Jarry",
-  "PHI": "Dan Vladar",
-  "FLA": "Akira Schmid",
-  "DAL": "Casey DeSmith",
-  "CGY": "Devin Cooley",
-  "ANA": "Laurent Brossoit",
-  "VAN": "Leevi Merilainen",
-  "VGK": "Adin Hill",
-  "NSH": "Juuse Saros",
-  "SJS": "Alex Nedeljkovic"
+  "MTL": "Jacob Fowler",
+  "NYR": "Dylan Garand",
+  "VAN": "Kevin Lankinen",
+  "UTA": "Karel Vejmelka"
  },
  "markets": [
   "assist",
