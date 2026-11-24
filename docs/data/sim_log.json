@@ -61969,7 +61969,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -61993,7 +61993,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -62017,7 +62017,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -62041,7 +62041,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62065,7 +62065,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62089,7 +62089,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "void",
   "units": null
  },
  {
@@ -62113,7 +62113,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62137,7 +62137,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "void",
   "units": null
  },
  {
@@ -62161,7 +62161,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "loss",
   "units": null
  },
  {
@@ -62185,7 +62185,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62209,7 +62209,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62233,7 +62233,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62257,7 +62257,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "void",
   "units": null
  },
  {
@@ -62281,7 +62281,7 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
-  "status": "pending",
+  "status": "win",
   "units": null
  },
  {
@@ -62305,6 +62305,126 @@
   "flag": false,
   "likely": false,
   "logged": "2026-11-22T20:04+00:00",
+  "status": "loss",
+  "units": null
+ },
+ {
+  "date": "2026-11-23",
+  "game_id": 2026020384,
+  "player_id": 8480800,
+  "name": "Quinn Hughes",
+  "team": "MIN",
+  "opp": "SJS",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5868,
+  "p_model": 0.5868,
+  "p_mkt": null,
+  "fair": -142,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-24T00:30+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-23",
+  "game_id": 2026020384,
+  "player_id": 8484801,
+  "name": "Macklin Celebrini",
+  "team": "SJS",
+  "opp": "MIN",
+  "market": "assist",
+  "kind": "watch",
+  "p": 0.5049,
+  "p_model": 0.5049,
+  "p_mkt": null,
+  "fair": -102,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-24T00:30+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-23",
+  "game_id": 2026020383,
+  "player_id": 8483445,
+  "name": "Cutter Gauthier",
+  "team": "ANA",
+  "opp": "SEA",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.9065,
+  "p_model": 0.9065,
+  "p_mkt": null,
+  "fair": -970,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-24T00:30+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-23",
+  "game_id": 2026020384,
+  "player_id": 8484801,
+  "name": "Macklin Celebrini",
+  "team": "SJS",
+  "opp": "MIN",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8856,
+  "p_model": 0.8856,
+  "p_mkt": null,
+  "fair": -774,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-24T00:30+00:00",
+  "status": "pending",
+  "units": null
+ },
+ {
+  "date": "2026-11-23",
+  "game_id": 2026020384,
+  "player_id": 8481557,
+  "name": "Matt Boldy",
+  "team": "MIN",
+  "opp": "SJS",
+  "market": "sog1.5",
+  "kind": "watch",
+  "p": 0.8594,
+  "p_model": 0.8594,
+  "p_mkt": null,
+  "fair": -611,
+  "price": null,
+  "book": null,
+  "prices": null,
+  "under": null,
+  "ev": null,
+  "flag": false,
+  "likely": false,
+  "logged": "2026-11-24T00:30+00:00",
   "status": "pending",
   "units": null
  }
